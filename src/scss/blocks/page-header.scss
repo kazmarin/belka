@@ -1,3 +1,15 @@
 .page-header {
-  color: $text-color;
+  // display: none;
+
+  @media (min-width: $screen-xs) {
+  background-image: url('/../img/mountain1--l.jpg');
+  }
+
+  @media (min-width: $screen-sm) {
+  background-image: url('../img/mountain2--l.jpg');
+  }
+
+  @media (min-width: $screen-lg) {
+  background-image: url('../img/mountain3--l.jpg');
+  }
 }

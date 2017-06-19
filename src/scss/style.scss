@@ -1,7 +1,10 @@
+@import 'normalize.scss';
+@import 'fonts.scss';
 @import 'variables.scss';
 
 @import 'global.scss';
-@import 'fonts.scss';
-// @import 'sprite.scss';
+@import 'sprite.scss';
 
 @import 'blocks/page-header.scss';
+
+// @import './src/blocks/page-header/page-header.scss'

@@ -1,0 +1,131 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Burger--s {
+    width: 4px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-avatar--s {
+    width: 24px;
+    height: 27px;
+    background-position: -19px -5px;
+}
+
+.sprite-button-up--s {
+    width: 33px;
+    height: 33px;
+    background-position: -53px -5px;
+}
+
+.sprite-instagram--s {
+    width: 21px;
+    height: 21px;
+    background-position: -96px -5px;
+}
+
+.sprite-instagram-f--s {
+    width: 19px;
+    height: 19px;
+    background-position: -127px -5px;
+}
+
+.sprite-instagram-h--s {
+    width: 19px;
+    height: 19px;
+    background-position: -127px -34px;
+}
+
+.sprite-mountain--s {
+    width: 35px;
+    height: 22px;
+    background-position: -5px -63px;
+}
+
+.sprite-next--s {
+    width: 23px;
+    height: 41px;
+    background-position: -50px -63px;
+}
+
+.sprite-phone-call-f--s {
+    width: 14px;
+    height: 14px;
+    background-position: -156px -5px;
+}
+
+.sprite-phone-call-h--s {
+    width: 16px;
+    height: 16px;
+    background-position: -156px -29px;
+}
+
+.sprite-placeholder-f--s {
+    width: 11px;
+    height: 16px;
+    background-position: -83px -55px;
+}
+
+.sprite-prev--s {
+    width: 21px;
+    height: 41px;
+    background-position: -104px -63px;
+}
+
+.sprite-prev-black--s {
+    width: 14px;
+    height: 25px;
+    background-position: -156px -55px;
+}
+
+.sprite-question--s {
+    width: 57px;
+    height: 58px;
+    background-position: -5px -114px;
+}
+
+.sprite-rope--s {
+    width: 57px;
+    height: 58px;
+    background-position: -72px -114px;
+}
+
+.sprite-sign--s {
+    width: 57px;
+    height: 58px;
+    background-position: -182px -5px;
+}
+
+.sprite-twitter--s {
+    width: 22px;
+    height: 18px;
+    background-position: -180px -73px;
+}
+
+.sprite-twitter-h--s {
+    width: 22px;
+    height: 18px;
+    background-position: -212px -73px;
+}
+
+.sprite-vk--s {
+    width: 28px;
+    height: 18px;
+    background-position: -139px -101px;
+}
+
+.sprite-vk-f--s {
+    width: 25px;
+    height: 15px;
+    background-position: -177px -101px;
+}
+
+.sprite-vk-h--s {
+    width: 25px;
+    height: 15px;
+    background-position: -212px -101px;
+}
