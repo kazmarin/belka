@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+
+  @media (max-width: $screen-sm - 1) {
+      width: 250px;
+      &__time, &__address {
+        display: none;
+      }
+  }
+
+  &__phone:before{
+    content: "";
+    display: inline-block;
+    @include sprite($vk-h-s);
+  }
+
+  &__time, &__address, &__phone {
+    margin-top:  3px;
+    font-family: 'Proxima Nova Lt';
+    font-size: $font-size;
+    line-height: $line-height
+  }
+}

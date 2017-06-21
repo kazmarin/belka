@@ -1,0 +1,30 @@
+@mixin content-area() {
+    margin: 0 auto;
+
+    @media (min-width: $screen-xs) {
+      width: $screen-xs;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: $screen-sm;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: $screen-lg;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
+    &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// @mixin content-area() {
+//     margin: 0 auto;

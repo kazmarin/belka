@@ -1,15 +1,36 @@
 .page-header {
-  // display: none;
+  height: 30px;
 
-  @media (min-width: $screen-xs) {
-  background-image: url('/../img/mountain1--l.jpg');
+  &__contacts {
+    height: 30px;
+    background-color: #e9e9f1;
   }
 
-  @media (min-width: $screen-sm) {
-  background-image: url('../img/mountain2--l.jpg');
+  &__container {
+    @include content-area();
+    background-color: #9ae4c6;
   }
 
-  @media (min-width: $screen-lg) {
-  background-image: url('../img/mountain3--l.jpg');
+  &__contacts-wrap {
+    float: left;
+
+    @media (max-width: $screen-sm - 1) {
+      margin-right: 25px;
+    }
   }
+
+  &__navbar {
+    float: right;
+    margin-top: 3px;
+    width: 16px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+
+&__nav-wrapp{
+  @media (max-width: $screen-sm - 1) {
+      display: none;
+    }
+}
+
 }

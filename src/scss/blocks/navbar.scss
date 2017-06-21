@@ -1,0 +1,20 @@
+.navbar {
+  position: relative;
+
+  &__btn{
+    margin-left: 8px;
+  }
+
+&__nav-toggle {
+  position: absolute;
+  width: 300px;
+  height: 370px;
+  left: -306px;
+  top: 27px;
+  background-color: green;
+  opacity: 1;
+  box-sizing: border-box;
+  border-top: 1px solid #22313f;
+}
+
+}

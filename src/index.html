@@ -31,40 +31,53 @@
 
 <header class="page-header">
   <div class="page-header__contacts">
-    <div class="container">
+    <div class="page-header__container">
       <div class="page-header__contacts-wrap contacts">
         <p class="contacts__time">24 часа</p>
         <p class="contacts__phone">8(812)999-77-88</p>
-        <p class="contacts__adress">Выборгское ш.,220</p>
+        <p class="contacts__address">Выборгское ш.,220</p>
       </div>
 
-      <button class="page-header__nav-toggle main-nav-toggle">
-        <ul class="main-nav-toggle-list">
-          <li class="main-nav-toggle-item">
-            <a href="" class="main-nav-toggle-link">Трассы</a>
-          </li>
-          <li class="main-nav-toggle-item">
-            <a href="" class="main-nav-toggle-link">Акции</a>
-          </li>
-          <li class="main-nav-toggle-item">
-            <a href="" class="main-nav-toggle-link">Цены</a>
-          </li>
-          <li class="main-nav-toggle-item">
-            <a href="" class="main-nav-toggle-link">Отзывы</a>
-          </li>
-          <li class="main-nav-toggle-item">
-            <a href="" class="main-nav-toggle-link">Контакты</a>
-          </li>
-        </ul>
-      </button>
+      <nav class="page-header__navbar navbar">
+        <input type="checkbox" id="trigger-toggle" class="trigger-toggle">
+        <label class="navbar__btn toggle-btn" for="trigger-toggle"></label>
+
+        <div class="navbar__nav-toggle main-nav-toggle">
+          <ul class="main-nav-toggle__list">
+            <li class="main-nav-toggle__item">
+              <a href="" class="main-nav-toggle__link">Трассы</a>
+            </li>
+            <li class="main-nav-toggle__item">
+              <a href="" class="main-nav-toggle__link">Акции</a>
+            </li>
+            <li class="main-nav-toggle__item">
+              <a href="" class="main-nav-toggle__link">Цены</a>
+            </li>
+            <li class="main-nav-toggle__item">
+              <a href="" class="main-nav-toggle__link">Отзывы</a>
+            </li>
+            <li class="main-nav-toggle__item">
+              <a href="" class="main-nav-toggle__link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="main-nav-toggle__social social">
+        <a href="" class="social__item social__tw"></a>
+        <a href="" class="social__item social__vk"></a>
+        <a href="" class="social__item social__instag"></a>
+        </div>
+        </div>
+
+      </nav>
     </div>
   </div>
 
-  <div class="container">
+<div class="page-header__nav-wrapp">
+  <div class="page-header__container">
     <a href="" class="logo">
       <img src="" alt="" class="logo-img">
     </a>
-    <button class="page-header__btn btn">Купить билет</button>
+    <button class="page-header__btn-h btn">Купить билет</button>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -84,6 +97,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </div>
 </header>
 

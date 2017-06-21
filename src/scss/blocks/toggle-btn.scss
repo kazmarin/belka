@@ -1,0 +1,13 @@
+.trigger-toggle {
+  display: none;
+}
+
+.toggle-btn {
+  display: inline-block;
+  @include sprite($toggle);
+  cursor: pointer;
+}
+
+.trigger-toggle:checked ~ .navbar__nav-toggle {
+  opacity: 1;
+}

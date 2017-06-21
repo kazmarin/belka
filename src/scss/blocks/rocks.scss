@@ -1,0 +1,14 @@
+.rocks {
+
+  @media (min-width: $screen-xs) {
+      background-image: url(../img/mountain1--s.jpg);
+    }
+
+    // @media (min-width: $screen-sm) {
+    background-image: url(../img/mountain1--s.jpg);
+    // }
+
+    // @media (min-width: $screen-lg) {
+    background-image: url(../img/mountain1--s.jpg);
+    // }
+}

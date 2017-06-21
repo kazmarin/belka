@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+&__item {
+  content: '';
+  background-color: brown;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+&__item:last-child{
+  margin-right: 0;
+}
+
+&__tw {
+  @include sprite($twitter-h-s);
+}
+
+&__vk {
+  @include sprite($vk-h-s);
+}
+
+ &__instag {
+@include sprite($instagram-h-s);
+}
+}
