@@ -3,26 +3,26 @@
   align-items: center;
   justify-content: center;
 
-&__item {
-  content: '';
-  background-color: brown;
-  display: inline-block;
-  margin-right: 10px;
-}
+  &__item {
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    background-color: brown;
 
-&__item:last-child{
-  margin-right: 0;
-}
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 
-&__tw {
-  @include sprite($twitter-h-s);
-}
+  &__tw {
+    @include sprite($twitter-h-s);
+  }
 
-&__vk {
-  @include sprite($vk-h-s);
-}
+  &__vk {
+    @include sprite($vk-h-s);
+  }
 
- &__instag {
-@include sprite($instagram-h-s);
-}
+  &__instag {
+    @include sprite($instagram-h-s);
+  }
 }

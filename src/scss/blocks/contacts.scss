@@ -2,16 +2,24 @@
   display: flex;
 
   @media (max-width: $screen-sm - 1) {
-      width: 250px;
-      &__time, &__address {
-        display: none;
-      }
+    width: 250px;
+    &__time, &__address {
+      display: none;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    padding-left: 25px;
   }
 
   &__phone:before{
-    content: "";
+    position: absolute;
     display: inline-block;
-    @include sprite($vk-h-s);
+    content: "";
+    top: 3px;
+    left: 0;
+    @include sprite($phone-call-h-s);
   }
 
   &__time, &__address, &__phone {

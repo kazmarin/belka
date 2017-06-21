@@ -1,5 +1,4 @@
 .page-header {
-  height: 30px;
 
   &__contacts {
     height: 30px;
@@ -8,7 +7,6 @@
 
   &__container {
     @include content-area();
-    background-color: #9ae4c6;
   }
 
   &__contacts-wrap {
@@ -19,18 +17,20 @@
     }
   }
 
-  &__navbar {
+  &__btn {
     float: right;
-    margin-top: 3px;
-    width: 16px;
-    box-sizing: border-box;
-    border: 1px solid #000;
   }
 
-&__nav-wrapp{
-  @media (max-width: $screen-sm - 1) {
-      display: none;
-    }
-}
+  &__navbar {
+    position: absolute;
+    left: 0;
+    top: 30px;
+  }
 
+  &__main-nav-wrapp {
+
+    @media (max-width: $screen-sm - 1) {
+     display: none;
+    }
+  }
 }

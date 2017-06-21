@@ -1,13 +1,12 @@
-.trigger-toggle {
-  display: none;
-}
-
 .toggle-btn {
-  display: inline-block;
-  @include sprite($toggle);
-  cursor: pointer;
-}
+  width: 16px;
 
-.trigger-toggle:checked ~ .navbar__nav-toggle {
-  opacity: 1;
+  &__icon {
+    display: inline-block;
+    content:'';
+    margin-top: 3px;
+    margin-left: 8px;
+    @include sprite($toggle);
+    cursor: pointer;
+  }
 }
