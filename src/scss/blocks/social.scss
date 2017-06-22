@@ -12,17 +12,18 @@
     &:last-child{
       margin-right: 0;
     }
-  }
 
-  &__tw {
+    &--tw {
     @include sprite($twitter-h-s);
   }
 
-  &__vk {
+  &--vk {
     @include sprite($vk-h-s);
   }
 
-  &__instag {
+  &--instag {
     @include sprite($instagram-h-s);
   }
+  }
+
 }

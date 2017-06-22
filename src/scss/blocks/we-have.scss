@@ -1,0 +1,77 @@
+.we-have {
+  height: 906px;
+  background-color: #fff;
+
+  &__container {
+    @include content-area();
+    padding-top: 30px;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    height: 450px;
+    width: 293px;
+    box-sizing: border-box;
+
+    @media (min-width: $screen-xs) {
+      background-image: url(../img/about-us--s.jpg);
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    @include title();
+    padding-top: 48px;
+
+    &--white {
+      color: #fefefe;
+
+      &:after {
+        border: 2px solid #fefefe;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 50px;
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: 34px;
+    margin-left: 75px;
+    width: 196px;
+    box-sizing: border-box;
+    font-family: $font-family;
+    font-size: ($font-size - 2);
+    line-height: ($line-height - 8);
+    color: #fffffe;
+
+    &:before {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      left: -62px;
+    }
+
+    &--rope {
+      &:before{
+        @include sprite($rope-s);
+      }
+    }
+
+    &--sign {
+      &:before{
+        @include sprite($sign-s);
+        top: 10px;
+      }
+    }
+
+    &--question {
+      &:before{
+        @include sprite($question-s);
+        top: 10px;
+      }
+    }
+  }
+}
