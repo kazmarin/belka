@@ -2,11 +2,11 @@
   width: 16px;
 
   &__icon {
+    @include sprite($toggle);
     display: inline-block;
     content:'';
     margin-top: 3px;
     margin-left: 8px;
-    @include sprite($toggle);
     cursor: pointer;
   }
 }

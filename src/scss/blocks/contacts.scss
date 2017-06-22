@@ -13,13 +13,13 @@
     padding-left: 25px;
   }
 
-  &__phone:before{
+  &__phone:before {
+    @include sprite($phone-call-h-s);
     position: absolute;
     display: inline-block;
     content: "";
     top: 3px;
     left: 0;
-    @include sprite($phone-call-h-s);
   }
 
   &__time, &__address, &__phone {

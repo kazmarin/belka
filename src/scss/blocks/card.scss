@@ -1,10 +1,21 @@
 .card {
   position: relative;
+  margin-right: 5px;
   width: 214px;
   height: 320px;
-  border: 1px solid #000;
+  box-sizing: border-box;
+
+  .card-img {
+    @media (max-width: $screen-sm - 1) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
 
   &__title {
+    position: relative;
     padding-top: 26px;
     font-family: $font-family-title;
     font-weight: bold;
@@ -13,43 +24,50 @@
     letter-spacing: 3px;
     text-align: center;
     color: #c7c7d3;
+    z-index: 2;
   }
 
   &__height,
-  &__age {
-    padding-top: 22px;
+  &__age,
+  &__text {
+    position: relative;
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
-    letter-spacing: 3px;
     text-align: center;
-    color: #f9f9f9;
+    z-index: 2;
   }
 
   &__height {
-    &:before{
+    margin-top: 22px;
+    color: #f9f9f9;
+
+    &:before {
       @include sprite($mountain-s);
+      position: absolute;
+      display: inline-block;
       content:'';
-      // top: 3px;
-      // left: 0;
+      top: 0;
+      left: 15px;
     }
   }
 
   &__age {
+    margin-top: 17px;
+    color: #f9f9f9;
+
     &:before{
-      content:'';
-      // top: 3px;
-      // left: 0;
       @include sprite($avatar-s);
+      position: absolute;
+      display: inline-block;
+      content:'';
+      top: 0;
+      left: 20px;
     }
   }
 
-  @media (max-width: $screen-sm - 1) {
-     .card-img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index:1;
-      }
-    }
+  &__text {
+    margin-top: 76px;
+    color: #e7e7f2;
+  }
 }

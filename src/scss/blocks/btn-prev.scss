@@ -1,0 +1,7 @@
+.btn-prev {
+  @include sprite($arrow-prev-s);
+  display: inline-block;
+  content: "";
+  background-color: transparent;
+  border: none;
+}

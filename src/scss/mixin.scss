@@ -36,6 +36,8 @@
     letter-spacing: 3px;
     text-align: center;
     color: #211811;
+    // для того, чтоб мобильный navbar был выше заголовка
+    z-index: 1;
 
      &:after {
       position: absolute;

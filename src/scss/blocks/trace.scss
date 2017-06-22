@@ -3,6 +3,7 @@
 
   @media (min-width: $screen-xs) {
     background-image: url(../img/mountain2--s.jpg);
+    background-size: cover;
   }
 
   &__container {
@@ -11,6 +12,7 @@
 
   &__title {
     @include title();
+    padding-top: 3px;
 
     &--white {
       color: #fefefe;
@@ -21,11 +23,7 @@
     }
   }
 
-  &__wrapper {
-    padding-top: 50px;
-  }
-
-  &__card {
-    margin: 0 auto;
+  &__carousel-wrap {
+    margin-top: 60px;
   }
 }

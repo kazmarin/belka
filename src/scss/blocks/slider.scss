@@ -1,0 +1,12 @@
+.slider {
+  width: 214px;
+  height: 320px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    width: 2000px;
+    height: 320px;
+  }
+}
