@@ -24,7 +24,7 @@
 
   &__time, &__address, &__phone {
     margin-top:  3px;
-    font-family: 'Proxima Nova Lt';
+    font-family: $font-family-text;
     font-size: $font-size;
     line-height: $line-height
   }

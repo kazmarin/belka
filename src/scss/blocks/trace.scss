@@ -1,0 +1,31 @@
+.trace {
+  height: 528px;
+
+  @media (min-width: $screen-xs) {
+    background-image: url(../img/mountain2--s.jpg);
+  }
+
+  &__container {
+    @include content-area();
+  }
+
+  &__title {
+    @include title();
+
+    &--white {
+      color: #fefefe;
+
+      &:after {
+        border: 2px solid #fefefe;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-top: 50px;
+  }
+
+  &__card {
+    margin: 0 auto;
+  }
+}

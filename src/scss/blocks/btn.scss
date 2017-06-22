@@ -1,0 +1,11 @@
+.btn {
+  width: 146px;
+  height: 32px;
+  box-sizing: border-box;
+  font-family: $font-family-title;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: ($line-height - 6);
+  border: 1px solid #211811;
+  background-color: transparent;
+}
