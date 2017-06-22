@@ -1,7 +1,7 @@
 .card {
   position: relative;
   margin-right: 5px;
-  width: 214px;
+  flex-basis: 214px;
   height: 320px;
   box-sizing: border-box;
 
@@ -35,6 +35,7 @@
     font-size: $font-size;
     line-height: $line-height;
     text-align: center;
+    // чтоб текст лежал выше чем картинка
     z-index: 2;
   }
 

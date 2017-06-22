@@ -193,18 +193,37 @@
   </section>
 
   <section class="action">
-    <div class="container">
-      <h2 class="action__title title">АКЦИИ</h2>
+    <div class="action__container">
+      <h2 class="action__title">АКЦИИ</h2>
+
       <div class="action__wrapper">
         <div class="action__card">
-          <p class="action__text">Компания от 5 чел.скидка 10%</p>
+          <picture>
+             <source media="(min-width: 768px)" srcset="img/company--m.png">
+             <source media="(min-width: 1200px)" srcset="img/company--l.png">
+             <img src="img/company--s.png" alt="Приходите компаниями" class="action__img">
+           </picture>
+          <p class="action__text">Компания от 5 чел. скидка 10%</p>
         </div>
+
         <div class="action__card">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/family--m.png">
+            <source media="(min-width: 1200px)" srcset="img/family--l.png">
+            <img src="img/family--s.png" alt="Семьей выгодно" class="action__img">
+          </picture>
           <p class="action__text">Многодетным семьям скидка 20%</p>
         </div>
+
         <div class="action__card">
-          <p class="action__text">Студентам по карте isic 20%</p>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/student--m.png">
+            <source media="(min-width: 1200px)" srcset="img/student--l.png">
+            <img src="img/student--s.png" alt="Семьей выгодно" class="action__img">
+          </picture>
+          <p class="action__text">Студентам <br> по карте isic 20%</p>
         </div>
+
       </div>
     </div>
   </section>

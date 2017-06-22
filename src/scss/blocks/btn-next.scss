@@ -4,4 +4,12 @@
   content: "";
   background-color: transparent;
   border: none;
+
+  &:active {
+    transform: scale(0.7);
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
