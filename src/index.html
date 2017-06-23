@@ -117,13 +117,13 @@
     <div class="trace__container">
       <h2 class="trace__title trace__title--white">ТРАССЫ</h2>
 
-      <div class="trace__carousel-wrap carousel">
-        <button class="carousel__btn-last btn-prev"></button>
+      <div class="trace__gallery-wrap gallery">
+        <button class="gallery__btn-last btn-prev"></button>
 
-        <div class="carousel__slider slider">
-          <div class="slider__inner">
+        <div class="gallery__slider slider-trace">
+          <div class="slider-trace__inner">
 
-            <div class="slider__card card">
+            <div class="slider-trace__card card">
               <h3 class="card__title">Трасса #1</h3>
               <p class="card__height">Высота 15 м.</p>
               <p class="card__age">Возраст 13+</p>
@@ -135,7 +135,7 @@
               <p class="card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ.подготовки.</p>
             </div>
 
-            <div class="slider__card card card--blue">
+            <div class="slider-trace__card card card--blue">
               <h3 class="card__title">Трасса #2</h3>
               <p class="card__height">Высота 4 м.</p>
               <p class="card__age">Возраст 4+</p>
@@ -148,7 +148,7 @@
               <p class="card__text">Различные зацепы и рельефы стены</p>
             </div>
 
-            <div class="slider__card card">
+            <div class="slider-trace__card card">
               <h3 class="card__title">Трасса #3</h3>
               <p class="card__height">Высота 10 м.</p>
               <p class="card__age">Возраст 13+</p>
@@ -161,7 +161,7 @@
               <p class="card__text">Необходима хорошая физ. подготовка.</p>
             </div>
 
-            <div class="slider__card card card--blue">
+            <div class="slider-trace__card card card--blue">
               <h3 class="card__title">Трасса #4</h3>
               <p class="card__height">Высота 3 м.</p>
               <p class="card__age">Возраст 4+</p>
@@ -173,7 +173,7 @@
               <p class="card__text">Самая невысокая трасса. Специальные зацепы для детей</p>
             </div>
 
-            <div class="slider__card card">
+            <div class="slider-trace__card card">
               <h3 class="card__title">Трасса #5</h3>
               <p class="card__height">Высота 8 м.</p>
               <p class="card__age">Возраст 13+</p>
@@ -187,7 +187,7 @@
           </div>
         </div>
 
-        <button class="carousel__btn-next btn-next"></button>
+        <button class="gallery__btn-next btn-next"></button>
       </div>
     </div>
   </section>
@@ -228,21 +228,50 @@
     </div>
   </section>
 
-  <section class="we-have">
-    <div class="we-have__container">
-      <div class="we-have__wrapper">
-        <h2 class="we-have__title we-have__title--white">У НАС</h2>
-        <div class="we-have__info">
-          <p class="we-have__text we-have__text--rope">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
-          <p class="we-have__text we-have__text--sign">Понятная маркировка трасс(ламинированные табоички и зацепки определенного цвета для каждой трассы)</p>
-          <p class="we-have__text we-have__text--question">На территории скаладрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
+  <section class="have">
+    <div class="have__container">
+
+      <div class="have__wrapper">
+        <h2 class="have__title have__title--white">У НАС</h2>
+        <div class="have__info">
+          <p class="have__text have__text--rope">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
+          <p class="have__text have__text--sign">Понятная маркировка трасс(ламинированные табоички и зацепки определенного цвета для каждой трассы)</p>
+          <p class="have__text have__text--question">На территории скаладрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
         </div>
       </div>
 
-      <div class="we-have__gallery">
-        <img src="" alt="" class="we-have-img">
-        <img src="" alt="" class="we-have-img">
-        <img src="" alt="" class="we-have-img">
+      <div class="have__gallery-wrap gallery">
+        <button class="gallery__btn-last btn-prev"></button>
+
+        <div class="gallery__slider slider-foto">
+          <div class="slider-foto__inner">
+
+            <div class="slider-foto__card card">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/foto1--m.png">
+                <source media="(min-width: 1200px)" srcset="img/foto1--l.png">
+                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
+              </picture>
+            </div>
+
+            <div class="slider-foto__card card card--blue">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/foto2--m.png">
+                <source media="(min-width: 1200px)" srcset="img/foto2--l.png">
+                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
+              </picture>
+            </div>
+
+            <div class="slider-foto__card card">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/foto3--m.png">
+                <source media="(min-width: 1200px)" srcset="img/foto3--l.png">
+                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <button class="carousel__btn-next btn-next"></button>
       </div>
     </div>
   </section>

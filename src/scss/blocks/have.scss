@@ -1,6 +1,7 @@
-.we-have {
+.have {
   height: 906px;
   background-color: #fff;
+  border: 1px solid #000;
 
   &__container {
     @include content-area();
@@ -9,7 +10,7 @@
 
   &__wrapper {
     margin: 0 auto;
-    height: 450px;
+    height: 445px;
     width: 293px;
     box-sizing: border-box;
 
@@ -47,6 +48,8 @@
     line-height: ($line-height - 8);
     color: #fffffe;
 
+    &:last-child {margin-bottom: 0;}
+
     &:before {
       position: absolute;
       display: inline-block;
@@ -73,5 +76,9 @@
         top: 10px;
       }
     }
+  }
+
+  &__gallery-wrap {
+    padding-top: 30px;
   }
 }
