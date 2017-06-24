@@ -277,17 +277,58 @@
   </section>
 
   <section class="price">
-    <div class="container">
       <h2 class="price__title title">ЦЕНЫ</h2>
-      <table class="table table__">
-        <tr>
-          <td></td>
-          <td>ДЕТСКИЙ</td>
-          <td>ВЗРОСЛЫЙ</td>
-        </tr>
-      </table>
 
-      <table class="table">
+
+      <div class="price__accordion-wrap accordion">
+
+        <div class="accordion__item">
+          <p class="accordion__text">Выберите возраст</p>
+
+          <div class="accordion__inner">
+            <div class="accordion__sub-item">
+              <p class="accordion__sub-text">ДЕТСКИЙ</p>
+              <p class="accordion__sub-text">ОТ 4 ЛЕТ</p>
+            </div>
+
+            <div class="accordion__sub-item">
+              <p class="accordion__sub-text">ВЗРОЛЫЙ</p>
+              <p class="accordion__sub-text">ОТ 7 ЛЕТ</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <p class="accordion__text">Выберите место</p>
+          <div class="accordion__inner">
+            <div class="accordion__sub-item">
+              <p class="accordion__sub-text">ВСЕ ТРАССЫ</p>
+              <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
+            </div>
+            <div class="accordion__sub-item">
+              <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК</p>
+            </div>
+            <div class="accordion__sub-item">
+              <p class="accordion__sub-text">СКАЛОДРОМ</p>
+            </div></div>
+          </div>
+
+          <div class="accordion__item">
+            <p class="accordion__text">Выберите длительность</p>
+            <div class="accordion__inner">
+              <div class="accordion__sub-item">
+                <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
+                <p class="accordion__sub-text">ЗА 3 ЧАСА</p>
+              </div>
+              <div class="accordion__sub-item">
+                <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
+                <p class="accordion__sub-text">ЗА 12 ЧАСОВ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--       <table class="table">
         <tr>
           <td colspan="3">Прохождение препятствий парка 3 часа</td>
         </tr>
@@ -340,15 +381,15 @@
           <td colspan="2">ПЕРСОНАЛЬНЫЙ ОПЕРАТОР ПАРКА</td>
           <td>600 Р/час</td>
         </tr>
-      </table>
+      </table> -->
+
       <a href="" class="price__btn btn">КУПИТЬ БИЛЕТ</a>
       <a href="" class="price__document">Техника безопасности (PDF)</a>
-    </div>
   </section>
 
   <section class="reviews">
-    <div class="container">
-      <h2 class="title__title title">ОТЗЫВЫ</h2>
+    <div class="reviews__container">
+      <h2 class="reviews__title">ОТЗЫВЫ</h2>
       <div class="reviews__wrapper">
         <div class="title__reviews-item reviews-item">
           <img src="" alt="" class="reviews-item-img">
@@ -425,5 +466,8 @@
     </div>
   </div>
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

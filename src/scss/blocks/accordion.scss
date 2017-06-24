@@ -1,0 +1,68 @@
+.accordion {
+  height: 174px;
+  box-sizing: border-box;
+
+  &__item {
+    position: relative;
+    height: 58px;
+    border-top: 1px solid #22313f;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:last-child {border-bottom: 1px solid #22313f;}
+  }
+
+  &__text,
+  &__sub-text {
+    margin: 0 auto;
+    width: $screen-xs;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+  }
+
+  &__text {
+    position: relative;
+    padding: 16px 0;
+    text-align: center;
+    color: #22313f;
+
+    &:after {
+      @include sprite($arrow-black-s);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 0px;
+      bottom: 0;
+      margin: auto 0;
+      right: 16px;
+    }
+  }
+
+  &__item-active > &__text:after {
+    transition: rotate (90deg);
+  }
+
+  &__inner {
+    position: absolute;
+    z-index:1;
+    width: 100%;
+    top: 57px;
+    display: none;
+    background-color: #22313f;
+  }
+
+  &__item-active > &__inner {
+    display: block;
+    z-index:2;
+  }
+
+    &__sub-item {
+    height: 59px;
+  }
+
+  &__sub-text {
+    color: #dadae7;
+  }
+}

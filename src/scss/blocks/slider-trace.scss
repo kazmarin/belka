@@ -1,12 +1,12 @@
-.slider-foto {
-  width: 215px;
-  height: 400px;
+.slider-trace {
+  width: 214px;
+  height: 320px;
   box-sizing: border-box;
   overflow: hidden;
 
   &__inner {
     display: flex;
     width: 2000px;
-    height: 400px;
+    height: 320px;
   }
 }

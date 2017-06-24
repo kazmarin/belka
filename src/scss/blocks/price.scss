@@ -1,0 +1,11 @@
+.price {
+  height: 267px;
+
+  &__title {
+    @include title();
+  }
+
+  &__accordion-wrap {
+    margin-top: 68px;
+  }
+}

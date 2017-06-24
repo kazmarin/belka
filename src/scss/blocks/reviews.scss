@@ -1,0 +1,25 @@
+.reviews {
+  height: 812px;
+
+  @media (min-width: $screen-xs) {
+    background-image: url(../img/mountain3--s.jpg);
+    background-size: cover;
+  }
+
+  &__container {
+    @include content-area();
+  }
+
+  &__title {
+    @include title();
+    padding-top: 200px;
+
+    &--white {
+      color: #fefefe;
+
+      &:after {
+        border: 2px solid #fefefe;
+      }
+    }
+  }
+}

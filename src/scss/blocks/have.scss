@@ -1,17 +1,15 @@
 .have {
   height: 906px;
   background-color: #fff;
-  border: 1px solid #000;
 
   &__container {
     @include content-area();
-    padding-top: 30px;
   }
 
   &__wrapper {
     margin: 0 auto;
-    height: 445px;
-    width: 293px;
+    height: 447px;
+    width: $screen-xs;
     box-sizing: border-box;
 
     @media (min-width: $screen-xs) {
@@ -79,6 +77,6 @@
   }
 
   &__gallery-wrap {
-    padding-top: 30px;
+    padding-top: 29px;
   }
 }

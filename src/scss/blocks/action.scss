@@ -1,5 +1,5 @@
 .action {
-  height: 832px;
+  height: 860px;
   background-color: #fff;
 
   &__container {
@@ -17,7 +17,7 @@
   }
 
   &__wrapper {
-    width: 320px;
+    // width: $screen-xs;
     padding-top: 55px;
     box-sizing: border-box;
   }
@@ -25,7 +25,7 @@
   &__card {
     position: relative;
     margin: 0 auto;
-    width: 292px;
+    width: $screen-xs;
     height: 253px;
     margin-bottom: 10px;
 
