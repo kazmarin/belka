@@ -13,6 +13,10 @@
     transform: scale(0.5);
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &--red{
     background-color: #922626;
     border: none;

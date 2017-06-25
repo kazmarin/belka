@@ -1,6 +1,5 @@
 .reviews {
   height: 812px;
-  border: 1px solid #000;
 
   @media (min-width: $screen-xs) {
     background-image: url(../img/mountain3--s.jpg);
@@ -9,10 +8,11 @@
 
   &__container {
     @include content-area();
+    padding-top: 215px;
   }
 
   &__wrapper {
-    margin-top: 215px;
+    // margin-top: 215px;
     height: 558px;
     background-color: #ebebeb;
   }

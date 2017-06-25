@@ -3,6 +3,7 @@
 // });
 
 $(document).ready(function() {
+
   function accordion() {
 
     function openItem() {
@@ -17,10 +18,8 @@ $(document).ready(function() {
 
   }
   accordion();
-});
 
 
-$(document).ready(function() {
   function nav_toggle() {
 
     function openToggle() {
@@ -33,7 +32,12 @@ $(document).ready(function() {
 
   }
   nav_toggle();
+
+
+$('.single-item').slick();
+
 });
+
 
 
 
@@ -48,8 +52,8 @@ $(document).ready(function() {
 var mapPoints = [
   [
     'Новая точка на карте',
-    59.91016094,
-    30.30612718,
+    60.07686157,
+    30.27096066,
     '<div class="some-class"><h2>Заголовок</h2><p>Лорем ипсум долор хрень какая-то, но видно, что это самая обычная разметка</p></div>'
   ]
 ];
@@ -69,7 +73,7 @@ function initMap() {
   // Найдем тег карты по id
   var mapDiv = document.getElementById('map');
   // Определим центр карты
-  var center = {lat: 59.91016094, lng: 30.30612718};
+  var center = {lat: 60.07404788, lng: 30.28437138};
   // Создадим объект карты
   var map = new google.maps.Map(mapDiv, {
     zoom: 13,
@@ -104,12 +108,12 @@ function initMap() {
 function setMapMarkers(map) {
   // Данные о картинке-маркере (в этом примере для всех маркеров одна картинка)
   var image = {
-    url: 'img/placeholder.png',
+    url: 'img/placeholder-map--s.png',
     // Эта картинка 128×128 пикселей.
     // Точка «упора» нарисованного маркера по горизонтали — середина
     // Точка «упора» нарисованного маркера по вертикали в 11 пикселях от нижнего края картинки
-    size: new google.maps.Size(16, 16),
-    anchor: new google.maps.Point(8, 16) // 128 / 2 (горизонталь) и 128 - 11 (вертикаль)
+    size: new google.maps.Size(22, 30),
+    anchor: new google.maps.Point(11, 30) // 128 / 2 (горизонталь) и 128 - 11 (вертикаль)
   };
   // Обходим массив маркеров и проставляем каждый
   for (var i = 0; i < mapPoints.length; i++) {
