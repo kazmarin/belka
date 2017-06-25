@@ -1,7 +1,6 @@
-.social {
+.social-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   &__item {
     display: inline-block;
@@ -15,16 +14,15 @@
   }
 
     &__tw {
-    @include sprite($twitter-h-s);
+    @include sprite($twitter-f-s);
   }
 
   &__vk {
-    @include sprite($vk-h-s);
+    @include sprite($vk-f-s);
   }
 
   &__instag {
-    @include sprite($instagram-h-s);
+    @include sprite($instagram-f-s);
   }
-
 
 }

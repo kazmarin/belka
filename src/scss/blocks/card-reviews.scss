@@ -1,0 +1,40 @@
+.card-reviews {
+  margin-right: 5px;
+  flex-basis: 214px;
+  height: inherit;
+  box-sizing: border-box;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  &__name {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+
+  &__name,
+  &__status {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+    color: #22313f;
+  }
+
+  &__social {
+    margin-top: 15px;
+  }
+
+  &__text {
+    padding-top: 13px;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    color: #22313f;
+    line-height: ($line-height - 2);
+  }
+
+}

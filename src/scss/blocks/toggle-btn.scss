@@ -1,12 +1,21 @@
 .toggle-btn {
-  width: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+    transform: scale(0.5);
+  }
+
+      &:focus {
+    outline: none;
+  }
 
   &__icon {
     @include sprite($toggle);
     display: inline-block;
     content:'';
-    margin-top: 3px;
-    margin-left: 8px;
-    cursor: pointer;
+    margin-left: 3px;
+    margin-top: 2px;
   }
 }

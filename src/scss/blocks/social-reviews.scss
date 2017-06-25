@@ -1,4 +1,4 @@
-.social {
+.social-reviews {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,24 +7,18 @@
     display: inline-block;
     content: '';
     margin-right: 10px;
-    background-color: brown;
 
     &:last-child{
       margin-right: 0;
     }
   }
 
-    &__tw {
-    @include sprite($twitter-h-s);
+  &__instag {
+    @include sprite($instagram-s);
   }
 
   &__vk {
-    @include sprite($vk-h-s);
+    @include sprite($vk-s);
   }
-
-  &__instag {
-    @include sprite($instagram-h-s);
-  }
-
 
 }

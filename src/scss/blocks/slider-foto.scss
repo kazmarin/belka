@@ -9,4 +9,12 @@
     width: 2000px;
     height: 400px;
   }
+
+  &__card {
+  position: relative;
+  margin-right: 5px;
+  flex-basis: 214px;
+  height: 320px;
+  box-sizing: border-box;
+  }
 }

@@ -37,13 +37,15 @@
         <p class="contacts__phone">8(812)999-77-88</p>
         <p class="contacts__address">Выборгское ш.,220</p>
       </div>
-      <label class="page-header__btn toggle-btn" for="trigger-toggle"><span class="toggle-btn__icon"></span></label>
+      <button class="page-header__btn toggle-btn">
+        <span class="toggle-btn__icon"></span>
+      </button>
     </div>
     </div>
 
-    <nav class="page-header__navbar navbar">
-      <input type="checkbox" id="trigger-toggle" class="trigger-toggle">
-      <div class="navbar__nav-toggle main-nav-toggle ">
+    <div class="page-header__navbar-wrap">
+    <!-- контейнер дописать -->
+      <nav class="navbar__nav-toggle main-nav-toggle main-nav-toggle--active">
         <ul class="main-nav-toggle__list">
           <li class="main-nav-toggle__item">
             <a href="" class="main-nav-toggle__link">Трассы</a>
@@ -63,12 +65,12 @@
         </ul>
 
         <div class="main-nav-toggle__social social">
-          <a href="" class="social__item social__item--tw"></a>
-          <a href="" class="social__item social__item--vk"></a>
-          <a href="" class="social__item social__item--instag"></a>
+          <a href="" class="social__item social__tw"></a>
+          <a href="" class="social__item social__vk"></a>
+          <a href="" class="social__item social__instag"></a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
   <div class="page-header__main-nav-wrapp">
     <div class="page-header__container">
@@ -118,7 +120,7 @@
       <h2 class="trace__title trace__title--white">ТРАССЫ</h2>
 
       <div class="trace__gallery-wrap gallery">
-        <button class="gallery__btn-last btn-prev"></button>
+        <button class="gallery__btn-prev btn-prev"></button>
 
         <div class="gallery__slider slider-trace">
           <div class="slider-trace__inner">
@@ -241,12 +243,12 @@
       </div>
 
       <div class="have__gallery-wrap gallery">
-        <button class="gallery__btn-last btn-prev"></button>
+        <button class="gallery__btn-prev btn-prev"></button>
 
         <div class="gallery__slider slider-foto">
           <div class="slider-foto__inner">
 
-            <div class="slider-foto__card card">
+            <div class="slider-foto__card">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/foto1--m.png">
                 <source media="(min-width: 1200px)" srcset="img/foto1--l.png">
@@ -254,7 +256,7 @@
               </picture>
             </div>
 
-            <div class="slider-foto__card card card--blue">
+            <div class="slider-foto__card">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/foto2--m.png">
                 <source media="(min-width: 1200px)" srcset="img/foto2--l.png">
@@ -262,7 +264,7 @@
               </picture>
             </div>
 
-            <div class="slider-foto__card card">
+            <div class="slider-foto__card">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/foto3--m.png">
                 <source media="(min-width: 1200px)" srcset="img/foto3--l.png">
@@ -277,197 +279,170 @@
   </section>
 
   <section class="price">
-      <h2 class="price__title title">ЦЕНЫ</h2>
+    <h2 class="price__title title">ЦЕНЫ</h2>
 
 
-      <div class="price__accordion-wrap accordion">
+    <div class="price__accordion-wrap accordion">
 
-        <div class="accordion__item">
-          <p class="accordion__text">Выберите возраст</p>
+      <div class="accordion__item">
+        <p class="accordion__text">Выберите возраст</p>
 
-          <div class="accordion__inner">
-            <div class="accordion__sub-item">
-              <p class="accordion__sub-text">ДЕТСКИЙ</p>
-              <p class="accordion__sub-text">ОТ 4 ЛЕТ</p>
-            </div>
+        <div class="accordion__inner">
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ДЕТСКИЙ</p>
+            <p class="accordion__sub-text">ОТ 4 ЛЕТ</p>
+          </div>
 
-            <div class="accordion__sub-item">
-              <p class="accordion__sub-text">ВЗРОЛЫЙ</p>
-              <p class="accordion__sub-text">ОТ 7 ЛЕТ</p>
-            </div>
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ВЗРОЛЫЙ</p>
+            <p class="accordion__sub-text">ОТ 7 ЛЕТ</p>
           </div>
         </div>
+      </div>
 
-        <div class="accordion__item">
-          <p class="accordion__text">Выберите место</p>
-          <div class="accordion__inner">
-            <div class="accordion__sub-item">
-              <p class="accordion__sub-text">ВСЕ ТРАССЫ</p>
-              <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
-            </div>
-            <div class="accordion__sub-item">
-              <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК</p>
-            </div>
-            <div class="accordion__sub-item">
-              <p class="accordion__sub-text">СКАЛОДРОМ</p>
-            </div></div>
+      <div class="accordion__item">
+        <p class="accordion__text">Выберите место</p>
+        <div class="accordion__inner">
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ВСЕ ТРАССЫ</p>
+            <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
           </div>
-
-          <div class="accordion__item">
-            <p class="accordion__text">Выберите длительность</p>
-            <div class="accordion__inner">
-              <div class="accordion__sub-item">
-                <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
-                <p class="accordion__sub-text">ЗА 3 ЧАСА</p>
-              </div>
-              <div class="accordion__sub-item">
-                <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
-                <p class="accordion__sub-text">ЗА 12 ЧАСОВ</p>
-              </div>
-            </div>
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК</p>
+          </div>
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">СКАЛОДРОМ</p>
           </div>
         </div>
+      </div>
 
-<!--       <table class="table">
-        <tr>
-          <td colspan="3">Прохождение препятствий парка 3 часа</td>
-        </tr>
-        <tr>
-          <td>ВСЕ ТРАССЫ</td>
-          <td>2200 Р</td>
-          <td>2500 Р</td>
-        </tr>
-        <tr>
-          <td>СКАЛОДРОМ</td>
-          <td>1000 Р</td>
-          <td>1300 Р</td>
-        </tr>
-        <tr>
-          <td>ВЕРЕВОЧНЫЙ ПАРК</td>
-          <td>1200 Р</td>
-          <td>1500 Р</td>
-        </tr>
-        <tr>
-          <td colspan="3"></td>
-        </tr>
-      </table>
+      <div class="accordion__item">
+        <p class="accordion__text">Выберите длительность</p>
+        <div class="accordion__inner">
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
+            <p class="accordion__sub-text">ЗА 3 ЧАСА</p>
+          </div>
+          <div class="accordion__sub-item">
+            <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
+            <p class="accordion__sub-text">ЗА 12 ЧАСОВ</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <table class="table">
-        <tr>
-          <td colspan="3">Прохождение препятствий парка 12 часов</td>
-        </tr>
-        <tr>
-          <td>ВСЕ ТРАССЫ</td>
-          <td>5500 Р</td>
-          <td>6000 Р</td>
-        </tr>
-        <tr>
-          <td>СКАЛОДРОМ</td>
-          <td>3000 Р</td>
-          <td>3500 Р</td>
-        </tr>
-        <tr>
-          <td>ВЕРЕВОЧНЫЙ ПАРК</td>
-          <td>4000 Р</td>
-          <td>4500 Р</td>
-        </tr>
-        <tr>
-          <td colspan="3">КАЖДЫЙ ДОПОЛНИТЕЛЬНЫЙ ЧАС +500 Р</td>
-        </tr>
-      </table>
-
-      <table class="table">
-        <tr>
-          <td colspan="2">ПЕРСОНАЛЬНЫЙ ОПЕРАТОР ПАРКА</td>
-          <td>600 Р/час</td>
-        </tr>
-      </table> -->
-
-      <a href="" class="price__btn btn">КУПИТЬ БИЛЕТ</a>
-      <a href="" class="price__document">Техника безопасности (PDF)</a>
+    <div class="price__wrapper">
+    <div class="price__text">Стоимость абонемента<span class="price__price-season">0 Р</span></div>
+    <div class="price__container">
+      <p class="price__trener">ПЕРСОНАЛЬНЫЙ ОПЕРАТОР ПАРКА<span class="price__price">600 Р/час</span></p>
+      <p class="price__hour">КАЖДЫЙ ДОПОЛНИТЕЛЬНЫЙ ЧАС<span class="price__price">500 Р</span></p>
+    <button class="price__btn btn btn--red">КУПИТЬ БИЛЕТ</button>
+    <a href="" class="price__document">Техника безопасности (PDF)</a>
+    </div>
+    </div>
   </section>
 
   <section class="reviews">
     <div class="reviews__container">
-      <h2 class="reviews__title">ОТЗЫВЫ</h2>
       <div class="reviews__wrapper">
-        <div class="title__reviews-item reviews-item">
-          <img src="" alt="" class="reviews-item-img">
-          <p class="reviews__name">Алексей.</p>
-          <p class="reviews__status">Скалолаз-любитель.</p>
-          <div class="reviews__social">
-            <img src="" alt="" class="title__social-img">
-            <img src="" alt="" class="title__social-img">
+        <h2 class="reviews__title">ОТЗЫВЫ</h2>
+      <div class="reviews__gallery-wrap gallery ">
+        <button class="gallery__btn-prev btn-prev"></button>
+
+        <div class="gallery__slider slider-reviews">
+        <div class="slider-reviews__inner">
+
+          <div class="slider-reviews__card card-reviews">
+          <img src="img/people1--s.png" alt="Фото" width="157" height="157" class="card-reviews__img">
+          <p class="card-reviews__name">Алексей.</p>
+          <p class="card-reviews__status">Скалолаз-любитель.</p>
+          <div class="card-reviews__social social-reviews">
+            <a href="#" class="social-reviews__item social-reviews__instag"></a>
+            <a href="#" class="social-reviews__item social-reviews__vk"></a>
           </div>
-          <p class="reviews-item__text">Интересные трассы, вкусная еда и самые приветоивые тренера</p>
+          <p class="card-reviews__text">Интересные трассы, вкусная еда и самые приветоивые тренера!</p>
         </div>
-        <div class="title__reviews-item reviews-item">
-          <img src="" alt="" class="reviews-item-img">
-          <p class="reviews__name">Мария.</p>
-          <p class="reviews__status">Студентка.</p>
-          <div class="reviews__social">
-            <img src="" alt="" class="title__social-img">
-            <img src="" alt="" class="title__social-img">
+
+        <div class="slider-reviews__card card-reviews">
+          <img src="img/people2--s.png" alt="Фото" class="card-reviews-img">
+          <p class="card-reviews__name">Мария.</p>
+          <p class="card-reviews__status">Студентка.</p>
+          <div class="card-reviews__social">
+            <a href="" class="social-reviews__item social-reviews__instag"></a>
+            <a href="" class="social-reviews__item social-reviews__vk"></a>
           </div>
-          <p class="reviews-item__text">Лучший скалодром в городе!</p>
+          <p class="card-reviews__text">Лучший скалодром в городе!</p>
         </div>
-        <div class="title__reviews-item reviews-item">
-          <img src="" alt="" class="reviews-item-img">
-          <p class="reviews__name">Екатерина.</p>
-          <p class="reviews__status">Мама троих детей.</p>
-          <div class="reviews__social">
-            <img src="" alt="" class="title__social-img">
-            <img src="" alt="" class="title__social-img">
+
+        <div class="slider-reviews__card card-reviews">
+          <img src="img/people3--s.png" alt="Фото" class="card-reviews-img">
+          <p class="card-reviews__name">Екатерина.</p>
+          <p class="card-reviews__status">Мама троих детей.</p>
+          <div class="card-reviews__social">
+            <a href="" class="social-reviews__item social-reviews__instag"></a>
+            <a href="" class="social-reviews__item social-reviews__vk"></a>
           </div>
-          <p class="reviews-item__text">Парк "BЕLKA" отличная альтернатива наскучившим походам в кино и кафе</p>
+          <p class="card-reviews__text">Парк "BЕLKA" отличная альтернатива наскучившим походам в кино и кафе</p>
         </div>
+        </div>
+        </div>
+
+
+        <button class="gallery__btn-next btn-next"></button>
+      </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="container">
-    <div class="page-footer__wrapper-left">
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__address">Выборгское ш.,220</p>
-        <p class="contacts__phone">8(812)999-77-88</p>
+
+  <div class="page-footer__map-wrap">
+    <div id="map" class="map"></div>
+
+    <!-- ВНИМАНИЕ! Тут использован мой ключ! key=AIzaSyDjGAiz42P2243i_aoNCu4Pf0vU_xDWcZk — ключ -->
+   <!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwn8tQEEYmWsVItjRCBucEqWIcLRxmAsI&signed_in=true&callback=initMap"></script> -->
+  </div>
+
+  <div class="page-footer__container">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts-wrap contacts-footer">
+        <p class="contacts-footer__address contacts-footer__placeholder">Выборгское ш.,220</p>
+        <p class="contacts-footer__phone contacts-footer__phone">8(812)999-77-88</p>
       </div>
-      <div class="page-footer__nav footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">ТРАССЫ</a>
+
+      <div class="page-footer__nav nav-footer">
+        <ul class="nav-footer__list">
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">ТРАССЫ</a>
           </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">АКЦИИ</a>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">АКЦИИ</a>
           </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">ЦЕНЫ</a>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">ЦЕНЫ</a>
           </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">ОТЗЫВЫ</a>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">ОТЗЫВЫ</a>
           </li>
-          <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">КОНТАКТЫ</a>
+          <li class="nav-footer__item">
+            <a href="" class="nav-footer__link">КОНТАКТЫ</a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__social social">
-        <img src="" alt="" class="social-img tw">
-        <img src="" alt="" class="social-img vk">
-        <img src="" alt="" class="social-img no_know">
-      </div>
-    </div>
 
-    <div class="page-footer__wrapper-right">
-      <div class="maps">
-
+      <div class="page-footer__social social-footer">
+        <a href="" class="social-footer__item social-footer__tw"></a>
+        <a href="" class="social-footer__item social-footer__vk"></a>
+        <a href="" class="social-footer__item social-footer__instag"></a>
       </div>
+
+      <button class="page-footer__btn btn-up"></button>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.min.js"></script>
 
 </body>
 </html>

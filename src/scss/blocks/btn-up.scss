@@ -1,0 +1,11 @@
+.btn-up {
+    @include sprite($button-up-s);
+    content: '';
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+
+      &:focus {
+    outline: none;
+  }
+  }

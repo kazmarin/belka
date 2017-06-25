@@ -12,4 +12,9 @@
   &:active {
     transform: scale(0.5);
   }
+
+  &--red{
+    background-color: #922626;
+    border: none;
+  }
 }

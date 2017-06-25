@@ -20,6 +20,8 @@
 
   &__title {
     @include title();
+    // для того, чтоб мобильный navbar был выше заголовка
+    // z-index: 1;
     padding-top: 80px;
   }
 

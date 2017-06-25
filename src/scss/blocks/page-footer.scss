@@ -1,0 +1,22 @@
+.page-footer {
+  height: 487px;
+  background-color: #22313f;
+
+    &__container {
+    @include content-area();
+  }
+
+      &__wrapper {
+    position: relative;
+  }
+
+  &__social {
+    margin-top: 18px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+}

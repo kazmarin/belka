@@ -1,0 +1,36 @@
+.contacts-footer {
+
+  &__address{
+    position: relative;
+    padding-left: 18px;
+    font-family: $font-family-text;
+    font-size: ($font-size - 2);
+    line-height: ($line-height + 4);
+
+    &:before {
+    @include sprite($placeholder-f-s);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 2px;
+    left: 0px;
+  }
+}
+
+  &__phone {
+    position: relative;
+    padding-left: 18px;
+    font-family: $font-family-text;
+    font-size: ($font-size - 2);
+    line-height: $line-height;
+
+    &:before {
+    @include sprite($phone-call-f-s);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 2px;
+    left: 0;
+  }
+}
+}
