@@ -1,21 +1,21 @@
 @mixin content-area() {
     margin: 0 auto;
-    // background-color: #9ae4c6;
+    background-color: #9ae4c6;
 
     @media (min-width: $screen-xs) {
-      width: $screen-xs;
+      width: $screen-xs-content;
       padding-left: 14px;
       padding-right: 14px;
     }
 
     @media (min-width: $screen-sm) {
-      width: $screen-sm;
+      width: $screen-sm-content;
       padding-left: 14px;
       padding-right: 14px;
     }
 
     @media (min-width: $screen-lg) {
-      width: $screen-lg;
+      width: $screen-lg-content;
       padding-left: 45px;
       padding-right: 45px;
     }
@@ -29,7 +29,7 @@
 
 @mixin title() {
     position: relative;
-    font-family: $font-family;
+    font-family: $font-family-title-text;
     font-weight: bold;
     font-size: ($font-size * 2);
     line-height: $line-height;

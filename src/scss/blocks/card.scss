@@ -17,7 +17,7 @@
   &__title {
     position: relative;
     padding-top: 26px;
-    font-family: $font-family-title;
+    font-family: $font-family-title-text;
     font-weight: bold;
     font-size: ($font-size + 14);
     line-height: $line-height;
@@ -44,7 +44,7 @@
     color: #f9f9f9;
 
     &:before {
-      @include sprite($mountain-s);
+      @include sprite($mountain);
       position: absolute;
       display: inline-block;
       content:'';
@@ -58,7 +58,7 @@
     color: #f9f9f9;
 
     &:before{
-      @include sprite($avatar-s);
+      @include sprite($avatar);
       position: absolute;
       display: inline-block;
       content:'';

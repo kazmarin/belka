@@ -1,13 +1,20 @@
-$screen-xs:                   292px;
-$screen-sm:                   740px;
+$screen-xs:                   320px;
+$screen-xs-content:           292px;
+
+$screen-sm:                   768px;
+$screen-sm-content:           740px;
+
 $screen-md:                   992px;
-$screen-lg:                   1187px;
+
+$screen-lg:                   1200px;
+$screen-lg-content:           1110px;
+
 $screen-xl:                   1920px;
 
 $text-color:                  #211811;
-
+// #22313f
 $font-family:                 'Open Sans', sans-serif;
-$font-family-title:               'Proxima Nova Rg', sans-serif;
+$font-family-title-text:      'Proxima Nova Rg', sans-serif;
 $font-family-text:               'Proxima Nova Lt', sans-serif;
 
 $font-size:                   16px;

@@ -1,31 +1,72 @@
 .contacts {
   display: flex;
+  width: 250px;
+  box-sizing: border-box;
 
-  @media (max-width: $screen-sm - 1) {
-    width: 250px;
-    &__time, &__address {
+  @media (min-width: $screen-sm) {
+    justify-content: flex-end;
+    width: 580px;
+  }
+
+  &__time,
+  &__address {
+    @media (max-width: $screen-sm - 1) {
       display: none;
+    }
+  }
+
+  &__time,
+  &__phone,
+  &__address {
+    margin-top:  3px;
+    font-family: $font-family-text;
+    font-weight: 300;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+
+  &__time {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 50px;
+
+    &:before {
+      @include sprite($time);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
     }
   }
 
   &__phone {
     position: relative;
     padding-left: 25px;
+    margin-right: 50px;
+
+    &:before {
+      @include sprite($phone-call-h);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
+    }
   }
 
-  &__phone:before {
-    @include sprite($phone-call-h-s);
-    position: absolute;
-    display: inline-block;
-    content: "";
-    top: 3px;
-    left: 0;
+  &__address {
+    position: relative;
+    padding-left: 25px;
+
+    &:before {
+      @include sprite($placeholder-h);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0;
+    }
   }
 
-  &__time, &__address, &__phone {
-    margin-top:  3px;
-    font-family: $font-family-text;
-    font-size: $font-size;
-    line-height: $line-height
-  }
 }

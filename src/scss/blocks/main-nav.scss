@@ -1,0 +1,35 @@
+.main-nav {
+
+  &__list {
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    position: relative;
+    font-family: $font-family-title-text;
+    font-weight: normal;
+    font-size: ($font-size + 2);
+    line-height: $line-height;
+    color: #000;
+    text-decoration: none;
+
+    &--active {
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 28px;
+        bottom: -9px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: 1px solid #22313f;
+      }
+    }
+  }
+
+}

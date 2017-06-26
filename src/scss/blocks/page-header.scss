@@ -2,9 +2,6 @@
   height: 30px;
 
   &__contacts {
-    position: relative;
-    z-index: 3;
-    height: 30px;
     background-color: #e9e9f1;
   }
 
@@ -14,39 +11,37 @@
 
   &__contacts-wrap {
     float: left;
+    margin-right: 20px;
 
-    @media (max-width: $screen-sm - 1) {
-      margin-right: 20px;
+    @media (min-width: $screen-sm) {
+      float: right;
     }
   }
 
-  &__btn {
+  &__toggle-btn {
     float: right;
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
   }
 
-  &__navbar-wrap {
-
+  &__navbar {
     position: absolute;
-    top: -370px;
+    display: none;
+    top: 30px;
     left: 0;
     height: 370px;
     width: 100%;
     background-color: #e9e9f1;
     border-top: 1px solid #22313f;
-       // для того, чтоб мобильный navbar был выше заголовка "СКАЛОДРОМ"
-      z-index: 2;
-      transition: top 1s linear;
-  }
+    // для того, чтоб  navbar был выше блока roks
+    z-index: 2;
 
-  &__navbar-active {
-    transition: top 1s linear;
-    top: 30px;
-  }
-
-  &__main-nav-wrapp {
-
-    @media (max-width: $screen-sm - 1) {
-     display: none;
+    @media (min-width: $screen-sm) {
+      display: block;
+      background-color: transparent;
+      border-top: none;
     }
   }
 }

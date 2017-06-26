@@ -4,6 +4,69 @@
 
 $(document).ready(function() {
 
+  $(".toggle-btn").click(function () {
+    $(".page-header__navbar").slideToggle("slow");
+  });
+
+
+
+
+
+
+$('.autoplay').slick({
+      settings: "unslick",
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false
+      }
+    },
+    {
+    }
+  ]
+});
+
+
+$(function() {
+
+
+      if (screen.width >= '768') {
+          $('.navbar nav').removeClass('main-nav-toggle');
+          $('.navbar nav').removeClass('navbar__nav-toggle-wrap');
+          $('.navbar nav ul').removeClass('main-nav-toggle__list');
+          $('.navbar nav ul li').removeClass('main-nav-toggle__item');
+          $('.navbar nav').addClass('main-nav');
+          $('.navbar nav').addClass('navbar__nav-wrap');
+          $('.navbar nav ul').addClass('main-nav__list');
+          $('.navbar nav ul li').addClass('main-nav__item');
+
+
+      } else (screen.width < '768') {
+          $('.navbar nav').addClass('main-nav-toggle');
+          $('.navbar nav').addClass('navbar__nav-toggle-wrap');
+          $('.navbar nav ul').addClass('main-nav-toggle__list');
+          $('.navbar nav ul li').addClass('main-nav-toogle__item');
+          $('.navbar nav').removeClass('main-nav');
+          $('.navbar nav').removeClass('navbar__nav-wrap');
+          $('.navbar nav ul').removeClass('main-nav__list');
+          $('.navbar nav ul li').removeClass('main-nav__item');
+      }
+  });
+
+
+
   function accordion() {
 
     function openItem() {
@@ -18,32 +81,6 @@ $(document).ready(function() {
 
   }
   accordion();
-
-
-  function nav_toggle() {
-
-    function openToggle() {
-      $('.page-header__navbar-wrap').toggleClass('page-header__navbar-active');
-      //  $('.page-header__navbar-wrap').animate({
-      //   top: "30"
-      // }, 5000, "easeOutBounce");
-    }
-    $('.toggle-btn').on('click', openToggle);
-
-  }
-  nav_toggle();
-
-
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
-
-});
-
-
-
 
 
 
@@ -112,7 +149,7 @@ function initMap() {
 function setMapMarkers(map) {
   // Данные о картинке-маркере (в этом примере для всех маркеров одна картинка)
   var image = {
-    url: 'img/placeholder-map--s.png',
+    url: 'img/placeholder-map.png',
     // Эта картинка 128×128 пикселей.
     // Точка «упора» нарисованного маркера по горизонтали — середина
     // Точка «упора» нарисованного маркера по вертикали в 11 пикселях от нижнего края картинки
@@ -138,3 +175,8 @@ function setMapMarkers(map) {
     });
   }
 }
+
+
+
+
+});

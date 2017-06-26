@@ -1,5 +1,5 @@
 .btn-next {
-  @include sprite($arrow-next-s);
+  @include sprite($arrow-next);
   display: inline-block;
   content: "";
   background-color: transparent;
