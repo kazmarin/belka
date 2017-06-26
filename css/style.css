@@ -445,73 +445,103 @@ body {
 .page-header {
   height: 30px; }
   .page-header__contacts {
-    position: relative;
-    z-index: 3;
-    height: 30px;
     background-color: #e9e9f1; }
   .page-header__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .page-header__container:after {
       content: '';
       display: block;
       clear: both; }
   .page-header__contacts-wrap {
-    float: left; }
-  .page-header__btn {
+    float: left;
+    margin-right: 20px; }
+  .page-header__toggle-btn {
     float: right; }
-  .page-header__navbar-wrap {
+  .page-header__navbar {
     position: absolute;
-    top: -370px;
+    display: none;
+    top: 30px;
     left: 0;
     height: 370px;
     width: 100%;
     background-color: #e9e9f1;
     border-top: 1px solid #22313f;
-    z-index: 2;
-    transition: top 1s linear; }
-  .page-header__navbar-active {
-    transition: top 1s linear;
-    top: 30px; }
+    z-index: 2; }
 
 .contacts {
   display: -ms-flexbox;
-  display: flex; }
-  .contacts__phone {
-    position: relative;
-    padding-left: 25px; }
-  .contacts__phone:before {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -102px -267px;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    display: inline-block;
-    content: "";
-    top: 3px;
-    left: 0; }
-  .contacts__time, .contacts__address, .contacts__phone {
+  display: flex;
+  width: 250px;
+  box-sizing: border-box; }
+  .contacts__time, .contacts__phone, .contacts__address {
     margin-top: 3px;
     font-family: "Proxima Nova Lt", sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 24px; }
+  .contacts__time {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 50px; }
+    .contacts__time:before {
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -237px -151px;
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0; }
+  .contacts__phone {
+    position: relative;
+    padding-left: 25px;
+    margin-right: 50px; }
+    .contacts__phone:before {
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -265px -46px;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0; }
+  .contacts__address {
+    position: relative;
+    padding-left: 25px; }
+    .contacts__address:before {
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -265px -66px;
+      width: 13px;
+      height: 18px;
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 3px;
+      left: 0; }
 
 .toggle-btn {
   background-color: transparent;
   border: none;
   cursor: pointer; }
   .toggle-btn:active {
-    transform: scale(0.5); }
+    transform: scale(0.8); }
   .toggle-btn:focus {
     outline: none; }
   .toggle-btn__icon {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -274px -46px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -265px -126px;
     width: 4px;
     height: 20px;
     display: inline-block;
     content: '';
     margin-left: 3px;
     margin-top: 2px; }
+
+.navbar__social {
+  margin-top: 20px; }
 
 .main-nav-toggle {
   text-align: center; }
@@ -526,8 +556,28 @@ body {
     line-height: 24px;
     color: #22313f;
     text-decoration: none; }
-  .main-nav-toggle__social {
-    margin-top: 20px; }
+
+.main-nav__item {
+  display: inline-block; }
+
+.main-nav__link {
+  position: relative;
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none; }
+  .main-nav__link--active:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 28px;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid #22313f; }
 
 .social {
   display: -ms-flexbox;
@@ -544,32 +594,33 @@ body {
     .social__item:last-child {
       margin-right: 0; }
   .social__tw {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -283px -243px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -237px -84px;
     width: 22px;
     height: 18px; }
   .social__vk {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -75px -248px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -145px -188px;
     width: 25px;
     height: 15px; }
   .social__instag {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -23px -292px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -237px -128px;
     width: 19px;
     height: 19px; }
 
 .rocks {
   height: 400px; }
   .rocks__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .rocks__container:after {
       content: '';
       display: block;
       clear: both; }
   .rocks__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -592,6 +643,7 @@ body {
     width: 210px; }
   .rocks__text {
     font-family: "Proxima Nova Lt", sans-serif;
+    font-weight: 300;
     font-size: 18px;
     line-height: 30px; }
   .rocks__btn {
@@ -618,14 +670,15 @@ body {
 .trace {
   height: 528px; }
   .trace__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .trace__container:after {
       content: '';
       display: block;
       clear: both; }
   .trace__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -657,15 +710,15 @@ body {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  width: 292px;
+  width: 320px;
   box-sizing: border-box; }
   .gallery__slider {
     margin-left: 13px;
     margin-right: 13px; }
 
 .btn-prev {
-  background-image: url(../img/sprite-07357085251955093.png);
-  background-position: -25px -222px;
+  background-image: url(../img/sprite-019843169646184067.png);
+  background-position: -27px -188px;
   width: 21px;
   height: 41px;
   display: inline-block;
@@ -717,8 +770,8 @@ body {
     margin-top: 22px;
     color: #f9f9f9; }
     .card__height:before {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: -75px -222px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -83px -142px;
       width: 35px;
       height: 22px;
       position: absolute;
@@ -730,8 +783,8 @@ body {
     margin-top: 17px;
     color: #f9f9f9; }
     .card__age:before {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: -283px -87px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -237px 0px;
       width: 24px;
       height: 27px;
       position: absolute;
@@ -744,8 +797,8 @@ body {
     color: #e7e7f2; }
 
 .btn-next {
-  background-image: url(../img/sprite-07357085251955093.png);
-  background-position: -237px -128px;
+  background-image: url(../img/sprite-019843169646184067.png);
+  background-position: 0px -188px;
   width: 23px;
   height: 41px;
   display: inline-block;
@@ -762,6 +815,7 @@ body {
   background-color: #fff; }
   .action__container {
     margin: 0 auto;
+    background-color: #9ae4c6;
     position: relative; }
     .action__container:after {
       content: '';
@@ -769,7 +823,7 @@ body {
       clear: both; }
   .action__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -797,7 +851,7 @@ body {
   .action__card {
     position: relative;
     margin: 0 auto;
-    width: 292px;
+    width: 320px;
     height: 253px;
     margin-bottom: 10px; }
     .action__card:last-child {
@@ -818,7 +872,8 @@ body {
   height: 906px;
   background-color: #fff; }
   .have__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .have__container:after {
       content: '';
       display: block;
@@ -826,11 +881,11 @@ body {
   .have__wrapper {
     margin: 0 auto;
     height: 447px;
-    width: 292px;
+    width: 320px;
     box-sizing: border-box; }
   .have__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -872,19 +927,19 @@ body {
       content: "";
       left: -62px; }
     .have__text--rope:before {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: -122px -160px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: 0px -80px;
       width: 57px;
       height: 58px; }
     .have__text--sign:before {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: -61px -160px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -122px -80px;
       width: 57px;
       height: 58px;
       top: 10px; }
     .have__text--question:before {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: 0px -160px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -61px -80px;
       width: 57px;
       height: 58px;
       top: 10px; }
@@ -914,7 +969,7 @@ body {
   height: 267px; }
   .price__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -950,7 +1005,8 @@ body {
   .price__price-season {
     margin-left: 60px; }
   .price__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .price__container:after {
       content: '';
       display: block;
@@ -985,7 +1041,7 @@ body {
       border-bottom: 1px solid #22313f; }
   .accordion__text, .accordion__sub-text {
     margin: 0 auto;
-    width: 292px;
+    width: 320px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -996,8 +1052,8 @@ body {
     text-align: center;
     color: #22313f; }
     .accordion__text:after {
-      background-image: url(../img/sprite-07357085251955093.png);
-      background-position: -264px -83px;
+      background-image: url(../img/sprite-019843169646184067.png);
+      background-position: -237px -197px;
       width: 14px;
       height: 25px;
       position: absolute;
@@ -1028,6 +1084,7 @@ body {
   height: 812px; }
   .reviews__container {
     margin: 0 auto;
+    background-color: #9ae4c6;
     padding-top: 215px; }
     .reviews__container:after {
       content: '';
@@ -1038,7 +1095,7 @@ body {
     background-color: #ebebeb; }
   .reviews__title {
     position: relative;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Proxima Nova Rg", sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 24px;
@@ -1112,13 +1169,13 @@ body {
     .social-reviews__item:last-child {
       margin-right: 0; }
   .social-reviews__instag {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -25px -267px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -237px -59px;
     width: 21px;
     height: 21px; }
   .social-reviews__vk {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -283px -174px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -84px -188px;
     width: 28px;
     height: 18px; }
 
@@ -1126,7 +1183,8 @@ body {
   height: 487px;
   background-color: #22313f; }
   .page-footer__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-color: #9ae4c6; }
     .page-footer__container:after {
       content: '';
       display: block;
@@ -1147,12 +1205,13 @@ body {
   position: relative;
   padding-left: 18px;
   font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 28px;
   color: #dadae7; }
   .contacts-footer__address:before {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -264px -197px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -265px -106px;
     width: 11px;
     height: 16px;
     position: absolute;
@@ -1165,12 +1224,13 @@ body {
   position: relative;
   padding-left: 18px;
   font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #dadae7; }
   .contacts-footer__phone:before {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -264px -152px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -265px -88px;
     width: 14px;
     height: 14px;
     position: absolute;
@@ -1210,24 +1270,24 @@ body {
     .social-footer__item:last-child {
       margin-right: 0; }
   .social-footer__tw {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -50px -267px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -237px -106px;
     width: 22px;
     height: 18px; }
   .social-footer__vk {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -104px -248px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -116px -188px;
     width: 25px;
     height: 15px; }
   .social-footer__instag {
-    background-image: url(../img/sprite-07357085251955093.png);
-    background-position: -46px -292px;
+    background-image: url(../img/sprite-019843169646184067.png);
+    background-position: -237px -174px;
     width: 19px;
     height: 19px; }
 
 .btn-up {
-  background-image: url(../img/sprite-07357085251955093.png);
-  background-position: -237px -46px;
+  background-image: url(../img/sprite-019843169646184067.png);
+  background-position: -46px -142px;
   width: 33px;
   height: 33px;
   content: '';
@@ -1432,7 +1492,43 @@ body {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
-    @media (min-width: 292px){
+
+.carus {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  background-color: #000; }
+
+.slick-next:before {
+  background-image: url(../img/sprite-019843169646184067.png);
+  background-position: 0px -188px;
+  width: 23px;
+  height: 41px;
+  display: inline-block;
+  content: ""; }
+
+.slick-next:active {
+  transform: scale(0.5); }
+
+.wr {
+  position: relative;
+  height: 200px;
+  background-color: green; }
+
+.anim {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 0;
+  height: 150px;
+  background-color: yellow; }
+
+.ani {
+  width: 200px;
+  height: 50px; }
+
+@media (min-width: 320px){
   .page-header__container{
     width: 292px;
     padding-left: 14px;
@@ -1479,11 +1575,28 @@ body {
     width: 292px;
     padding-left: 14px;
     padding-right: 14px; } }
-    @media (min-width: 740px){
+
+@media (min-width: 768px){
   .page-header__container{
     width: 740px;
     padding-left: 14px;
     padding-right: 14px; }
+  .page-header__contacts-wrap{
+    float: right; }
+  .page-header__toggle-btn{
+    display: none; }
+  .page-header__navbar{
+    display: block;
+    background-color: transparent;
+    border-top: none; }
+  .contacts{
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 580px; }
+  .navbar__nav-toggle-wrap{
+    display: none; }
+  .navbar__social{
+    display: none; }
   .rocks__container{
     width: 740px;
     padding-left: 14px;
@@ -1512,52 +1625,54 @@ body {
     width: 740px;
     padding-left: 14px;
     padding-right: 14px; } }
-    @media (min-width: 1187px){
+
+@media (min-width: 1200px){
   .page-header__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .rocks__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .trace__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .action__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .have__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .price__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .reviews__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; }
   .page-footer__container{
-    width: 1187px;
+    width: 1110px;
     padding-left: 45px;
     padding-right: 45px; } }
-    @media (max-width: 739px){
-  .page-header__contacts-wrap{
-    margin-right: 20px; }
-  .page-header__main-nav-wrapp{
-    display: none; }
-  .contacts{
-    width: 250px; }
+
+@media (max-width: 767px){
   .contacts__time, .contacts__address{
+    display: none; }
+  .navbar__logo{
     display: none; }
   .card .card-img{
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1; } }
+
+@media (max-width: 1199px){
+  .navbar__btn{
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
