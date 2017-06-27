@@ -1,6 +1,6 @@
 @mixin content-area() {
     margin: 0 auto;
-    background-color: #9ae4c6;
+    // background-color: #9ae4c6;
 
     @media (min-width: $screen-xs) {
       width: $screen-xs-content;
@@ -47,6 +47,10 @@
       left: 0;
       margin: 0 auto;
       border: 2px solid #211811;
+    }
+
+    @media (min-width: $screen-sm) {
+      font-size: ($font-size + 14);
     }
 
 }

@@ -7,7 +7,7 @@
   font-size: $font-size;
   line-height: ($line-height - 6);
   border: 1px solid #211811;
-  background-color: transparent;
+  background-color: #eeeef4;
 
   &:active {
     transform: scale(0.5);
@@ -15,6 +15,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  &--grey{
+    background-color: transparent;
   }
 
   &--red{

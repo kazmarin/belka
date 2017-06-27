@@ -1,35 +1,38 @@
 .navbar {
 
+  @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: center;
+    height: 64px;
+  }
+
   &__logo {
-    @media (max-width: $screen-sm - 1){
+    margin-right: 20px;
+    @media (max-width: $screen-sm - 1) {
       display: none;
-}
+    }
   }
 
   &__btn {
-    @media (max-width: $screen-lg - 1){
+    @media (max-width: $screen-lg - 1) {
       display: none;
-}
+    }
   }
 
-  &__nav-toggle-wrap {
-    @media (min-width: $screen-sm){
-      display: none;
-}
+  &__nav-wrap {
+
+    @media (min-width: $screen-sm) {
+      flex-grow: 1;
+      width: 480px;
+      box-sizing: border-box;
+    }
   }
 
-//   &__nav-wrap {
-//     @media (min-width: $screen-sm){
-//       display: block;
-// }
-//   }
-
-    &__social {
+  &__social {
     margin-top: 20px;
 
-    @media (min-width: $screen-sm){
+    @media (min-width: $screen-sm) {
       display: none;
-}
+    }
   }
-
 }

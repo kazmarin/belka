@@ -1,16 +1,26 @@
 .card {
   position: relative;
-  margin-right: 5px;
-  flex-basis: 214px;
+  width: 214px;
   height: 320px;
-  box-sizing: border-box;
+
+  @media (min-width: $screen-sm) {
+    height: 621px;
+    background-color: rgba(71,86,100,.8);
+
+    &:nth-child(even) {background-color: #2b3644;}
+  }
 
   .card-img {
     @media (max-width: $screen-sm - 1) {
+      //нужно на мобилке картинку положить под надпись
       position: absolute;
       left: 0;
       top: 0;
       z-index: 1;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 20px;
     }
   }
 
@@ -24,27 +34,32 @@
     letter-spacing: 3px;
     text-align: center;
     color: #c7c7d3;
+    //заголовок должен лежать сверху на картинке
     z-index: 2;
   }
 
   &__height,
   &__age,
   &__text {
-    position: relative;
     font-family: $font-family;
     font-size: $font-size;
-    line-height: $line-height;
+    line-height: ($line-height - 4);
     text-align: center;
+
+    @media (max-width: $screen-sm - 1) {
+      position: relative;
     // чтоб текст лежал выше чем картинка
     z-index: 2;
   }
+  }
 
-  &__height {
+  &__height,
+  &__age {
+    position: relative;
     margin-top: 22px;
     color: #f9f9f9;
 
     &:before {
-      @include sprite($mountain);
       position: absolute;
       display: inline-block;
       content:'';
@@ -53,22 +68,31 @@
     }
   }
 
+  &__height {
+    margin-top: 22px;
+
+    &:before {
+      @include sprite($mountain);
+    }
+  }
+
   &__age {
     margin-top: 17px;
-    color: #f9f9f9;
+    margin-bottom: 60px;
+
+      @media (min-width: $screen-sm) {
+      margin-bottom: 30px;
+    }
 
     &:before{
       @include sprite($avatar);
-      position: absolute;
-      display: inline-block;
-      content:'';
-      top: 0;
-      left: 20px;
     }
   }
 
   &__text {
-    margin-top: 76px;
+    margin: 0 auto;
+    width: 180px;
     color: #e7e7f2;
+    color: #000;
   }
 }

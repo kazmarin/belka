@@ -1,18 +1,20 @@
 .rocks {
-  height: 400px;
+  height: 402px;
+  background-size: cover;
 
   @media (min-width: $screen-xs) {
     background-image: url(../img/mountain1--s.jpg);
-    background-size: cover;
   }
 
- // @media (min-width: $screen-sm) {
- //  background-image: url(../img/mountain1--s.jpg);
- // }
+ @media (min-width: $screen-sm) {
+  height: 821px;
+  background-image: url(../img/mountain1--m.jpg);
+ }
 
- // @media (min-width: $screen-lg) {
- //  background-image: url(../img/mountain1--s.jpg);
- // }
+ @media (min-width: $screen-lg) {
+  height: 813px;
+  background-image: url(../img/mountain1--l.jpg);
+ }
 
   &__container {
     @include content-area();
@@ -23,21 +25,35 @@
     // для того, чтоб мобильный navbar был выше заголовка
     // z-index: 1;
     padding-top: 80px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 170px;
+    }
   }
 
   &__text-wrapp {
     padding-top: 85px;
     width: 210px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 120px;
+      width: 620px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 120px;
+      width: 580px;
+    }
   }
 
   &__text {
-    font-family: $font-family-text;
+    font-family: $font-family;
     font-weight: 300;
     font-size: ($font-size + 2);
     line-height: ($line-height + 6);
 
     &:nth-child(n+2) {
-      @media (min-width: $screen-xs) {
+      @media (max-width: $screen-sm - 1) {
         display: none;
       }
     }
@@ -45,5 +61,9 @@
 
   &__btn {
     margin-top: 40px;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
   }
 }

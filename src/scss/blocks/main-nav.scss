@@ -1,35 +1,45 @@
 .main-nav {
 
-  &__list {
-  }
+  @media (min-width: $screen-sm) {
+    display: flex;
+    justify-content: flex-end;
 
-  &__item {
-    display: inline-block;
-  }
+    &__list {
+    }
 
-  &__link {
-    position: relative;
-    font-family: $font-family-title-text;
-    font-weight: normal;
-    font-size: ($font-size + 2);
-    line-height: $line-height;
-    color: #000;
-    text-decoration: none;
+    &__item {
+      display: inline-block;
+      margin-right: 20px;
 
-    &--active {
+      &:last-child {
+        margin-right: 0;
+      }
 
-      &:after {
-        position: absolute;
-        display: block;
-        content: '';
-        width: 28px;
-        bottom: -9px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        border: 1px solid #22313f;
+    }
+
+    &__link {
+      position: relative;
+      font-family: $font-family-title-text;
+      font-weight: normal;
+      font-size: ($font-size + 2);
+      line-height: $line-height;
+      color: #000;
+      text-decoration: none;
+
+      &--active {
+
+        &:after {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 28px;
+          bottom: -9px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          border: 1px solid #22313f;
+        }
       }
     }
   }
-
 }

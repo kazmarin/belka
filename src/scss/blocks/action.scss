@@ -2,6 +2,14 @@
   height: 860px;
   background-color: #fff;
 
+  @media (min-width: $screen-sm) {
+    height: 865px;
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 582px;
+  }
+
   &__container {
     @include content-area();
     position: relative;
@@ -17,20 +25,23 @@
   }
 
   &__wrapper {
-    // width: $screen-xs;
     padding-top: 55px;
-    box-sizing: border-box;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+    }
   }
 
   &__card {
     position: relative;
     margin: 0 auto;
-    width: $screen-xs;
-    height: 253px;
     margin-bottom: 10px;
+    border: 1px solid #000;
 
     &:last-child {
       margin-bottom: 0;
+    }
+    @media (min-width: $screen-lg) {
     }
   }
 

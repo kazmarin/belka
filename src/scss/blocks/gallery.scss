@@ -2,13 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $screen-xs;
-  box-sizing: border-box;
 
+  .btn-prev,
+  .btn-next {
 
-  &__slider {
+    @media (min-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  &__slick-wrap {
+    @media (max-width: $screen-lg) {
     margin-left: 13px;
     margin-right: 13px;
   }
 
+  }
 }

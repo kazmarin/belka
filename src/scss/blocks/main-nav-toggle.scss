@@ -1,20 +1,23 @@
 .main-nav-toggle {
-  text-align: center;
 
-  &__list {
-    margin-top: 80px;
-  }
+  @media (max-width: $screen-sm - 1) {
+    text-align: center;
 
-  &__item {
-    list-style-type: none;
-  }
+    &__list {
+      margin-top: 80px;
+    }
 
-  &__link {
-    font-family: $font-family-title-text;
-    font-weight: normal;
-    font-size: ($font-size + 2);
-    line-height: $line-height;
-    color: #22313f;
-    text-decoration: none;
+    &__item {
+      list-style-type: none;
+    }
+
+    &__link {
+      font-family: $font-family-title-text;
+      font-weight: normal;
+      font-size: ($font-size + 2);
+      line-height: $line-height;
+      color: #22313f;
+      text-decoration: none;
+    }
   }
 }

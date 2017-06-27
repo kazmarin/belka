@@ -1,9 +1,19 @@
 .trace {
-  height: 528px;
+  height: 529px;
+  background-size: cover;
 
   @media (min-width: $screen-xs) {
+    height: 831px;
     background-image: url(../img/mountain2--s.jpg);
-    background-size: cover;
+  }
+
+  @media (min-width: $screen-xs) {
+    height: 867px;
+    background-image: url(../img/mountain2--m.jpg);
+  }
+
+  @media (min-width: $screen-xs) {
+    background-image: url(../img/mountain2--l.jpg);
   }
 
   &__container {

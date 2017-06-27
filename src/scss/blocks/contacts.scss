@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
+  align-items: center;
   width: 250px;
+  height: 30px;
   box-sizing: border-box;
 
   @media (min-width: $screen-sm) {
@@ -18,7 +20,6 @@
   &__time,
   &__phone,
   &__address {
-    margin-top:  3px;
     font-family: $font-family-text;
     font-weight: 300;
     font-size: $font-size;
@@ -28,7 +29,7 @@
   &__time {
     position: relative;
     padding-left: 25px;
-    margin-right: 50px;
+    margin-right: 25px;
 
     &:before {
       @include sprite($time);
@@ -43,7 +44,7 @@
   &__phone {
     position: relative;
     padding-left: 25px;
-    margin-right: 50px;
+    margin-right: 25px;
 
     &:before {
       @include sprite($phone-call-h);

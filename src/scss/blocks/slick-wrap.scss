@@ -1,39 +1,31 @@
-.carus {
-   width: 800px;
-   height: 400px;
-   margin: 0 auto;
-   border: 1px solid #000;
-   background-color: #000;
-}
+.slick-prev,
+.slick-next{
+    height: 41px;
+    width: 23px;
+    transform: none;
 
-.slick-next {
-
-  &:before {@include sprite($arrow-next);
-  display: inline-block;
-  content: "";}
+  &:before {
+    display: inline-block;
+    content: "";
+  }
 
    &:active {
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
 }
 
+.slick-prev {
+  left: -36px;
 
-.wr {
-  position: relative;
-  height: 200px;
-  background-color: green;
+  &:before {
+    @include sprite($arrow-prev);
+  }
 }
 
-.anim {
-  position: absolute;
-  display: none;
-  width: 100%;
-  top: 0;
-  height: 150px;
-  background-color: yellow;
-}
+.slick-next {
+    right: -36px;
 
-.ani {
-  width: 200px;
-  height: 50px;
+  &:before {
+    @include sprite($arrow-next);
+  }
 }

@@ -12,58 +12,50 @@ $(document).ready(function() {
 
 
 
-
-$('.autoplay').slick({
-      settings: "unslick",
+$('.slick-trace').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  mobileFirst: true,
   responsive: [
     {
       breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000
-      }
+      settings: "unslick"
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false
+          slidesToShow: 3,
+          slidesToScroll: 1,
       }
-    },
-    {
     }
   ]
 });
 
 
-$(function() {
 
-
-      if (screen.width >= '768') {
-          $('.navbar nav').removeClass('main-nav-toggle');
-          $('.navbar nav').removeClass('navbar__nav-toggle-wrap');
-          $('.navbar nav ul').removeClass('main-nav-toggle__list');
-          $('.navbar nav ul li').removeClass('main-nav-toggle__item');
-          $('.navbar nav').addClass('main-nav');
-          $('.navbar nav').addClass('navbar__nav-wrap');
-          $('.navbar nav ul').addClass('main-nav__list');
-          $('.navbar nav ul li').addClass('main-nav__item');
-
-
-      } else (screen.width < '768') {
-          $('.navbar nav').addClass('main-nav-toggle');
-          $('.navbar nav').addClass('navbar__nav-toggle-wrap');
-          $('.navbar nav ul').addClass('main-nav-toggle__list');
-          $('.navbar nav ul li').addClass('main-nav-toogle__item');
-          $('.navbar nav').removeClass('main-nav');
-          $('.navbar nav').removeClass('navbar__nav-wrap');
-          $('.navbar nav ul').removeClass('main-nav__list');
-          $('.navbar nav ul li').removeClass('main-nav__item');
-      }
-  });
+// $('.autoplay').slick({
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 2000
+  // responsive: [
+  //   {
+  //     breakpoint: 1200,
+  //     settings: "unslick"
+  //   },
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       slidesToShow: 3,
+  //       slidesToScroll: 1,
+  //       autoplay: false
+  //     }
+  //   },
+  // ]
+// });
 
 
 
