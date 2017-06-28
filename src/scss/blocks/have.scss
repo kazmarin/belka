@@ -2,18 +2,34 @@
   height: 906px;
   background-color: #fff;
 
+  @media (min-width: $screen-sm) {
+    height: 885px;
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 1100px;
+  }
+
   &__container {
     @include content-area();
   }
 
   &__wrapper {
-    margin: 0 auto;
     height: 447px;
+    background-size: cover;
     box-sizing: border-box;
 
     @media (min-width: $screen-xs) {
       background-image: url(../img/about-us--s.jpg);
-      background-size: cover;
+    }
+
+    @media (min-width: $screen-sm) {
+      height: 385px;
+      background-image: url(../img/about-us--m.jpg);
+    }
+
+    @media (min-width: $screen-lg) {
+      background-image: url(../img/about-us--l.jpg);
     }
   }
 
@@ -32,27 +48,50 @@
 
   &__info {
     margin-top: 50px;
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 135px;
+    }
   }
 
   &__text {
     position: relative;
-    margin-bottom: 34px;
-    margin-left: 75px;
     width: 196px;
-    box-sizing: border-box;
     font-family: $font-family;
     font-size: ($font-size - 2);
     line-height: ($line-height - 8);
     color: #fffffe;
+    box-sizing: border-box;
 
-    &:last-child {margin-bottom: 0;}
+    @media (max-width: $screen-sm - 1) {
+      margin-bottom: 34px;
+      margin-left: 75px;
+
+      &:last-child {margin-bottom: 0;}
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 230px;
+      font-size: $font-size;
+      line-height: $line-height;
+    }
 
     &:before {
       position: absolute;
       display: inline-block;
       content: "";
       left: -62px;
+
+      @media (min-width: $screen-sm) {
+        top: -70px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
     }
+
 
     &--rope {
       &:before{
@@ -77,5 +116,13 @@
 
   &__gallery-wrap {
     padding-top: 29px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 53px;
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-top: 110px;
+    }
   }
 }

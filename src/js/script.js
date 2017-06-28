@@ -35,6 +35,22 @@ $('.slick-trace').slick({
 });
 
 
+$('.slick-foto').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: "unslick"
+    }
+  ]
+});
+
+
 
 // $('.autoplay').slick({
 //         slidesToShow: 3,

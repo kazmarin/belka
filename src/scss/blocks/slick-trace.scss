@@ -20,7 +20,7 @@
   }
 
   &__card {
-    @media (min-width: $screen-sm) {
+    @media (max-width: $screen-lg - 1) {
     margin-left: 4px;
     margin-right: 4px;
   }
