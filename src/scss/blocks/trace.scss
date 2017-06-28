@@ -7,12 +7,12 @@
     background-image: url(../img/mountain2--s.jpg);
   }
 
-  @media (min-width: $screen-xs) {
+  @media (min-width: $screen-sm) {
     height: 867px;
     background-image: url(../img/mountain2--m.jpg);
   }
 
-  @media (min-width: $screen-xs) {
+  @media (min-width: $screen-lg) {
     background-image: url(../img/mountain2--l.jpg);
   }
 
