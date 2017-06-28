@@ -40,10 +40,10 @@
   &__card {
     // текст позиционируем относительно карточки
     position: relative;
-    margin-bottom: 10px;
     border: 1px solid #000;
 
     @media (max-width: $screen-lg - 1) {
+      margin-bottom: 10px;
 
       &:last-child {
       margin-bottom: 0;
@@ -52,14 +52,15 @@
 
     @media (min-width: $screen-lg) {
       width: 359px;
-    }
   }
+}
 
   &__text {
     //текст должен стоять выше картинки
     position: absolute;
     bottom: 20px;
     left: 15px;
+    width: 270px;
     font-family: $font-family-title-text;
     font-weight: bold;
     font-size: ($font-size + 8);
