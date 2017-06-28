@@ -1,9 +1,10 @@
 .action {
-  height: 860px;
+  height: 864px;
   background-color: #fff;
+  border: 1px solid red;
 
   @media (min-width: $screen-sm) {
-    height: 865px;
+    height: 860px;
   }
 
   @media (min-width: $screen-lg) {
@@ -12,40 +13,50 @@
 
   &__container {
     @include content-area();
-    position: relative;
   }
 
   &__title {
     @include title();
-    position: absolute;
+    //заголовок поднят в соседний блок, который выше
     top: -37px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
   }
 
   &__wrapper {
-    padding-top: 55px;
+    // margin-top: 55px;  ?????????
+    width: $screen-xs-content;
+    box-sizing: border-box;
+
+    @media (min-width: $screen-sm) {
+      width: $screen-sm-content;
+    }
 
     @media (min-width: $screen-lg) {
       display: flex;
+      justify-content: space-between;
+      width: $screen-lg-content;
     }
   }
 
   &__card {
+    // текст позиционируем относительно карточки
     position: relative;
-    margin: 0 auto;
     margin-bottom: 10px;
     border: 1px solid #000;
 
-    &:last-child {
+    @media (max-width: $screen-lg - 1) {
+
+      &:last-child {
       margin-bottom: 0;
     }
+    }
+
     @media (min-width: $screen-lg) {
+      width: 359px;
     }
   }
 
   &__text {
+    //текст должен стоять выше картинки
     position: absolute;
     bottom: 20px;
     left: 15px;
@@ -55,6 +66,5 @@
     line-height: ($line-height + 6);
     letter-spacing: 1px;
     color: #fefefe;
-    text-outline: 20px;
   }
 }
