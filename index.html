@@ -94,12 +94,12 @@
     <div class="rocks__container">
       <h1 class="rocks__title">СКАЛОДРОМ</h1>
       <div class="rocks__text-wrapp">
-        <p class="rocks__text rocks__slogan">Заберитесь на вершину, не уезжая в горы!</p>
+        <p class="rocks__text">Заберитесь на вершину, не уезжая в горы!</p>
         <p class="rocks__text">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня.</p>
         <p class="rocks__text">Включает в себя 2 детские трассы и 3 взрослые.</p>
         <p class="rocks__text">Скалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
       </div>
-      <button class="rocks__btn btn">Купить билет</button>
+      <button class="rocks__btn btn btn--grey">Купить билет</button>
     </div>
   </section>
 
@@ -108,76 +108,54 @@
       <h2 class="trace__title trace__title--white">ТРАССЫ</h2>
 
       <div class="trace__gallery-wrap gallery">
-        <button class="gallery__btn-prev btn-prev"></button>
+        <!-- <button class="gallery__btn-prev btn-prev"></button> -->
 
-        <div class="gallery__slider slider-trace">
-          <div class="slider-trace__inner">
+        <div class="gallery__slick-wrap slick-trace">
 
-            <div class="slider-trace__card card">
-              <h3 class="card__title">Трасса #1</h3>
-              <p class="card__height">Высота 15 м.</p>
-              <p class="card__age">Возраст 13+</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/climb1--m.png">
-                <source media="(min-width: 1200px)" srcset="img/climb1--l.png">
-                <img src="img/climb1-v2--s.png" alt="Трасса" class="card-img">
-              </picture>
-              <p class="card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ.подготовки.</p>
-            </div>
+          <div class="slick-trace__card card">
+            <h3 class="card__title">Трасса #1</h3>
+            <p class="card__height">Высота 15 м.</p>
+            <p class="card__age">Возраст 13+</p>
+            <img src="img/climb1.png" alt="Трасса1" width="214" height="320" class="card-img">
+            <p class="card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
+          </div>
 
-            <div class="slider-trace__card card card--blue">
-              <h3 class="card__title">Трасса #2</h3>
-              <p class="card__height">Высота 4 м.</p>
-              <p class="card__age">Возраст 4+</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/climb2--m.png">
-                <source media="(min-width: 1200px)" srcset="img/climb2--l.png">
-                <img src="img/climb1-v2--s.png" alt="Трасса" class="card-img">
-              </picture>
-              <p class="card__text">Для людей с разной физ. подготовкой.</p>
-              <p class="card__text">Различные зацепы и рельефы стены</p>
-            </div>
+          <div class="slick-trace__card card card--blue">
+            <h3 class="card__title">Трасса #2</h3>
+            <p class="card__height">Высота 4 м.</p>
+            <p class="card__age">Возраст 4+</p>
+            <img src="img/climb2.png" alt="Трасса2" width="214" height="320" class="card-img">
+            <p class="card__text">Для людей с разной физ. подготовкой.</p>
+            <p class="card__text">Различные зацепы и рельефы стены</p>
+          </div>
 
-            <div class="slider-trace__card card">
-              <h3 class="card__title">Трасса #3</h3>
-              <p class="card__height">Высота 10 м.</p>
-              <p class="card__age">Возраст 13+</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/climb3--m.png">
-                <source media="(min-width: 1200px)" srcset="img/climb3--l.png">
-                <img src="img/climb1-v2--s.png" alt="Трасса" class="card-img">
-              </picture>
-              <p class="card__text">Трасса подойдет как для профессианалов, так и для любителей.</p>
-              <p class="card__text">Необходима хорошая физ. подготовка.</p>
-            </div>
+          <div class="slick-trace__card card">
+            <h3 class="card__title">Трасса #3</h3>
+            <p class="card__height">Высота 10 м.</p>
+            <p class="card__age">Возраст 13+</p>
+            <img src="img/climb3.png" alt="Трасса3" width="214" height="320" class="card-img">
+            <p class="card__text">Трасса подойдет как для профессианалов, так и для любителей.</p>
+            <p class="card__text">Необходима хорошая физ. подготовка.</p>
+          </div>
 
-            <div class="slider-trace__card card card--blue">
-              <h3 class="card__title">Трасса #4</h3>
-              <p class="card__height">Высота 3 м.</p>
-              <p class="card__age">Возраст 4+</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/climb4--m.png">
-                <source media="(min-width: 1200px)" srcset="img/climb4--l.png">
-                <img src="img/climb1-v2--s.png" alt="Трасса" class="card-img">
-              </picture>
-              <p class="card__text">Самая невысокая трасса. Специальные зацепы для детей</p>
-            </div>
+          <div class="slick-trace__card card card--blue">
+            <h3 class="card__title">Трасса #4</h3>
+            <p class="card__height">Высота 3 м.</p>
+            <p class="card__age">Возраст 4+</p>
+            <img src="img/climb4.png" alt="Трасса4" width="214" height="320" class="card-img">
+            <p class="card__text">Самая невысокая трасса. Специальные зацепы для детей</p>
+          </div>
 
-            <div class="slider-trace__card card">
-              <h3 class="card__title">Трасса #5</h3>
-              <p class="card__height">Высота 8 м.</p>
-              <p class="card__age">Возраст 13+</p>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/climb5--m.png">
-                <source media="(min-width: 1200px)" srcset="img/climb5--l.png">
-                <img src="img/climb1-v2--s.png" alt="Трасса" class="card-img">
-              </picture>
-              <p class="card__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
-            </div>
+          <div class="slick-trace__card card">
+            <h3 class="card__title">Трасса #5</h3>
+            <p class="card__height">Высота 8 м.</p>
+            <p class="card__age">Возраст 13+</p>
+            <img src="img/climb5.png" alt="Трасса5" width="214" height="320" class="card-img">
+            <p class="card__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
           </div>
         </div>
 
-        <button class="gallery__btn-next btn-next"></button>
+        <!-- <button class="gallery__btn-next btn-next"></button> -->
       </div>
     </div>
   </section>
@@ -190,7 +168,7 @@
         <div class="action__card">
           <picture>
              <source media="(min-width: 768px)" srcset="img/company--m.png">
-             <source media="(min-width: 1200px)" srcset="img/company--l.png">
+             <source media="(min-width: 1200px)" srcset="img/company--l.png" width="359">
              <img src="img/company--s.png" alt="Приходите компаниями" class="action__img">
            </picture>
           <p class="action__text">Компания от 5 чел. скидка 10%</p>
