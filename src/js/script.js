@@ -9,44 +9,44 @@ $(document).ready(function() {
   });
 
 
-// $('.slick-trace').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   speed: 500,
-//   // autoplay: true,
-//   // autoplaySpeed: 2000,
-//   mobileFirst: true,
-//   responsive: [
-//     {
-//       breakpoint: 1200,
-//       settings: "unslick"
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//       }
-//     }
-//   ]
-// });
+$('.slick-trace').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: "unslick"
+    },
+    {
+      breakpoint: 768,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+      }
+    }
+  ]
+});
 
 
 
-// $('.slick-foto').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   speed: 500,
-//   // autoplay: true,
-//   // autoplaySpeed: 2000,
-//   mobileFirst: true,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: "unslick",
-//     }
-//   ]
-// });
+$('.slick-foto').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 500,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: "unslick",
+    }
+  ]
+});
 
 
 $('.slick-reviews').slick({
@@ -56,7 +56,6 @@ $('.slick-reviews').slick({
   // autoplay: true,
   // autoplaySpeed: 2000,
   mobileFirst: true,
-  arrows: true,
   responsive: [
     {
       breakpoint: 768,
@@ -70,20 +69,20 @@ $('.slick-reviews').slick({
 
 
 
-  // function accordion() {
+  function accordion() {
 
-  //   function openItem() {
-  //     if ($(this).hasClass('accordion__item-active')) {
-  //         $(this).removeClass('accordion__item-active');
-  //     } else {
-  //       $('.accordion__item').removeClass('accordion__item-active');
-  //       $(this).addClass('accordion__item-active');
-  //     }
-  //   }
-  //   $('.accordion__item').on('click', openItem);
+    function openItem() {
+      if ($(this).hasClass('accordion__item-active')) {
+          $(this).removeClass('accordion__item-active');
+      } else {
+        $('.accordion__item').removeClass('accordion__item-active');
+        $(this).addClass('accordion__item-active');
+      }
+    }
+    $('.accordion__item').on('click', openItem);
 
-  // }
-  // accordion();
+  }
+  accordion();
 
 
 });
