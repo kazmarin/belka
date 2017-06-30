@@ -26,7 +26,6 @@
       // меняем порядок текста и карты
       order: 1;
       height: 257px;
-      box-sizing: border-box;
     }
 
     @media (min-width: $screen-sm) {
@@ -50,16 +49,24 @@
   }
 
   &__nav {
+    margin-top: 20px;
+
+    @media (min-width: $screen-lg) {
     margin-top: 30px;
+    }
   }
 
   &__social {
+    margin-top: 20px;
+
+    @media (min-width: $screen-sm) {
     margin-top: 35px;
+    }
   }
 
   &__btn {
     position: absolute;
-    right: 0;
+    right: 15px;
     bottom: 10px;
 
     @media (min-width: $screen-sm) {

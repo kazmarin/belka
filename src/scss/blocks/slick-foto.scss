@@ -1,8 +1,11 @@
 .slick-foto {
-  // margin: 0 auto;
+
+  @media (max-width: $screen-sm - 1) {
+  margin: 0 auto;
 // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
 width: 223px;
 height: 400px;
+}
 
 @media (min-width: $screen-sm) {
   display: flex;

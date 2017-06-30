@@ -1,13 +1,37 @@
   .reviews {
-    height: 570px;
+    height: 812px;
+    background-image: url(../img/mountain3--s.jpg);
+    background-size: cover;
+
+    @media (min-width: $screen-sm) {
+    height: 1570px;
+    background-image: url(../img/mountain3--m.jpg);
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 1623px;
+    background-image: url(../img/mountain3--l.jpg);
+  }
 
   &__container {
     @include content-area();
+    padding-top: 215px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 930px;
+  }
   }
 
   &__wrapper {
-    background-color: #ebebeb;
+    border: 1px solid #000;
+    height: 558px;
+    background-color: rgba(226,226,227,.84);
     box-sizing: border-box;
+
+  @media (min-width: $screen-lg) {
+    margin-top: 961px;
+    height: 569px;
+  }
   }
 
   &__title {

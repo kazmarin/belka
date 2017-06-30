@@ -31,6 +31,10 @@
     position: relative;
     margin-right: 30px;
 
+        @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
+      margin-right: 60px;
+    }
+
     &:before {
       @include sprite($time);
       position: absolute;
@@ -44,6 +48,10 @@
   &__phone {
     position: relative;
     margin-right: 70px;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
+      margin-right: 60px;
+    }
 
     &:before {
       @include sprite($phone-call-h);

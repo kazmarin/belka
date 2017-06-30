@@ -1,6 +1,7 @@
 .have {
-  height: 906px;
+  height: 902px;
   background-color: #fff;
+  border: 1px solid #000;
 
   @media (min-width: $screen-sm) {
     height: 885px;
@@ -58,7 +59,7 @@
 
   &__text {
     position: relative;
-    width: 196px;
+    width: 192px;
     font-family: $font-family;
     font-size: ($font-size - 2);
     line-height: ($line-height - 8);
@@ -72,7 +73,7 @@
       &:last-child {margin-bottom: 0;}
     }
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-lg) {
       width: 240px;
       font-size: $font-size;
       line-height: $line-height;
@@ -97,6 +98,10 @@
       &:before{
         @include sprite($rope-s);
 
+        @media (max-width: $screen-sm - 1) {
+          top: 7px;
+        }
+
         @media (min-width: $screen-sm) {
           @include sprite($rope);
         }
@@ -117,7 +122,10 @@
     &--question {
       &:before{
         @include sprite($question-s);
-        top: 10px;
+
+        @media (max-width: $screen-sm - 1) {
+          top: 7px;
+        }
 
         @media (min-width: $screen-sm) {
           @include sprite($question);
@@ -128,7 +136,7 @@
 
   &__slick-wrap {
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-xs) {
       margin-top: 29px;
 
     }

@@ -1,5 +1,45 @@
-.slick-prev,
-.slick-next{
+.slick-trace .slick-prev,
+.slick-trace .slick-next {
+    height: 41px;
+    width: 23px;
+    //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
+    transform: none;
+
+    &:before {
+    display: inline-block;
+    content: "";
+  }
+
+   &:active {
+    transform: scale(0.8);
+  }
+}
+
+.slick-trace .slick-prev {
+  left: -32px;
+  top: 135px;
+
+  @media (min-width: $screen-sm) {top: 275px;}
+
+  &:before {
+    @include sprite($arrow-prev);
+  }
+}
+
+.slick-trace .slick-next {
+  right: -32px;
+  top: 135px;
+
+  @media (min-width: $screen-sm) {top: 275px;}
+
+  &:before {
+    @include sprite($arrow-next);
+  }
+}
+
+
+.slick-foto .slick-prev,
+.slick-foto .slick-next {
     height: 41px;
     width: 23px;
     transform: none;
@@ -14,16 +54,53 @@
   }
 }
 
-.slick-prev {
-  left: -36px;
+.slick-foto .slick-prev {
+  left: -33px;
+  top: 173px;
 
   &:before {
     @include sprite($arrow-prev);
   }
 }
 
-.slick-next {
-    right: -36px;
+.slick-foto .slick-next {
+  right: -33px;
+  top: 173px;
+
+  &:before {
+    @include sprite($arrow-next);
+  }
+}
+
+.slick-reviews .slick-prev,
+.slick-reviews .slick-next {
+    height: 41px;
+    width: 23px;
+    //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
+    transform: none;
+
+  &:before {
+    display: inline-block;
+    content: "";
+  }
+
+   &:active {
+    transform: scale(0.8);
+  }
+}
+
+.slick-reviews .slick-prev {
+  left: -33px;
+  top: 165px;
+
+  &:before {
+    @include sprite($arrow-prev);
+  }
+}
+
+.slick-reviews .slick-next {
+  right: -33px;
+  top: 165px;
 
   &:before {
     @include sprite($arrow-next);

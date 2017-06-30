@@ -5,6 +5,9 @@
 @import 'global.scss';
 @import 'sprite.scss';
 
+@import 'slick.scss';
+@import 'slick-theme.scss';
+
 @import 'mixin.scss';
 
 @import 'blocks/page-header.scss';
@@ -41,10 +44,12 @@
 
 
 
-@import 'slick.scss';
-@import 'slick-theme.scss';
+// @import 'slick.scss';
+// @import 'slick-theme.scss';
 
 @import 'blocks/slick-wrap.scss';
+
+
 
 
 

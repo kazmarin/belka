@@ -1,5 +1,5 @@
 .action {
-  height: 864px;
+  height: 858px;
   background-color: #fff;
   border: 1px solid red;
 
@@ -18,21 +18,38 @@
 
   &__title {
     @include title();
+
+     @media (max-width: $screen-sm - 1) {
+      //заголовоак перемещаем в соседний блок
+      position: relative;
+      top: -42px;
+  }
+
+   @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
+   //заголовоак перемещаем в соседний блок
+      position: relative;
+      top: -62px;}
+
+   @media (min-width: $screen-lg) {
     padding-top: 23px;
   }
 
+  }
+
   &__wrapper {
-    margin-top: 88px;
+    margin-top: 23px;
     width: $screen-xs-content;
     box-sizing: border-box;
 
     @media (min-width: $screen-sm) {
+      margin-top: 4px;
       width: $screen-sm-content;
     }
 
     @media (min-width: $screen-lg) {
       display: flex;
       justify-content: space-between;
+      margin-top: 88px;
       width: $screen-lg-content;
     }
   }
@@ -40,7 +57,6 @@
   &__card {
      // текст позиционируем относительно карточки
     position: relative;
-    border: 1px solid #000;
     height: 253px;
     width: 292px;
 
@@ -75,10 +91,13 @@
     line-height: ($line-height + 6);
     letter-spacing: 1px;
     color: #fefefe;
+
+    @media (min-width: $screen-sm) {
+      width: 370px;
+      font-size: ($font-size + 14);
+    }
+
+     @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){left: 40px;}
   }
 
-
-  // &__img {
-  //   width: 100%;
-  // }
 }

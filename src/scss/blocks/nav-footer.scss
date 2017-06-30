@@ -1,8 +1,12 @@
 .nav-footer {
 
   &__item {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
     list-style-type: none;
+
+    @media (min-width: $screen-sm) {
+    margin-bottom: 13px;
+    }
 
     &:last-child {
       margin-bottom: 0;

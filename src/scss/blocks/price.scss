@@ -1,6 +1,16 @@
 .price {
-  // position: relative;
-  height: 1037px;
+  position: relative;
+  height: 267px;
+
+  @media (min-width: $screen-sm) {
+    height: 92px;
+    // height: 1006px;
+  }
+
+  @media (min-width: $screen-sm) {
+    height: 73px;
+    // height: 1034px;
+  }
 
   &__title {
     @include title();
@@ -8,37 +18,53 @@
 
   &__accordion-wrap {
     margin-top: 69px;
+
+    @media (min-width: $screen-sm) {
+      display: none;
+  }
   }
 
   &__wrapper {
-    // position: absolute;
+    position: absolute;
+
+    @media (max-width: $screen-sm - 1) {
     width: 100%;
     height: 190px;
     bottom: -190px;
   }
 
-  &__text {
+    @media (min-width: $screen-sm) {
+  }
+
+  @media (min-width: $screen-sm) {
+  }
+  }
+
+  &__info {
     height: 52px;
+    background-color: #f1f1f1;
+  }
+
+   &__container {
+    @include content-area();
+  }
+
+  &__text-season {
+    width: 292px;
     font-family: $font-family;
     font-size: $font-size;
-    line-height: $line-height;
+    line-height: 52px;
     text-align: center;
-    background-color: #f1f1f1;
     color: #22313f;
     box-sizing: border-box;
   }
 
   &__price-season {
     margin-left: 60px;
-  }
-
-    &__container {
-    @include content-area();
-  }
-
-
-  &__trener {
-    // margin-top: 6px;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: 52px;
+    color: #22313f;
   }
 
   &__trener,
@@ -51,18 +77,21 @@
   }
 
   &__price {
-    margin-left: 36px;
+    margin-left: 45px;
   }
 
   &__btn {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   &__document {
     display: block;
-    margin-top: 16px;
+    margin-top: 15px;
+    font-family: $font-family;
+    font-size: ($font-size - 2);
+    line-height: ($line-height - 6);
     text-align: center;
     color: #22313f;
   }

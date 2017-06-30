@@ -1,4 +1,5 @@
 .card-trace {
+  margin: 0 auto;
   //нужно на мобилке картинку положить под текст
   position: relative;
   width: 214px;
@@ -6,7 +7,6 @@
   box-sizing: border-box;
 
 @media (max-width: $screen-lg - 1) {
-    // margin: 0 auto;
   }
 
 
@@ -75,10 +75,6 @@
   &__age {
     margin-top: 10px;
 
-    @media (max-width: $screen-sm - 1) {
-      margin-bottom: 60px;
-    }
-
     &:before{
       @include sprite($avatar);
       top: -5px;
@@ -102,9 +98,13 @@
 
   &__text {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 75px;
     width: 180px;
     color: #e7e7f2;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 20px;
+    }
   }
 
 }

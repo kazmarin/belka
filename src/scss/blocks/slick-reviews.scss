@@ -1,6 +1,7 @@
 .slick-reviews {
   margin: 0 auto;
-  width: 222px;
+  width: 224px;
+  height: 413px;
 
   @media (min-width: $screen-sm) {
     width: 666px;
@@ -11,8 +12,8 @@
   }
 
   &__card {
-    // margin-right: 4px;
-    // margin-left: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
 
 //     @media (min-width: $screen-sm) {
 //     width: 655px;

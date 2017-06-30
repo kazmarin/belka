@@ -31,7 +31,7 @@
     line-height: ($line-height + 4);
     color: #dadae7;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
     font-size: ($font-size + 2);
     line-height: ($line-height + 12);
     }
@@ -51,6 +51,11 @@
   &__phone {
     line-height: $line-height;
     color: #dadae7;
+
+    @media (min-width: $screen-sm) {
+    font-size: ($font-size + 2);
+    line-height: $line-height;
+    }
 
     @media (min-width: $screen-lg) {
     font-size: ($font-size + 2);

@@ -1,4 +1,5 @@
 .accordion {
+
   height: 174px;
   box-sizing: border-box;
 
@@ -25,6 +26,7 @@
   &__text {
     position: relative;
     padding: 16px 0;
+    width: 263px;
     text-align: center;
     color: #22313f;
 
@@ -36,7 +38,7 @@
       top: 0px;
       bottom: 0;
       margin: auto 0;
-      right: 16px;
+      right: 0;
     }
   }
 
