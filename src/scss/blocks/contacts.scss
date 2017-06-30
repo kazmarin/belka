@@ -1,11 +1,11 @@
 .contacts {
-  display: flex;
-  align-items: center;
   width: 250px;
-  height: 30px;
+  height: 32px;
   box-sizing: border-box;
 
   @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
     width: 580px;
   }
@@ -20,6 +20,7 @@
   &__time,
   &__phone,
   &__address {
+    padding-left: 25px;
     font-family: $font-family-text;
     font-weight: 300;
     font-size: $font-size;
@@ -28,8 +29,7 @@
 
   &__time {
     position: relative;
-    padding-left: 25px;
-    margin-right: 25px;
+    margin-right: 30px;
 
     &:before {
       @include sprite($time);
@@ -43,8 +43,7 @@
 
   &__phone {
     position: relative;
-    padding-left: 25px;
-    margin-right: 25px;
+    margin-right: 70px;
 
     &:before {
       @include sprite($phone-call-h);
@@ -58,7 +57,6 @@
 
   &__address {
     position: relative;
-    padding-left: 25px;
 
     &:before {
       @include sprite($placeholder-h);

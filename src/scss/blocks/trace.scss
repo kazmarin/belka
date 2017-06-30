@@ -3,16 +3,16 @@
   background-size: cover;
 
   @media (min-width: $screen-xs) {
-    height: 831px;
     background-image: url(../img/mountain2--s.jpg);
   }
 
   @media (min-width: $screen-sm) {
-    height: 867px;
+    height: 831px;
     background-image: url(../img/mountain2--m.jpg);
   }
 
   @media (min-width: $screen-lg) {
+    height: 867px;
     background-image: url(../img/mountain2--l.jpg);
   }
 
@@ -22,7 +22,7 @@
 
   &__title {
     @include title();
-    padding-top: 3px;
+    padding-top: 20px;
 
     &--white {
       color: #fefefe;
@@ -33,7 +33,16 @@
     }
   }
 
-  &__gallery-wrap {
-    margin-top: 60px;
+  &__slick-wrap {
+    margin-top: 55px;
+    width: $screen-xs-content;
+    box-sizing: border-box;
+
+  @media (min-width: $screen-sm) {
+      width: $screen-sm-content;
+  }
+  @media (min-width: $screen-lg) {
+      width: $screen-lg-content;
+  }
   }
 }

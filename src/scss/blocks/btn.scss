@@ -1,6 +1,6 @@
 .btn {
-  width: 146px;
-  height: 32px;
+  width: 150px;
+  height: 33px;
   box-sizing: border-box;
   font-family: $font-family-title-text;
   font-weight: normal;
@@ -8,6 +8,7 @@
   line-height: ($line-height - 6);
   border: 1px solid #211811;
   background-color: #eeeef4;
+  box-sizing: border-box;
 
   &:active {
     transform: scale(0.5);

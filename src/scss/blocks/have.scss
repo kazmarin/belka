@@ -73,7 +73,7 @@
     }
 
     @media (min-width: $screen-sm) {
-      width: 230px;
+      width: 240px;
       font-size: $font-size;
       line-height: $line-height;
     }
@@ -85,7 +85,7 @@
       left: -62px;
 
       @media (min-width: $screen-sm) {
-        top: -70px;
+        top: -85px;
         right: 0;
         left: 0;
         margin: 0 auto;
@@ -96,6 +96,10 @@
     &--rope {
       &:before{
         @include sprite($rope-s);
+
+        @media (min-width: $screen-sm) {
+          @include sprite($rope);
+        }
       }
     }
 
@@ -103,6 +107,10 @@
       &:before{
         @include sprite($sign-s);
         top: 10px;
+
+        @media (min-width: $screen-sm) {
+          @include sprite($sign);
+        }
       }
     }
 
@@ -110,19 +118,27 @@
       &:before{
         @include sprite($question-s);
         top: 10px;
+
+        @media (min-width: $screen-sm) {
+          @include sprite($question);
+        }
       }
     }
   }
 
-  &__gallery-wrap {
-    padding-top: 29px;
+  &__slick-wrap {
 
     @media (min-width: $screen-sm) {
-      padding-top: 53px;
+      margin-top: 29px;
+
     }
 
     @media (min-width: $screen-sm) {
-      padding-top: 110px;
+      margin-top: 53px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 112px;
     }
   }
 }

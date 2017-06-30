@@ -5,7 +5,7 @@
   &__item {
     display: inline-block;
     content: '';
-    margin-right: 10px;
+    margin-right: 12px;
 
     &:last-child{
       margin-right: 0;
@@ -14,14 +14,25 @@
 
     &__tw {
     @include sprite($twitter-f-s);
+
+    @media (min-width: $screen-sm) {
+   @include sprite($twitter-f);
+    }
   }
 
   &__vk {
     @include sprite($vk-f-s);
+    @media (min-width: $screen-sm) {
+   @include sprite($vk-f);
+    }
+
   }
 
   &__instag {
     @include sprite($instagram-f-s);
+    @media (min-width: $screen-sm) {
+   @include sprite($instagram-f);
+    }
   }
 
 }

@@ -1,41 +1,37 @@
-.card {
+.card-trace {
+  //нужно на мобилке картинку положить под текст
   position: relative;
   width: 214px;
   height: 320px;
+  box-sizing: border-box;
+
+@media (max-width: $screen-lg - 1) {
+    // margin: 0 auto;
+  }
+
 
   @media (min-width: $screen-sm) {
-    height: 621px;
+    height: 620px;
     background-color: rgba(71,86,100,.8);
 
     &:nth-child(even) {background-color: #2b3644;}
   }
 
-  .card-img {
-    @media (max-width: $screen-sm - 1) {
-      //нужно на мобилке картинку положить под надпись
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-    }
-
-    @media (min-width: $screen-sm) {
-      margin-bottom: 20px;
-    }
-  }
-
   &__title {
-    position: relative;
     padding-top: 26px;
     font-family: $font-family-title-text;
     font-weight: bold;
     font-size: ($font-size + 14);
     line-height: $line-height;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     text-align: center;
     color: #c7c7d3;
-    //заголовок должен лежать сверху на картинке
+
+    @media (max-width: $screen-sm - 1) {
+      position: relative;
+    // чтоб текст лежал выше чем картинка
     z-index: 2;
+  }
   }
 
   &__height,
@@ -47,51 +43,68 @@
     text-align: center;
 
     @media (max-width: $screen-sm - 1) {
+      // чтоб текст лежал выше чем картинка
       position: relative;
-    // чтоб текст лежал выше чем картинка
-    z-index: 2;
+      z-index: 2;
   }
   }
 
   &__height,
   &__age {
     position: relative;
-    margin-top: 22px;
+    padding-left: 22px;
     color: #f9f9f9;
 
     &:before {
       position: absolute;
       display: inline-block;
       content:'';
-      top: 0;
-      left: 15px;
     }
   }
 
   &__height {
-    margin-top: 22px;
+    margin-top: 20px;
 
     &:before {
       @include sprite($mountain);
+      top: -2px;
+      left: 25px;
     }
   }
 
   &__age {
-    margin-top: 17px;
-    margin-bottom: 60px;
+    margin-top: 10px;
 
-      @media (min-width: $screen-sm) {
-      margin-bottom: 30px;
+    @media (max-width: $screen-sm - 1) {
+      margin-bottom: 60px;
     }
 
     &:before{
       @include sprite($avatar);
+      top: -5px;
+      left: 28px;
+    }
+  }
+
+    &__img {
+    @media (max-width: $screen-sm - 1) {
+      //нужно на мобилке картинку положить под надпись
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    @media (min-width: $screen-sm) {
+      margin-top: 25px;
     }
   }
 
   &__text {
     margin: 0 auto;
+    margin-top: 20px;
     width: 180px;
     color: #e7e7f2;
   }
+
 }

@@ -5,6 +5,14 @@
     background-color: transparent;
     border: none;
 
+    @media (min-width: $screen-sm) {
+   @include sprite($button-up-m);
+    }
+
+    @media (min-width: $screen-lg) {
+   @include sprite($button-up-l);
+    }
+
       &:focus {
     outline: none;
   }

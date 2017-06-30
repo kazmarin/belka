@@ -1,28 +1,30 @@
-.reviews {
-  height: 812px;
-
-  @media (min-width: $screen-xs) {
-    background-image: url(../img/mountain3--s.jpg);
-    background-size: cover;
-  }
+  .reviews {
+    height: 570px;
 
   &__container {
     @include content-area();
-    padding-top: 215px;
   }
 
   &__wrapper {
-    // margin-top: 215px;
-    height: 558px;
     background-color: #ebebeb;
+    box-sizing: border-box;
   }
 
   &__title {
     @include title();
-    padding-top: 40px;
+    padding-top: 43px;
   }
 
-  &__gallery-wrap {
-    margin-top: 50px;
+&__slick-wrap {
+    margin-top: 40px;
+    width: $screen-xs-content;
+    box-sizing: border-box;
+
+  @media (min-width: $screen-sm) {
+      width: $screen-sm-content;
+  }
+  @media (min-width: $screen-lg) {
+      width: $screen-lg-content;
+  }
   }
 }

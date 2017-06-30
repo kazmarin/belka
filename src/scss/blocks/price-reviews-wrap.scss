@@ -1,0 +1,18 @@
+.price-reviews-wrap {
+  background-size: cover;
+
+  @media (min-width: $screen-xs) {
+    height: 812px;
+    background-image: url(../img/mountain3--s.jpg);
+  }
+
+  @media (min-width: $screen-sm) {
+    height: 1488px;
+    background-image: url(../img/mountain3--m.jpg);
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 1700px;
+    background-image: url(../img/mountain3--l.jpg);
+  }
+}

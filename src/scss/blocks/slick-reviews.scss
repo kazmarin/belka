@@ -1,0 +1,26 @@
+.slick-reviews {
+  margin: 0 auto;
+  width: 222px;
+
+  @media (min-width: $screen-sm) {
+    width: 666px;
+  }
+
+   @media (min-width: $screen-lg) {
+    width: 1060px;
+  }
+
+  &__card {
+    // margin-right: 4px;
+    // margin-left: 4px;
+
+//     @media (min-width: $screen-sm) {
+//     width: 655px;
+//   }
+
+//   @media (min-width: $screen-lg) {
+//     padding-right: 70px;
+//     padding-left: 70px;
+// }
+}
+}

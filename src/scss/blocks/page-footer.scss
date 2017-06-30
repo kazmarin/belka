@@ -2,21 +2,77 @@
   height: 487px;
   background-color: #22313f;
 
-    &__container {
-    @include content-area();
+  &__inner {
+    display: flex;
+
+    //на мобильнике карта и тект стоят друг под другом
+    @media (max-width: $screen-sm - 1) {
+      flex-direction: column;
+    }
+
+    //на разрешении больше мобильного, карта и текст должны лежать в контентной области
+    @media (min-width: $screen-sm) {
+      @include content-area();
+    }
   }
 
-      &__wrapper {
+  &__wrapper {
+    //для перемещения кнопки круглой
     position: relative;
+
+    @media (max-width: $screen-sm - 1) {
+      //на мобильном карта занимает весь экран, а текст лежит в бласти контента
+      @include content-area();
+      // меняем порядок текста и карты
+      order: 1;
+      height: 257px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $screen-sm) {
+      //у карты размер задан, и чтоб не задавать ширину тексту(она разная на разрешениях),
+      // но при этом прижать карту к правому краю контента на разрещении sm и lg
+      flex-grow: 1;
+      height: 470px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__contacts-wrap {
+
+    @media (min-width: $screen-sm) {
+    padding-top: 60px;
+    }
+
+    @media (min-width: $screen-lg) {
+    padding-top: 32px;
+    }
+  }
+
+  &__nav {
+    margin-top: 30px;
   }
 
   &__social {
-    margin-top: 18px;
+    margin-top: 35px;
   }
 
   &__btn {
     position: absolute;
     right: 0;
-    bottom: -10px;
+    bottom: 10px;
+
+    @media (min-width: $screen-sm) {
+      bottom: 30px;
+      left: 0;
+    }
+  }
+
+  &__map-wrap {
+
+    @media (min-width: $screen-lg) {
+    // чтоб карта встала по центру относительно контейнера текста
+    margin: auto 0;
+    }
   }
 }

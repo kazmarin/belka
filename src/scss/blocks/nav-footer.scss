@@ -1,11 +1,7 @@
 .nav-footer {
 
-  &__list {
-    margin-top: 20px;
-  }
-
   &__item {
-    margin-bottom: 8px;
+    margin-bottom: 13px;
     list-style-type: none;
 
     &:last-child {
@@ -19,9 +15,10 @@
     line-height: $line-height - 6;
     color: #dadae7;
     text-decoration: none;
-  }
 
-  &__social {
-    margin-top: 20px;
+    @media (min-width: $screen-sm) {
+    font-size: $font-size + 2;
+    line-height: $line-height;
+    }
   }
 }

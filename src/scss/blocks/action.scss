@@ -8,8 +8,9 @@
   }
 
   @media (min-width: $screen-lg) {
-    height: 582px;
+    height: 580px;
   }
+
 
   &__container {
     @include content-area();
@@ -17,12 +18,11 @@
 
   &__title {
     @include title();
-    //заголовок поднят в соседний блок, который выше
-    top: -37px;
+    padding-top: 23px;
   }
 
   &__wrapper {
-    // margin-top: 55px;  ?????????
+    margin-top: 88px;
     width: $screen-xs-content;
     box-sizing: border-box;
 
@@ -38,9 +38,11 @@
   }
 
   &__card {
-    // текст позиционируем относительно карточки
+     // текст позиционируем относительно карточки
     position: relative;
     border: 1px solid #000;
+    height: 253px;
+    width: 292px;
 
     @media (max-width: $screen-lg - 1) {
       margin-bottom: 10px;
@@ -50,7 +52,13 @@
     }
     }
 
+    @media (min-width: $screen-sm) {
+      height: 253px;
+      width: 740px;
+  }
+
     @media (min-width: $screen-lg) {
+      height: 343px;
       width: 359px;
   }
 }
@@ -68,4 +76,9 @@
     letter-spacing: 1px;
     color: #fefefe;
   }
+
+
+  // &__img {
+  //   width: 100%;
+  // }
 }

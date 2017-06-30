@@ -1,5 +1,5 @@
 .page-header {
-  height: 30px;
+  height: 32px;
 
   &__contacts {
     background-color: #e9e9f1;
@@ -11,7 +11,7 @@
 
   &__contacts-wrap {
     float: left;
-    margin-right: 20px;
+    // margin-right: 20px;
 
     @media (min-width: $screen-sm) {
       float: right;
