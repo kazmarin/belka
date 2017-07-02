@@ -8,7 +8,7 @@
   }
 
    @media (min-width: $screen-lg) {
-    width: 1060px;
+    width: 1068px;
   }
 
   &__card {
@@ -19,9 +19,9 @@
 //     width: 655px;
 //   }
 
-//   @media (min-width: $screen-lg) {
-//     padding-right: 70px;
-//     padding-left: 70px;
-// }
+  @media (min-width: $screen-lg) {
+    margin-right: 60px;
+    margin-left: 60px;
+}
 }
 }

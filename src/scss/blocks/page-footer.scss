@@ -77,7 +77,7 @@
 
   &__map-wrap {
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
     // чтоб карта встала по центру относительно контейнера текста
     margin: auto 0;
     }

@@ -27,4 +27,24 @@ height: 400px;
 }
 }
 
+.card-foto {
+@media (min-width: $screen-sm) {
+  display: block;
+  // width: 359px;
+  // height: 484px;
+  // cursor: zoom-in;
+}
+
+  @media (min-width: $screen-lg) {
+  display: inline-block;
+  width: 359px;
+  height: 484px;
+  cursor: zoom-in;
+
+  // &:hover {
+  //   box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.8) inset;
+  // }
+}
+}
+
 

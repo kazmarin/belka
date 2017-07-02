@@ -23,7 +23,7 @@ $('.slick-trace').slick({
       settings: "unslick"
     },
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -41,6 +41,7 @@ $('.slick-foto').slick({
   // autoplay: true,
   // autoplaySpeed: 2000,
   mobileFirst: true,
+  arrows: true,
   responsive: [
     {
       breakpoint: 768,
@@ -48,6 +49,30 @@ $('.slick-foto').slick({
     }
   ]
 });
+
+// $('.mfp-foto').magnificPopup({
+//  type: 'image',
+//  closeOnContentClick: true,
+//     mainClass: 'mfp-img-mobile', // class to remove default margin from left and right side
+//     image: {
+//       verticalFit: true
+//     },
+
+//     zoom: {
+//      enabled: true,
+//      duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+//  }
+//  });
+
+
+$(".col2").click(function () {
+    $(this).toggleClass("col2--active");
+  });
+
+$(".col3").click(function () {
+    $(this).toggleClass("col3--active");
+  });
+
 
 
 
@@ -58,12 +83,14 @@ $('.slick-reviews').slick({
   // autoplay: true,
   // autoplaySpeed: 2000,
   mobileFirst: true,
+  arrows: true,
   responsive: [
     {
       breakpoint: 768,
       settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrows: true,
       }
     }
   ]
