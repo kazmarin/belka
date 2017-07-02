@@ -6,12 +6,12 @@
     display: flex;
 
     //на мобильнике карта и тект стоят друг под другом
-    @media (max-width: $screen-sm - 1) {
+    @media (max-width: $screen-sm -1) {
       flex-direction: column;
     }
 
     //на разрешении больше мобильного, карта и текст должны лежать в контентной области
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-sm + 1) {
       @include content-area();
     }
   }
@@ -33,7 +33,7 @@
       // но при этом прижать карту к правому краю контента на разрещении sm и lg
       flex-grow: 1;
       height: 470px;
-      box-sizing: border-box;
+      // box-sizing: border-box;
     }
   }
 
