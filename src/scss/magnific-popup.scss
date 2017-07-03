@@ -133,6 +133,7 @@ button {
 }
 
 .mfp-close {
+  border: 1px solid green;
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -151,7 +152,7 @@ button {
     opacity: 1;
   }
   &:active {
-    top: 1px;
+    top: 10px;
   }
 }
 

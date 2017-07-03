@@ -21,8 +21,6 @@ $('.slick-trace').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 500,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
   mobileFirst: true,
   arrows: true,
   responsive: [
@@ -35,6 +33,8 @@ $('.slick-trace').slick({
       settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
       }
     }
   ]
@@ -46,8 +46,6 @@ $('.slick-foto').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 500,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
   mobileFirst: true,
   arrows: true,
   responsive: [
@@ -88,17 +86,15 @@ $('.slick-reviews').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 500,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
   mobileFirst: true,
-  arrows: true,
   responsive: [
     {
       breakpoint: 767,
       settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
       }
     }
   ]

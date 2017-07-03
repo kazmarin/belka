@@ -3,8 +3,9 @@
   @media (max-width: $screen-sm - 1) {
   margin: 0 auto;
 // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
-width: 226px;
+width: 224px;
 height: 400px;
+
 }
 
 @media (min-width: $screen-sm) {
@@ -22,11 +23,10 @@ height: 400px;
 .card-foto {
   //чтоб элементы до и после поставить сверху
   position: relative;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   width: 215px;
   height: 400px;
-  border: 1px solid #000;
 
 @media (min-width: $screen-sm) {
   width: 243px;

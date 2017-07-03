@@ -70,7 +70,7 @@
 }
 
 .slick-foto .slick-next {
-  right: -33px;
+  right: -32px;
   top: 173px;
 
   &:before {
@@ -114,6 +114,25 @@
 }
 
 
+
+button.mfp-close {
+  font-size: 0;
+  &:before{
+     @include sprite($close);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 0;
+      right: 0;
+       width: 41px;
+       height: 43px;
+     }
+}
+
+.mfp-image-holder .mfp-close {
+  right: -70px;
+  width: 20%;
+}
 
 // .mfp-zoom-in {
 
