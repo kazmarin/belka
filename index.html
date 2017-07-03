@@ -15,27 +15,8 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- Это включение в разметку SVG-спрайта и пример его использования -->
-  
-  <!-- <svg width="24" height="24"><use xlink:href="#loupe"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#rgb"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg> -->
-
-
   <!-- Это включение в разметку PNG-спрайта и пример его использования -->
 
-
-
-
-<!-- Это примеры использования растрового спрайта -->
-<!--
-<div class="chrome"></div>
-<div class="github-logo"></div>
-<div class="kraken"></div>
-<div class="male-and-female"></div>
-<div class="musica-searcher"></div>
-<div class="placeholder"></div>
--->
 
 <header class="page-header">
   <div class="page-header__contacts">
@@ -54,7 +35,7 @@
   <div class="page-header__navbar">
     <div class="page-header__container">
       <div class="page-header__navbar-wrap navbar">
-      <a href="" class="navbar__logo logo">
+        <a href="" class="navbar__logo logo">
           <img src="img/logo.png" alt="Логотип" width="88" height="64" class="logo-img">
         </a>
         <button class="navbar__btn btn">Купить билет</button>
@@ -62,10 +43,10 @@
         <nav class="navbar__nav-toggle-wrap main-nav-toggle navbar__nav-wrap main-nav">
           <ul class="main-nav-toggle__list main-nav__list">
             <li class="main-nav-toggle__item main-nav__item">
-              <a href="" class="main-nav-toggle__link main-nav__link main-nav__link--active">Трассы</a>
+              <a href="#" class="main-nav-toggle__link main-nav__link main-nav__link--active">Трассы</a>
             </li>
             <li class="main-nav-toggle__item main-nav__item">
-              <a href="" class="main-nav-toggle__link main-nav__link">Акции</a>
+              <a href="#" class="main-nav-toggle__link main-nav__link">Акции</a>
             </li>
             <li class="main-nav-toggle__item main-nav__item">
               <a href="" class="main-nav-toggle__link main-nav__link">Цены</a>
@@ -107,55 +88,61 @@
     <div class="trace__container">
       <h2 class="trace__title trace__title--white">ТРАССЫ</h2>
 
-      <div class="trace__gallery-wrap gallery">
-        <!-- <button class="gallery__btn-prev btn-prev"></button> -->
+      <div class="trace__slick-wrap">
+        <div class="slick-trace">
 
-        <div class="gallery__slick-wrap slick-trace">
+          <div class="slick-trace__card">
+            <div class="card-trace">
+              <h3 class="card-trace__title">Трасса #1</h3>
+              <p class="card-trace__height">Высота 15 м.</p>
+              <p class="card-trace__age">Возраст 13+</p>
+              <img src="img/climb1.jpg" alt="Трасса1" width="214" height="320" class="card-trace__img">
+              <p class="card-trace__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
+            </div>
+            </div>
 
-          <div class="slick-trace__card card">
-            <h3 class="card__title">Трасса #1</h3>
-            <p class="card__height">Высота 15 м.</p>
-            <p class="card__age">Возраст 13+</p>
-            <img src="img/climb1.png" alt="Трасса1" width="214" height="320" class="card-img">
-            <p class="card__text">Трасса для опытных скалолазов. Требуется наличие хорошей физ. подготовки.</p>
-          </div>
+<div class="slick-trace__card">
+            <div class="card-trace card-trace--blue">
+              <h3 class="card-trace__title">Трасса #2</h3>
+              <p class="card-trace__height">Высота 4 м.</p>
+              <p class="card-trace__age">Возраст 4+</p>
+              <img src="img/climb2.jpg" alt="Трасса2" width="214" height="320" class="card-trace__img">
+              <p class="card-trace__text">Для людей с разной физ. подготовкой. Различные зацепы и рельефы стены</p>
+            </div>
+            </div>
 
-          <div class="slick-trace__card card card--blue">
-            <h3 class="card__title">Трасса #2</h3>
-            <p class="card__height">Высота 4 м.</p>
-            <p class="card__age">Возраст 4+</p>
-            <img src="img/climb2.png" alt="Трасса2" width="214" height="320" class="card-img">
-            <p class="card__text">Для людей с разной физ. подготовкой.</p>
-            <p class="card__text">Различные зацепы и рельефы стены</p>
-          </div>
+            <div class="slick-trace__card">
+              <div class="card-trace">
+                <h3 class="card-trace__title">Трасса #3</h3>
+                <p class="card-trace__height">Высота 10 м.</p>
+                <p class="card-trace__age">Возраст 13+</p>
+                <img src="img/climb3.jpg" alt="Трасса3" width="214" height="320" class="card-trace__img">
+                <p class="card-trace__text">Трасса подойдет как для профессианалов, так и для любителей. Необходима хорошая физ. подготовка.</p>
+              </div>
+            </div>
 
-          <div class="slick-trace__card card">
-            <h3 class="card__title">Трасса #3</h3>
-            <p class="card__height">Высота 10 м.</p>
-            <p class="card__age">Возраст 13+</p>
-            <img src="img/climb3.png" alt="Трасса3" width="214" height="320" class="card-img">
-            <p class="card__text">Трасса подойдет как для профессианалов, так и для любителей.</p>
-            <p class="card__text">Необходима хорошая физ. подготовка.</p>
-          </div>
+            <div class="slick-trace__card">
+              <div class="card-trace card-trace--blue">
+                <h3 class="card-trace__title">Трасса #4</h3>
+                <p class="card-trace__height">Высота 3 м.</p>
+                <p class="card-trace__age">Возраст 4+</p>
+                <img src="img/climb4.jpg" alt="Трасса4" width="214" height="320" class="card-trace__img">
+                <p class="card-trace__text">Самая невысокая трасса. Специальные зацепы для детей</p>
+              </div>
+            </div>
 
-          <div class="slick-trace__card card card--blue">
-            <h3 class="card__title">Трасса #4</h3>
-            <p class="card__height">Высота 3 м.</p>
-            <p class="card__age">Возраст 4+</p>
-            <img src="img/climb4.png" alt="Трасса4" width="214" height="320" class="card-img">
-            <p class="card__text">Самая невысокая трасса. Специальные зацепы для детей</p>
-          </div>
 
-          <div class="slick-trace__card card">
-            <h3 class="card__title">Трасса #5</h3>
-            <p class="card__height">Высота 8 м.</p>
-            <p class="card__age">Возраст 13+</p>
-            <img src="img/climb5.png" alt="Трасса5" width="214" height="320" class="card-img">
-            <p class="card__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
+            <div class="slick-trace__card">
+              <div class="card-trace">
+                <h3 class="card-trace__title">Трасса #5</h3>
+                <p class="card-trace__height">Высота 8 м.</p>
+                <p class="card-trace__age">Возраст 13+</p>
+                <img src="img/climb5.jpg" alt="Трасса5" width="214" height="320" class="card-trace__img">
+                <p class="card-trace__text">Средняя высота и сложность.Физ. подготовка не обязательна.</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- <button class="gallery__btn-next btn-next"></button> -->
       </div>
     </div>
   </section>
@@ -167,31 +154,33 @@
       <div class="action__wrapper">
         <div class="action__card">
           <picture>
-             <source media="(min-width: 768px)" srcset="img/company--m.png">
-             <source media="(min-width: 1200px)" srcset="img/company--l.png" width="359">
-             <img src="img/company--s.png" alt="Приходите компаниями" class="action__img">
-           </picture>
-          <p class="action__text">Компания от 5 чел. скидка 10%</p>
+            <source media="(min-width: 1200px)" srcset="img/company--l.jpg">
+            <source srcset="img/company--m.jpg" media="(min-width: 768px)">
+            <img src="img/company--s.jpg" alt="Приходите компаниями" class="action__img">
+          </picture>
+            <p class="action__text">Компания от 5 чел. скидка 10%</p>
+            <a href="" class="action__link">Подробнее</a>
         </div>
 
         <div class="action__card">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/family--m.png">
-            <source media="(min-width: 1200px)" srcset="img/family--l.png">
-            <img src="img/family--s.png" alt="Семьей выгодно" class="action__img">
+            <source media="(min-width: 1200px)" srcset="img/family--l.jpg">
+            <source media="(min-width: 768px)" srcset="img/family--m.jpg">
+            <img src="img/family--s.jpg" alt="Семьей выгодно" class="action__img">
           </picture>
-          <p class="action__text">Многодетным семьям скидка 20%</p>
+            <p class="action__text">Многодетным семьям скидка 20%</p>
+            <a href="" class="action__link">Подробнее</a>
         </div>
 
-        <div class="action__card">
+        <div class="action__card action__card--shadow">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/student--m.png">
-            <source media="(min-width: 1200px)" srcset="img/student--l.png">
-            <img src="img/student--s.png" alt="Семьей выгодно" class="action__img">
+            <source media="(min-width: 1200px)" srcset="img/student--l.jpg">
+            <source media="(min-width: 768px)" srcset="img/student--m.jpg">
+            <img src="img/student--s.jpg" alt="Семьей выгодно" class="action__img">
           </picture>
-          <p class="action__text">Студентам <br> по карте isic 20%</p>
+            <p class="action__text">Студентам <br> по карте isic 20%</p>
+            <a href="" class="action__link">Подробнее</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -203,43 +192,46 @@
         <h2 class="have__title have__title--white">У НАС</h2>
         <div class="have__info">
           <p class="have__text have__text--rope">Альпинистское снаряжение и страховочные устройства французской компании Petzl</p>
-          <p class="have__text have__text--sign">Понятная маркировка трасс(ламинированные табоички и зацепки определенного цвета для каждой трассы)</p>
+          <p class="have__text have__text--sign">Понятная маркировка трасс (ламинированные табоички и зацепки определенного цвета для каждой трассы)</p>
           <p class="have__text have__text--question">На территории скаладрома всегда находится инструктор, который готов ответить на любой Ваш вопрос</p>
         </div>
       </div>
 
-      <div class="have__gallery-wrap gallery">
-        <button class="gallery__btn-prev btn-prev"></button>
+      <div class="have__slick-wrap">
 
-        <div class="gallery__slider slider-foto">
-          <div class="slider-foto__inner single-item">
-
-            <div class="slider-foto__card">
+        <div class="slick-foto">
+          <div class="slick-foto__card">
+            <a href="img/foto-big.jpg" class="card-foto mfp-foto">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/foto1--m.png">
                 <source media="(min-width: 1200px)" srcset="img/foto1--l.png">
+                <source media="(min-width: 768px)" srcset="img/foto1--m.png">
                 <img src="img/foto1--s.png" alt="Трасса" class="card-img">
               </picture>
-            </div>
-
-            <div class="slider-foto__card">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/foto2--m.png">
-                <source media="(min-width: 1200px)" srcset="img/foto2--l.png">
-                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
-              </picture>
-            </div>
-
-            <div class="slider-foto__card">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/foto3--m.png">
-                <source media="(min-width: 1200px)" srcset="img/foto3--l.png">
-                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
-              </picture>
-            </div>
+            </a>
           </div>
+
+          <div class="slick-foto__card">
+            <a href="img/foto-big.jpg" class="card-foto mfp-foto">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/foto2--l.png">
+                <source media="(min-width: 768px)" srcset="img/foto2--m.png">
+                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
+              </picture>
+              </a>
+          </div>
+          <div class="slick-foto__card">
+            <a href="img/foto-big.jpg" class="card-foto mfp-foto">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/foto3--l.png">
+                <source media="(min-width: 768px)" srcset="img/foto3--m.png">
+                <img src="img/foto1--s.png" alt="Трасса" class="card-img">
+              </picture>
+              </a>
+          </div>
+
+
+
         </div>
-        <button class="carousel__btn-next btn-next"></button>
       </div>
     </div>
   </section>
@@ -247,9 +239,7 @@
   <section class="price">
     <h2 class="price__title title">ЦЕНЫ</h2>
 
-
     <div class="price__accordion-wrap accordion">
-
       <div class="accordion__item">
         <p class="accordion__text">Выберите возраст</p>
 
@@ -298,13 +288,75 @@
     </div>
 
     <div class="price__wrapper">
-    <div class="price__text">Стоимость абонемента<span class="price__price-season">0 Р</span></div>
-    <div class="price__container">
-      <p class="price__trener">ПЕРСОНАЛЬНЫЙ ОПЕРАТОР ПАРКА<span class="price__price">600 Р/час</span></p>
-      <p class="price__hour">КАЖДЫЙ ДОПОЛНИТЕЛЬНЫЙ ЧАС<span class="price__price">500 Р</span></p>
-    <button class="price__btn btn btn--red">КУПИТЬ БИЛЕТ</button>
-    <a href="" class="price__document">Техника безопасности (PDF)</a>
+    <div class="price__list-service">
+      <div class="price__container">
+        <div class="list-service">
+
+          <div class="list-service__title-wrap">
+          <p class="list-service__title">ДЕТСКИЙ<br>от 4 лет</p>
+          <p class="list-service__title">ВЗРОСЛЫЙ<br>от 7 лет</p>
+        </div>
+
+        <table class="list-service__table-wrap service-table">
+        <tr class="service-table__row row1">
+          <td class="col1" colspan="3">Прохождение препятствий парка 3 часа</td>
+        </tr>
+        <tr class="service-table__row row2">
+          <td class="col1">ВСЕ ТРАССЫ<br>ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</td>
+          <td class="col2">2200 P</td>
+          <td class="col3">2500 P</td>
+        </tr>
+        <tr class="service-table__row row3">
+          <td class="col1">СКAЛОДРОМ</td>
+          <td class="col2">1000 P</td>
+          <td class="col3">1300 P</td>
+        </tr>
+        <tr class="service-table__row row4">
+          <td class="col1">ВЕРЕВОЧНЫЙ ПАРК</td>
+          <td class="col2">1200 P</td>
+          <td class="col3">1500 P</td>
+        </tr>
+        </table>
+
+        <table class="list-service__table-wrap service-table">
+        <tr class="service-table__row row1">
+          <td class="col1" colspan="3">Прохождение препятствий парка 12 часов</td>
+        </tr>
+        <tr class="service-table__row row2">
+          <td class="col1">ВСЕ ТРАССЫ<br>ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</td>
+          <td class="col2">5500 P</td>
+          <td class="col3">6000 Р</td>
+        </tr>
+        <tr class="service-table__row row3">
+          <td class="col1">СКАЛОДРОМ</td>
+          <td class="col2">3000 P</td>
+          <td class="col3">3500 P</td>
+        </tr>
+        <tr class="service-table__row row4">
+          <td class="col1">ВЕРЕВОЧНЫЙ ПАРК</td>
+          <td class="col2">4000 P</td>
+          <td class="col3">4500 P</td>
+        </tr>
+        </table>
+        </div>
+        </div>
     </div>
+      <div class="price__info">
+      <div class="price__container">
+       <span class="price__text-season">Стоимость абонемента</span>
+        <span class="price__price-season">0 Р</span>
+        </div>
+      </div>
+
+      <div class="price__container">
+      <div class="price__text-wrap">
+        <p class="price__trener">ПЕРСОНАЛЬНЫЙ ОПЕРАТОР ПАРКА<span class="price__price">600 Р/час</span></p>
+        <p class="price__hour">КАЖДЫЙ ДОПОЛНИТЕЛЬНЫЙ ЧАС<span class="price__price">500 Р</span></p>
+        </div>
+        <button class="price__btn btn btn--red-big">КУПИТЬ БИЛЕТ</button>
+        <a href="" class="price__document">Техника безопасности (PDF)</a>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -312,65 +364,72 @@
     <div class="reviews__container">
       <div class="reviews__wrapper">
         <h2 class="reviews__title">ОТЗЫВЫ</h2>
-      <div class="reviews__gallery-wrap gallery ">
-        <button class="gallery__btn-prev btn-prev"></button>
 
-        <div class="gallery__slider slider-reviews">
-        <div class="slider-reviews__inner">
+        <div class="reviews__slick-wrap">
+          <div class="slick-reviews">
+            <div class="slick-reviews__card">
 
-          <div class="slider-reviews__card card-reviews">
-          <img src="img/people1--s.png" alt="Фото" width="157" height="157" class="card-reviews__img">
-          <p class="card-reviews__name">Алексей.</p>
-          <p class="card-reviews__status">Скалолаз-любитель.</p>
-          <div class="card-reviews__social social-reviews">
-            <a href="#" class="social-reviews__item social-reviews__instag"></a>
-            <a href="#" class="social-reviews__item social-reviews__vk"></a>
+              <div class="card-reviews">
+                <img src="img/people1.png" alt="Фото" width="157" height="157" class="card-reviews__img">
+                <p class="card-reviews__name">Алексей.</p>
+                <p class="card-reviews__status">Скалолаз-любитель.</p>
+                <div class="card-reviews__social social-reviews">
+                  <a href="#" class="social-reviews__item social-reviews__instag"></a>
+                  <a href="#" class="social-reviews__item social-reviews__vk"></a>
+                </div>
+                <p class="card-reviews__text">Интересные трассы, вкусная еда и самые приветоивые тренера!</p>
+              </div>
+            </div>
+
+            <div class="slick-reviews__card">
+              <div class="card-reviews">
+                <img src="img/people2.png" alt="Фото" class="card-reviews__img">
+                <p class="card-reviews__name">Мария.</p>
+                <p class="card-reviews__status">Студентка.</p>
+                <div class="card-reviews__social social-reviews">
+                  <a href="" class="social-reviews__item social-reviews__instag"></a>
+                  <a href="" class="social-reviews__item social-reviews__vk"></a>
+                </div>
+                <p class="card-reviews__text">Лучший скалодром в городе!</p>
+              </div>
+            </div>
+
+            <div class="slick-reviews__card">
+              <div class="card-reviews">
+                <img src="img/people3.png" alt="Фото" class="card-reviews__img">
+                <p class="card-reviews__name">Екатерина.</p>
+                <p class="card-reviews__status">Мама троих детей.</p>
+                <div class="card-reviews__social social-reviews">
+                  <a href="" class="social-reviews__item social-reviews__instag"></a>
+                  <a href="" class="social-reviews__item social-reviews__vk"></a>
+                </div>
+                <p class="card-reviews__text">Парк "BЕLKA" отличная альтернатива наскучившим походам в кино и кафе</p>
+              </div>
+            </div>
+
+            <div class="slick-reviews__card">
+              <div class="card-reviews">
+                <img src="img/people2.png" alt="Фото" class="card-reviews__img">
+                <p class="card-reviews__name">Мария.</p>
+                <p class="card-reviews__status">Студентка.</p>
+                <div class="card-reviews__social social-reviews">
+                  <a href="" class="social-reviews__item social-reviews__instag"></a>
+                  <a href="" class="social-reviews__item social-reviews__vk"></a>
+                </div>
+                <p class="card-reviews__text">Лучший скалодром в городе!</p>
+              </div>
+            </div>
           </div>
-          <p class="card-reviews__text">Интересные трассы, вкусная еда и самые приветоивые тренера!</p>
         </div>
-
-        <div class="slider-reviews__card card-reviews">
-          <img src="img/people2--s.png" alt="Фото" class="card-reviews-img">
-          <p class="card-reviews__name">Мария.</p>
-          <p class="card-reviews__status">Студентка.</p>
-          <div class="card-reviews__social">
-            <a href="" class="social-reviews__item social-reviews__instag"></a>
-            <a href="" class="social-reviews__item social-reviews__vk"></a>
-          </div>
-          <p class="card-reviews__text">Лучший скалодром в городе!</p>
-        </div>
-
-        <div class="slider-reviews__card card-reviews">
-          <img src="img/people3--s.png" alt="Фото" class="card-reviews-img">
-          <p class="card-reviews__name">Екатерина.</p>
-          <p class="card-reviews__status">Мама троих детей.</p>
-          <div class="card-reviews__social">
-            <a href="" class="social-reviews__item social-reviews__instag"></a>
-            <a href="" class="social-reviews__item social-reviews__vk"></a>
-          </div>
-          <p class="card-reviews__text">Парк "BЕLKA" отличная альтернатива наскучившим походам в кино и кафе</p>
-        </div>
-        </div>
-        </div>
-
-
-        <button class="gallery__btn-next btn-next"></button>
-      </div>
       </div>
     </div>
   </section>
 </main>
 
+
 <footer class="page-footer">
 
-  <div class="page-footer__map-wrap">
-    <div id="map" class="map"></div>
-
-    <!-- ВНИМАНИЕ! Тут использован мой ключ! key=AIzaSyDjGAiz42P2243i_aoNCu4Pf0vU_xDWcZk — ключ -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwn8tQEEYmWsVItjRCBucEqWIcLRxmAsI&signed_in=true&callback=initMap"></script>
-  </div>
-
-  <div class="page-footer__container">
+  <div class="page-footer__inner">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts-wrap contacts-footer">
         <p class="contacts-footer__address contacts-footer__placeholder">Выборгское ш.,220</p>
@@ -405,29 +464,19 @@
 
       <button class="page-footer__btn btn-up"></button>
     </div>
+
+    <div class="page-footer__map-wrap">
+    <div id="map" class="map"></div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwn8tQEEYmWsVItjRCBucEqWIcLRxmAsI&signed_in=true&callback=initMap"></script>
+
   </div>
+
+    </div>
+
 </footer>
 
-<div class="carus">
-<div class="autoplay">
-<div><img src="img/climb1--m.png" alt=""></div>
-<div><img src="img/climb2--m.png" alt=""></div>
-<div><img src="img/climb3--m.png" alt=""></div>
-<div><img src="img/climb3--m.png" alt=""></div>
-<div><img src="img/climb2--m.png" alt=""></div>
-<div><img src="img/climb1--m.png" alt=""></div>
-</div>
-</div>
-
-<div class="wr">
-  <div class="anim"></div>
-</div>
-<button class="ani"></button>
-
-
 <script src="js/script.min.js"></script>
-
-
 
 </body>
 </html>
