@@ -6,13 +6,23 @@
     display: flex;
 
     //на мобильнике карта и тект стоят друг под другом
-    @media (max-width: $screen-sm -1) {
+    @media (max-width: $screen-sm - 1) {
       flex-direction: column;
     }
 
     //на разрешении больше мобильного, карта и текст должны лежать в контентной области
-    @media (min-width: $screen-sm + 1) {
-      @include content-area();
+    @media (min-width: $screen-sm) {
+      margin: 0 auto;
+      width: $screen-sm-content;
+      padding-left: 14px;
+      padding-right: 14px;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      width: $screen-lg-content;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
     }
   }
 
@@ -20,7 +30,7 @@
     //для перемещения кнопки круглой
     position: relative;
 
-    @media (max-width: $screen-sm - 1) {
+     @media (max-width: $screen-sm - 1) {
       //на мобильном карта занимает весь экран, а текст лежит в бласти контента
       @include content-area();
       // меняем порядок текста и карты

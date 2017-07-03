@@ -1,16 +1,15 @@
 .slick-trace {
 margin: 0 auto;
   @media (min-width: $screen-xs) {
-    margin: 0 auto;
      // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
-    width: 222px;
-    height: 320px;
+    width: 245px;
+    height: 350px;
   }
 
   @media (min-width: $screen-sm) {
     // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними
-    width: 666px;
-    height: 621px;
+    width: 715px;
+    height: 650px;
   }
 
   @media (min-width: $screen-lg) {
@@ -24,9 +23,15 @@ margin: 0 auto;
   }
 
   &__card {
+
+    @media (max-width: $screen-sm - 1) {
+      padding-top: 15px;
+      height: 350px;
+    }
+
     @media (max-width: $screen-lg - 1) {
-    padding-left: 4px;
-    padding-right: 4px;
+      padding-top: 15px;
+      height: 650px;
   }
 
    @media (min-width: $screen-lg) {

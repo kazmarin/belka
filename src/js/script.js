@@ -9,6 +9,14 @@ $(document).ready(function() {
   });
 
 
+function activeItem_link() {
+        $('.main-nav__link').removeClass('main-nav__link--active');
+        $(this).addClass('main-nav__link--active');
+    }
+    $('.main-nav__link').on('click', activeItem_link);
+
+
+
 $('.slick-trace').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -19,7 +27,7 @@ $('.slick-trace').slick({
   arrows: true,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1199,
       settings: "unslick"
     },
     {
@@ -44,25 +52,25 @@ $('.slick-foto').slick({
   arrows: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: "unslick",
     }
   ]
 });
 
-// $('.mfp-foto').magnificPopup({
-//  type: 'image',
-//  closeOnContentClick: true,
-//     mainClass: 'mfp-img-mobile', // class to remove default margin from left and right side
-//     image: {
-//       verticalFit: true
-//     },
+$('.mfp-foto').magnificPopup({
+ type: 'image',
+ closeOnContentClick: true,
+    // mainClass: 'mfp-img-mobile', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
 
-//     zoom: {
-//      enabled: true,
-//      duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
-//  }
-//  });
+    zoom: {
+     enabled: true,
+     duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+ }
+ });
 
 
 $(".col2").click(function () {
@@ -86,7 +94,7 @@ $('.slick-reviews').slick({
   arrows: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

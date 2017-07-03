@@ -76,6 +76,42 @@
       height: 343px;
       width: 359px;
   }
+
+  &:before {
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    height: 253px;
+    width: 292px;
+    background-color: transparent;
+    transition: background-color 0.5s linear;
+
+    @media (min-width: $screen-sm) {
+      height: 253px;
+      width: 740px;
+  }
+
+    @media (min-width: $screen-lg) {
+      height: 343px;
+      width: 359px;
+  }
+  }
+
+  &:hover {
+
+        &:before {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  & .action__text{
+    display: none;
+  }
+
+    & .action__link {
+      opacity: 1;
+    }
+  }
 }
 
   &__text {
@@ -98,5 +134,24 @@
 
      @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){left: 40px;}
   }
+
+  &__link {
+    //"подробнее" должно стоять выше картинки
+      position: absolute;
+      //задаю ширину и высоту, чтоб выствавить блок автоматически потом по середине
+      width: 100px;
+      height: 40px;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      font-family: $font-family;
+      font-size: $font-size;
+      line-height: ($line-height + 12);
+      color: #fefefe;
+      transition: opacity 0.8s linear;
+      opacity: 0;
+}
 
 }

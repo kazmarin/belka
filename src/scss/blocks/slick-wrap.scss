@@ -1,3 +1,9 @@
+.slick-slide {
+  &:focus {
+    outline: none;
+  }
+}
+
 .slick-trace .slick-prev,
 .slick-trace .slick-next {
     height: 41px;

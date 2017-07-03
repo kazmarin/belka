@@ -22,7 +22,7 @@
     &:first-child {
       height: 52px;
 
-      & .col1 {
+        .col1 {
         padding-right: 20px;
         text-align: right;
         background-color: #f0f0f0;
@@ -34,27 +34,34 @@
     }
 
     &:nth-child(n+2) {
-      & .col1 {
-        width: 370px;
+        .col1 {
+        width: 369px;
         color: #dadae7;
         background-color: #55616d;
+        // border-bottom: 2px solid #55616d;
 
         @media (min-width: $screen-lg) {
           width: 398px;
         }
       }
+
     }
 
 
-    .col2,
-    .col3 {
+    & .col2,
+    & .col3 {
+
       &:hover {
-    border: 1px solid #67717b;
+     border: 2px solid #67717b;
   }
 
   &--active {
     position: relative;
     border: 2px solid #960000;
+
+    &:hover {
+    border: 2px solid #960000;
+  }
 
     &:after{
       @include sprite($checked-l);

@@ -3,7 +3,7 @@
   @media (max-width: $screen-sm - 1) {
   margin: 0 auto;
 // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
-width: 223px;
+width: 226px;
 height: 400px;
 }
 
@@ -19,31 +19,78 @@ height: 400px;
   height: 484px;
 }
 
-&__card {
-    @media (max-width: $screen-sm - 1) {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-}
-}
-
 .card-foto {
+  //чтоб элементы до и после поставить сверху
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 215px;
+  height: 400px;
+  border: 1px solid #000;
+
 @media (min-width: $screen-sm) {
-  display: block;
-  // width: 359px;
-  // height: 484px;
-  // cursor: zoom-in;
+  width: 243px;
+  height: 400px;
 }
 
   @media (min-width: $screen-lg) {
-  display: inline-block;
   width: 359px;
   height: 484px;
-  cursor: zoom-in;
+}
 
-  // &:hover {
-  //   box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.8) inset;
-  // }
+  &:before {
+    display: none;
+    position: absolute;
+    content:'';
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.5s linear;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+  width: 243px;
+  height: 400px;
+}
+
+    @media (min-width: $screen-lg) {
+      height: 484px;
+      width: 359px;
+    }
+  }
+
+  &:after {
+    @include sprite($loupe);
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 87px;
+    height: 89px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+    @media (max-width: $screen-sm - 1) {
+      display: none;
+}
+  }
+
+  &:hover {
+
+    @media (min-width: $screen-sm) {
+        &:before {
+    background-color: rgba(0,0,0,0.5);
+   }
+
+    &:after {
+      opacity: 1;
+    }
+    }
+  }
 }
 }
 
