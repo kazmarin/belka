@@ -14,17 +14,15 @@
     }
   }
 
-    &__tw {
+    &--twitter {
     @include sprite($twitter-h-s);
   }
 
-  &__vk {
+  &--vkontakte {
     @include sprite($vk-h-s);
   }
 
-  &__instag {
+  &--instagram {
     @include sprite($instagram-h-s);
   }
-
-
 }

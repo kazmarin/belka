@@ -1,9 +1,16 @@
-.slick-slide {
-  &:focus {
-    outline: none;
-  }
+// убираем рамку при нажатой карточке везде,
+// где подключена карусель
+.slick-slide:focus {
+  outline: none;
 }
 
+// убираем рамку при нажатой карточке на разрешении 1200 ,
+// когда карусель выключена
+.slick-trace__card:focus {
+  outline: none;
+}
+
+// Вставляем свою стрелку в блоке  "trace"
 .slick-trace .slick-prev,
 .slick-trace .slick-next {
     height: 41px;
@@ -43,7 +50,12 @@
   }
 }
 
+// Убираем рамку в блоке  "have", возникающую от mfp
+.slick-foto__card .card-foto:focus{
+  outline:none;
+}
 
+// Вставляем свою стрелку в блоке  "have"
 .slick-foto .slick-prev,
 .slick-foto .slick-next {
     height: 41px;
@@ -78,6 +90,7 @@
   }
 }
 
+// Вставляем свою стрелку в блоке  "reviews"
 .slick-reviews .slick-prev,
 .slick-reviews .slick-next {
     height: 41px;
@@ -115,6 +128,8 @@
 
 
 
+
+// Вставляем свою кнопку в модальном окне
 button.mfp-close {
   font-size: 0;
   &:before{
@@ -129,47 +144,12 @@ button.mfp-close {
      }
 }
 
+// Перемещаем кнопку в нужное место
 .mfp-image-holder .mfp-close {
   right: -70px;
   width: 20%;
 }
 
-// .mfp-zoom-in {
-
-//   /* start state */
-//   .mfp-with-anim {
-//     opacity: 0;
-//     transition: all 0.2s ease-in-out;
-//     transform: scale(0.8);
-//   }
-
-//   &.mfp-bg {
-//     opacity: 0;
-//     transition: all 0.3s ease-out;
-//   }
-
-//   /* animate in */
-//   &.mfp-ready {
-//     .mfp-with-anim {
-//       opacity: 1;
-//       transform: scale(2);
-//     }
-//     &.mfp-bg {
-//       opacity: 0.8;
-//     }
-//   }
-
-//   /* animate out */
-//   &.mfp-removing {
-
-//     .mfp-with-anim {
-//       transform: scale(0.8);
-//       opacity: 0;
-//     }
-//     &.mfp-bg {
-//       opacity: 0;
-//     }
-
-//   }
-
-// }
+img.mfp-img {
+  height: 800px;
+}

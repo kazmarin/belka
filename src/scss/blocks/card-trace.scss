@@ -9,9 +9,11 @@
 
   @media (min-width: $screen-sm) {
     height: 620px;
-    background-color: rgba(71,86,100,.8);
+    background-color: rgba(85,96,107,.8);
 
-    &:nth-child(even) {background-color: #2b3644;}
+    &--blue {
+    background-color: #22313f;
+  }
   }
 
   &:hover {

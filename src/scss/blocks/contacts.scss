@@ -47,11 +47,7 @@
 
   &__phone {
     position: relative;
-    margin-right: 70px;
-
-    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
-      margin-right: 60px;
-    }
+    margin-right: 60px;
 
     &:before {
       @include sprite($phone-call-h);

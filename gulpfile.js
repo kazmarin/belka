@@ -178,6 +178,7 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/slick.min.js',
       dirs.source + '/js/jquery.magnific-popup.min.js',
+      dirs.source + '/js/jquery.easing.min.js',
       dirs.source + '/js/script.js',
     ])
     .pipe(plumber({ errorHandler: onError }))             // не останавливаем автоматику при ошибках

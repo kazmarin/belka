@@ -20,16 +20,16 @@
     box-sizing: border-box;
 
     @media (min-width: $screen-xs) {
-      background-image: url(../img/about-us--s.jpg);
+      background-image: url(../img/about-us--320.jpg);
     }
 
     @media (min-width: $screen-sm) {
       height: 385px;
-      background-image: url(../img/about-us--m.jpg);
+      background-image: url(../img/about-us--768.jpg);
     }
 
     @media (min-width: $screen-lg) {
-      background-image: url(../img/about-us--l.jpg);
+      background-image: url(../img/about-us--1200.jpg);
     }
   }
 

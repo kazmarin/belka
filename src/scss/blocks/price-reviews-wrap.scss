@@ -5,16 +5,16 @@
   @media (min-width: $screen-xs) {
     // height: 812px;
     height: 1079px;
-    background-image: url(../img/mountain3--s.jpg);
+    background-image: url(../img/mountain3--320.jpg);
   }
 
   @media (min-width: $screen-sm) {
     height: 1690px;
-    background-image: url(../img/mountain3--m.jpg);
+    background-image: url(../img/mountain3--768.jpg);
   }
 
   @media (min-width: $screen-lg) {
     height: 1700px;
-    background-image: url(../img/mountain3--l.jpg);
+    background-image: url(../img/mountain3--1200.jpg);
   }
 }

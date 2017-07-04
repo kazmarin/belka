@@ -3,17 +3,17 @@
   background-size: cover;
 
   @media (min-width: $screen-xs) {
-    background-image: url(../img/mountain1--s.jpg);
+    background-image: url(../img/mountain1--320.jpg);
   }
 
  @media (min-width: $screen-sm) {
   height: 821px;
-  background-image: url(../img/mountain1--m.jpg);
+  background-image: url(../img/mountain1--768.jpg);
  }
 
  @media (min-width: $screen-lg) {
   height: 813px;
-  background-image: url(../img/mountain1--l.jpg);
+  background-image: url(../img/mountain1--1200.jpg);
  }
 
   &__container {

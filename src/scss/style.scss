@@ -1,5 +1,5 @@
-@import 'normalize.scss';
 @import 'fonts.scss';
+@import 'normalize.scss';
 @import 'variables.scss';
 
 @import 'global.scss';
@@ -21,7 +21,6 @@
 @import 'blocks/rocks.scss';
 @import 'blocks/btn.scss';
 @import 'blocks/trace.scss';
-@import 'blocks/gallery.scss';
 @import 'blocks/btn-prev.scss';
 @import 'blocks/slick-trace.scss';
 @import 'blocks/card-trace.scss';
@@ -44,16 +43,4 @@
 @import 'blocks/social-footer.scss';
 @import 'blocks/btn-up.scss';
 
-
-
-// @import 'slick.scss';
-// @import 'slick-theme.scss';
-
-@import 'blocks/slick-wrap.scss';
-
-
-
-
-
-
-// @import '.src/blocks/page-header/page-header.scss'
+@import 'blocks/own-slick-mfp.scss';
