@@ -2,8 +2,13 @@
   width: $screen-sm-content;
   box-sizing: border-box;
 
-@media (min-width: $screen-lg) {
-  width: $screen-lg-content;
+  @media (max-width: $screen-sm - 1) {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: $screen-lg-content;
   }
 
   &__title-wrap {
@@ -15,7 +20,7 @@
     @media (min-width: $screen-lg) {
       width: 790px;
       float: right;
-  }
+    }
   }
 
   &__title {
@@ -27,9 +32,7 @@
     text-align: center;
     color: #dadae7;
 
-    @media (min-width: $screen-lg) {
-      width: 395px;
-  }
+    @media (min-width: $screen-lg) {width: 395px; }
   }
 
   &__table-wrap{

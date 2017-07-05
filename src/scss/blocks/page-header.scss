@@ -12,17 +12,13 @@
   &__contacts-wrap {
     float: left;
 
-    @media (min-width: $screen-sm) {
-      float: right;
-    }
+    @media (min-width: $screen-sm) {float: right; }
   }
 
   &__toggle-btn {
     float: right;
 
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
+    @media (min-width: $screen-sm) {display: none; }
   }
 
   &__navbar {

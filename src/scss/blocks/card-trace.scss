@@ -1,3 +1,5 @@
+// Карточки трасс
+// =====================================
 .card-trace {
   margin: 0 auto;
   //нужно на мобилке картинку положить под текст
@@ -6,21 +8,28 @@
   height: 320px;
   box-sizing: border-box;
 
-
-  @media (min-width: $screen-sm) {
-    height: 620px;
-    background-color: rgba(85,96,107,.8);
-
-    &--blue {
-    background-color: #22313f;
-  }
+  &:before {
+    @media (max-width: $screen-sm - 1) {
+      position: absolute;
+      // затемнение должно быть на изображении
+      z-index: 2;
+      content:'';
+      top: 0;
+      left: 0;
+      height: 320px;
+      width: 214px;
+      background-color: rgba(0,0,0,0.5);
+    }
   }
 
   &:hover {
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);
-    @media (min-width: $screen-lg) {
-      box-shadow: 0 0 29px 4px rgba(0,0,0,0.55);
-    }
+      @media (min-width: $screen-lg) {box-shadow: 0 0 29px 4px rgba(0,0,0,0.55); }
+  }
+
+  @media (min-width: $screen-sm) {
+    height: 620px;
+    background-color: rgba(85,96,107,.8);
   }
 
   &__title {
@@ -36,9 +45,9 @@
 
     @media (max-width: $screen-sm - 1) {
       position: relative;
-    // чтоб текст лежал выше чем картинка
-    z-index: 2;
-  }
+      // чтоб текст лежал выше чем картинка
+      z-index: 2;
+    }
   }
 
   &__height,
@@ -53,7 +62,7 @@
       // чтоб текст лежал выше чем картинка
       position: relative;
       z-index: 2;
-  }
+    }
   }
 
   &__height,
@@ -90,18 +99,16 @@
     }
   }
 
-    &__img {
+  &__img {
     @media (max-width: $screen-sm - 1) {
-      //нужно на мобилке картинку положить под надпись
+      //нужно на мобилке картинку положить под текст
       position: absolute;
       left: 0;
       top: 0;
       z-index: 1;
     }
 
-    @media (min-width: $screen-sm) {
-      margin-top: 25px;
-    }
+    @media (min-width: $screen-sm) {margin-top: 25px; }
   }
 
   &__text {
@@ -110,9 +117,10 @@
     width: 180px;
     color: #e7e7f2;
 
-    @media (min-width: $screen-sm) {
-      margin-top: 20px;
-    }
+    @media (min-width: $screen-sm) {margin-top: 20px; }
   }
 
+  &--blue {
+    @media (min-width: $screen-sm) {background-color: #22313f; }
+  }
 }

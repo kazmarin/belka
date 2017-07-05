@@ -1,14 +1,13 @@
+// ============================================
+//      Блок "У нас"
+// ============================================
 .have {
   height: 902px;
   background-color: #fff;
 
-  @media (min-width: $screen-sm) {
-    height: 885px;
-  }
+  @media (min-width: $screen-sm) {height: 885px; }
 
-  @media (min-width: $screen-lg) {
-    height: 1100px;
-  }
+  @media (min-width: $screen-lg) {height: 1100px; }
 
   &__container {
     @include content-area();
@@ -36,14 +35,6 @@
   &__title {
     @include title();
     padding-top: 48px;
-
-    &--white {
-      color: #fefefe;
-
-      &:after {
-        border: 2px solid #fefefe;
-      }
-    }
   }
 
   &__info {
@@ -70,7 +61,7 @@
       margin-bottom: 34px;
       margin-left: 75px;
 
-      &:last-child {margin-bottom: 0;}
+      &:last-child {margin-bottom: 0; }
     }
 
     @media (min-width: $screen-lg) {
@@ -136,17 +127,10 @@
 
   &__slick-wrap {
 
-    @media (min-width: $screen-xs) {
-      margin-top: 29px;
+    @media (min-width: $screen-xs) {margin-top: 29px; }
 
-    }
+    @media (min-width: $screen-sm) {margin-top: 53px; }
 
-    @media (min-width: $screen-sm) {
-      margin-top: 53px;
-    }
-
-    @media (min-width: $screen-lg) {
-      margin-top: 112px;
-    }
+    @media (min-width: $screen-lg) {margin-top: 112px; }
   }
 }

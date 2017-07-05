@@ -1,3 +1,5 @@
+// Аккордион
+//====================================
 .accordion {
   height: 174px;
   box-sizing: border-box;
@@ -9,11 +11,11 @@
     cursor: pointer;
     box-sizing: border-box;
 
-    &:last-child {border-bottom: 1px solid #22313f;}
+    &:last-child {border-bottom: 1px solid #22313f; }
   }
 
   &__text,
-  &__sub-text {
+  &__subtext {
     margin: 0 auto;
     width: $screen-xs;
     font-family: $font-family;
@@ -38,32 +40,29 @@
       bottom: 0;
       margin: auto 0;
       right: 0;
+      transition: transform 0.5s linear;
     }
   }
 
-  &__item-active > &__text:after {
-    transition: rotate (90deg);
-  }
+  &__item-active > &__text:after {transform: rotate(-90deg); }
 
   &__inner {
     position: absolute;
-    z-index:1;
     width: 100%;
     top: 57px;
+    //когда разворачивается и сворачивается элемент он должен лежать выше остальных
+    z-index:1;
     display: none;
     background-color: #22313f;
   }
 
-  &__item-active > &__inner {
-    display: block;
-    z-index:2;
-  }
-
-    &__sub-item {
+  &__subitem {
     height: 59px;
   }
 
-  &__sub-text {
+  &__subtext {
     color: #dadae7;
-}
+
+    &--center {line-height: 59px; }
+  }
 }

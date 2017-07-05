@@ -1,3 +1,5 @@
+// Блок Social
+// ======================================
 .social-footer {
   display: flex;
   align-items: center;
@@ -12,27 +14,22 @@
     }
   }
 
-    &__tw {
+  &__tw {
     @include sprite($twitter-f-s);
 
-    @media (min-width: $screen-sm) {
-   @include sprite($twitter-f);
-    }
+    @media (min-width: $screen-sm) {@include sprite($twitter-f); }
   }
 
   &__vk {
     @include sprite($vk-f-s);
-    @media (min-width: $screen-sm) {
-   @include sprite($vk-f);
-    }
+
+    @media (min-width: $screen-sm) {@include sprite($vk-f); }
 
   }
 
   &__instag {
     @include sprite($instagram-f-s);
-    @media (min-width: $screen-sm) {
-   @include sprite($instagram-f);
-    }
-  }
 
+    @media (min-width: $screen-sm) {@include sprite($instagram-f); }
+  }
 }

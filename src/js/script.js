@@ -70,12 +70,12 @@ $(document).ready(function() {
    });
 
   // Начинает подсвечивать ячейку c ценой в блоке "price"
-  $(".col2").click(function () {
-    $(this).toggleClass("col2--active");
+  $(".service-table__col2").click(function () {
+    $(this).toggleClass("service-table__col2--active");
   });
 
-  $(".col3").click(function () {
-    $(this).toggleClass("col3--active");
+  $(".service-table__col3").click(function () {
+    $(this).toggleClass("service-table__col3--active");
   });
 
   // Карусель в блоке "reviews"
@@ -103,9 +103,11 @@ $(document).ready(function() {
     function openItem() {
       if ($(this).hasClass('accordion__item-active')) {
         $(this).removeClass('accordion__item-active');
+        $(this).children('.accordion__inner').slideUp("slow");
       } else {
         $('.accordion__item').removeClass('accordion__item-active');
         $(this).addClass('accordion__item-active');
+        $(this).children('.accordion__inner').slideDown("slow");
       }
     }
     $('.accordion__item').on('click', openItem);
@@ -118,6 +120,26 @@ $(document).ready(function() {
     $('html, body').animate({ scrollTop: 0 }, 5000, 'easeOutQuad');    //переходим к элементу по координатам, которые получили
   }
   $('.btn-up').on('click', jumpHeader);
+
+// // Вычисление общей суммы в аккордионе
+// var sum = $('.sum');
+// var items = $('.accordion__sub-item');
+// var total = 0;
+
+// items.on('click', function(event) {
+//   if($(this).data('added') == 'true') {
+
+//   var price = $(this).data('price');
+//   if($(this).data('added') == 'true') {
+//     $(this).removeData('added');
+//     total -= price;
+//   } else {
+//     $(this).data('added', 'true');
+//     total += price;
+//   }
+//   sum.html(total);
+// });
+
 
 });
 

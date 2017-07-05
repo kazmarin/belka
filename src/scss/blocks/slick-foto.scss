@@ -1,102 +1,100 @@
+// Карусель в разделе "У нас" have
+// ===========================================
 .slick-foto {
 
   @media (max-width: $screen-sm - 1) {
-  margin: 0 auto;
-// ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
-width: 224px;
-height: 400px;
+    margin: 0 auto;
+    // ширина выбирается такая, чтоб вместить ширину карточки
+    // +отступы между ними(здесь почему-то больше пришлось задать)
+    width: 224px;
+    height: 400px;
+  }
 
-}
-
-@media (min-width: $screen-sm) {
-  display: flex;
-  justify-content: space-between;
-  width: $screen-sm-content;
-  height: 400px;
-}
-
-@media (min-width: $screen-lg) {
-  width: $screen-lg-content;
-  height: 484px;
-}
-
-.card-foto {
-  //чтоб элементы до и после поставить сверху
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 215px;
-  height: 400px;
-
-@media (min-width: $screen-sm) {
-  width: 243px;
-  height: 400px;
-}
+  @media (min-width: $screen-sm) {
+    display: flex;
+    justify-content: space-between;
+    width: $screen-sm-content;
+    height: 400px;
+  }
 
   @media (min-width: $screen-lg) {
-  width: 359px;
-  height: 484px;
-}
+    width: $screen-lg-content;
+    height: 484px;
+  }
 
-  &:before {
-    display: none;
-    position: absolute;
-    content:'';
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    transition: background-color 0.5s linear;
+  .card-foto {
+    //чтоб элементы до и после поставить сверху
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 215px;
+    height: 400px;
 
     @media (min-width: $screen-sm) {
-      display: block;
-  width: 243px;
-  height: 400px;
-}
+      width: 243px;
+      height: 400px;
+    }
 
     @media (min-width: $screen-lg) {
-      height: 484px;
       width: 359px;
+      height: 484px;
     }
-  }
 
-  &:after {
-    @include sprite($loupe);
-    display: inline-block;
-    position: absolute;
-    content: '';
-    width: 87px;
-    height: 89px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 0;
-    transition: opacity 0.5s linear;
-
-    @media (max-width: $screen-sm - 1) {
+    &:before {
       display: none;
-}
-  }
+      position: absolute;
+      content:'';
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      transition: background-color 0.5s linear;
 
-  &:hover {
+      @media (min-width: $screen-sm) {
+        display: block;
+        width: 243px;
+        height: 400px;
+      }
 
-    @media (min-width: $screen-sm) {
-        &:before {
-    background-color: rgba(0,0,0,0.5);
-   }
+      @media (min-width: $screen-lg) {
+        height: 484px;
+        width: 359px;
+      }
+    }
 
     &:after {
-      opacity: 1;
-    }
-    }
-  }
+      @include sprite($loupe);
+      display: inline-block;
+      position: absolute;
+      content: '';
+      width: 87px;
+      height: 89px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0;
+      transition: opacity 0.5s linear;
 
-  &__img {
-    width: 100%;
-    height: 100%;
+      @media (max-width: $screen-sm - 1) {
+        display: none;
+      }
+    }
+
+    &:hover {
+
+      @media (min-width: $screen-sm) {
+        &:before {background-color: rgba(0,0,0,0.5); }
+
+        &:after {opacity: 1; }
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
   }
-}
 }
 
 

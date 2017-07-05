@@ -1,10 +1,13 @@
-  .reviews {
-    width: 100%;
-    height: 812px;
-    background-image: url(../img/mountain3--320.jpg);
-    background-size: cover;
+// =================================
+// Блок отзывов reviews
+// =================================
+.reviews {
+  width: 100%;
+  height: 812px;
+  background-image: url(../img/mountain3--320.jpg);
+  background-size: cover;
 
-    @media (min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
     height: 1570px;
     background-image: url(../img/mountain3--768.jpg);
   }
@@ -18,23 +21,17 @@
     @include content-area();
     padding-top: 215px;
 
-    @media (min-width: $screen-sm) {
-      padding-top: 930px;
-  }
+    @media (min-width: $screen-sm) {padding-top: 930px; }
 
-   @media (min-width: $screen-lg) {
-    padding-top: 961px;
+    @media (min-width: $screen-lg) {padding-top: 961px; }
   }
-}
 
   &__wrapper {
     height: 558px;
     background-color: rgba(226,226,227,.84);
     box-sizing: border-box;
 
-  @media (min-width: $screen-lg) {
-    height: 569px;
-  }
+    @media (min-width: $screen-lg) {height: 569px; }
   }
 
   &__title {
@@ -42,16 +39,13 @@
     padding-top: 43px;
   }
 
-&__slick-wrap {
+  &__slick-wrap {
     margin-top: 40px;
     width: $screen-xs-content;
     box-sizing: border-box;
 
-  @media (min-width: $screen-sm) {
-      width: $screen-sm-content;
-  }
-  @media (min-width: $screen-lg) {
-      width: $screen-lg-content;
-  }
+    @media (min-width: $screen-sm) {width: $screen-sm-content; }
+
+    @media (min-width: $screen-lg) {width: $screen-lg-content; }
   }
 }

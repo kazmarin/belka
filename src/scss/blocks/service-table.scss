@@ -1,84 +1,166 @@
-.service-table {
-  width: $screen-sm-content;
-  border-collapse: collapse;
-  box-sizing: border-box;
+// .service-table {
+//   width: $screen-sm-content;
+//   border-collapse: collapse;
+//   box-sizing: border-box;
 
-  @media (min-width: $screen-lg) {
-    width: $screen-lg-content;
-  }
+//   @media (min-width: $screen-lg) {
+//     width: $screen-lg-content;
+//   }
+
+//   &__row {
+//     height: 64px;
+//     font-family: $font-family;
+//     font-size: $font-size;
+//     line-height: $line-height;
+//     text-align: center;
+//     color: #22313f;
+
+//     @media (min-width: $screen-lg) {
+//       font-size: ($font-size + 2);
+//     }
+
+//     &:first-child {
+//       height: 52px;
+
+//         .col1 {
+//         padding-right: 20px;
+//         text-align: right;
+//         background-color: #f0f0f0;
+
+//         @media (min-width: $screen-lg) {
+//           text-align: center;
+//         }
+//       }
+//     }
+
+//     &:nth-child(n+2) {
+//         .col1 {
+//         width: 369px;
+//         color: #dadae7;
+//         background-color: #55616d;
+//         // border-bottom: 2px solid #55616d;
+
+//         @media (min-width: $screen-lg) {
+//           width: 398px;
+//         }
+//       }
+
+//     }
+
+
+//     & .col2,
+//     & .col3 {
+
+//       &:hover {
+//      border: 2px solid #67717b;
+//   }
+
+//   &--active {
+//     position: relative;
+//     border: 2px solid #960000;
+
+//     &:hover {
+//     border: 2px solid #960000;
+//   }
+
+//     &:after{
+//       @include sprite($checked-l);
+//       position: absolute;
+//       display: inline-block;
+//       content: "";
+//       top: 0;
+//       bottom: 0;
+//       margin: auto 0;
+//       right: 30px;
+
+//       @media (min-width: $screen-lg){
+//         right: 50px;
+//       }
+//     }
+//   }
+
+//   }
+// }
+// }
+
+.service-table {
+  display: flex;
+  flex-direction: column;
+  width: $screen-sm-content;
+  box-sizing: border- box;
+
+  @media (min-width: $screen-lg) {width: $screen-lg-content; }
 
   &__row {
+    display: flex;
     height: 64px;
     font-family: $font-family;
     font-size: $font-size;
-    line-height: $line-height;
-    text-align: center;
+    line-height: 64px;
     color: #22313f;
+    text-align: center;
 
-    @media (min-width: $screen-lg) {
-      font-size: ($font-size + 2);
-    }
+    @media (min-width: $screen-lg) {font-size: ($font-size + 2); }
 
     &:first-child {
       height: 52px;
+      background-color: #f0f0f0;
 
-        .col1 {
+      .service-table__col1 {
         padding-right: 20px;
+        flex-grow: 1;
+        line-height: 52px;
         text-align: right;
-        background-color: #f0f0f0;
 
-        @media (min-width: $screen-lg) {
-          text-align: center;
-        }
+        @media (min-width: $screen-lg) {text-align: center; }
+      }
+    }
+
+    &:nth-child(2) {
+      .service-table__col1 {
+        line-height: $line-height;
       }
     }
 
     &:nth-child(n+2) {
-        .col1 {
+      .service-table__col1 {
         width: 369px;
         color: #dadae7;
         background-color: #55616d;
-        // border-bottom: 2px solid #55616d;
 
-        @media (min-width: $screen-lg) {
-          width: 398px;
-        }
+        @media (min-width: $screen-lg) {width: 398px; }
       }
-
     }
-
-
-    & .col2,
-    & .col3 {
-
-      &:hover {
-     border: 2px solid #67717b;
   }
 
-  &--active {
-    position: relative;
-    border: 2px solid #960000;
+  &__col2,
+  &__col3 {
+    flex-grow: 1;
 
     &:hover {
-    border: 2px solid #960000;
-  }
+      border: 2px solid #67717b;
+    }
 
-    &:after{
-      @include sprite($checked-l);
-      position: absolute;
-      display: inline-block;
-      content: "";
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      right: 30px;
+    &--active {
+      position: relative;
+      border: 2px solid #960000;
 
-      @media (min-width: $screen-lg){
-        right: 50px;
+      &:hover {
+        border: 2px solid #960000;
+      }
+
+      &:after{
+        @include sprite($checked-l);
+        position: absolute;
+        display: inline-block;
+        content: "";
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 30px;
+
+        @media (min-width: $screen-lg){right: 50px; }
       }
     }
   }
-
-  }
-}
 }

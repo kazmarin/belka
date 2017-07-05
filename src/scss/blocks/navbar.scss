@@ -8,15 +8,11 @@
 
   &__logo {
     margin-right: 20px;
-    @media (max-width: $screen-sm - 1) {
-      display: none;
-    }
+    @media (max-width: $screen-sm - 1) {display: none; }
   }
 
   &__btn {
-    @media (max-width: $screen-lg - 1) {
-      display: none;
-    }
+    @media (max-width: $screen-lg - 1) {display: none; }
   }
 
   &__nav-wrap {
@@ -31,8 +27,6 @@
   &__social {
     margin-top: 20px;
 
-    @media (min-width: $screen-sm) {
-      display: none;
-    }
+    @media (min-width: $screen-sm) {display: none; }
   }
 }

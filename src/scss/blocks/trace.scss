@@ -24,17 +24,7 @@
     @include title();
     padding-top: 3px;
 
-  @media (min-width: $screen-lg) {
-    padding-top: 20px;
-  }
-
-    &--white {
-      color: #fefefe;
-
-      &:after {
-        border: 2px solid #fefefe;
-      }
-    }
+    @media (min-width: $screen-lg) {padding-top: 20px; }
   }
 
   &__slick-wrap {
@@ -42,13 +32,14 @@
     width: $screen-xs-content;
     box-sizing: border-box;
 
-  @media (min-width: $screen-sm) {
-    margin-top: 68px;
+    @media (min-width: $screen-sm) {
+      margin-top: 68px;
       width: $screen-sm-content;
-  }
-  @media (min-width: $screen-lg) {
-    margin-top: 55px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 55px;
       width: $screen-lg-content;
-  }
+    }
   }
 }

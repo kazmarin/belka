@@ -1,19 +1,19 @@
 .btn-up {
-    @include sprite($button-up-s);
-    content: '';
-    display: inline-block;
-    background-color: transparent;
-    border: none;
+  @include sprite($button-up-s);
+  content: '';
+  display: inline-block;
+  background-color: transparent;
+  border: none;
 
-    @media (min-width: $screen-sm) {
-   @include sprite($button-up-m);
-    }
+  @media (min-width: $screen-sm) {
+    @include sprite($button-up-m);
+  }
 
-    @media (min-width: $screen-lg) {
-   @include sprite($button-up-l);
-    }
+  @media (min-width: $screen-lg) {
+    @include sprite($button-up-l);
+  }
 
-      &:focus {
+  &:focus {
     outline: none;
   }
-  }
+}

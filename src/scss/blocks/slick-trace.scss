@@ -1,5 +1,8 @@
+// Карусель в разделе "Трассы" trace
+// ===========================================
 .slick-trace {
-margin: 0 auto;
+  margin: 0 auto;
+
   @media (min-width: $screen-xs) {
      // ширина выбирается такая, чтоб вместить ширину карточки +отступы между ними(здесь почему-то больше пришлось задать)
     width: 245px;
@@ -32,11 +35,10 @@ margin: 0 auto;
     @media (max-width: $screen-lg - 1) {
       padding-top: 15px;
       height: 650px;
-  }
+    }
 
-   @media (min-width: $screen-lg) {
-
-  &:nth-child(even) {margin-top: 75px;}
-}
+    &:nth-child(even) {
+      @media (min-width: $screen-lg) {margin-top: 75px; }
+   }
   }
 }

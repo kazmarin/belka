@@ -229,16 +229,12 @@
     <div class="price__accordion-wrap accordion">
       <div class="accordion__item">
         <p class="accordion__text">Выберите возраст</p>
-
         <div class="accordion__inner">
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ДЕТСКИЙ</p>
-            <p class="accordion__sub-text">ОТ 4 ЛЕТ</p>
+          <div class="accordion__subitem accordion__subitem--child">
+            <p class="accordion__subtext">ДЕТСКИЙ<br>ОТ 4 ЛЕТ</p>
           </div>
-
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ВЗРОЛЫЙ</p>
-            <p class="accordion__sub-text">ОТ 7 ЛЕТ</p>
+          <div class="accordion__subitem accordion__subitem--grown">
+            <p class="accordion__subtext">ВЗРОЛЫЙ<br>ОТ 7 ЛЕТ</p>
           </div>
         </div>
       </div>
@@ -246,15 +242,14 @@
       <div class="accordion__item">
         <p class="accordion__text">Выберите место</p>
         <div class="accordion__inner">
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ВСЕ ТРАССЫ</p>
-            <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
+          <div class="accordion__subitem" data-price-child-3hours="2200" data-price-grown-3hours="2500" data-price-child-12hours="5500" data-price-grown-12hours="6000">
+            <p class="accordion__subtext">ВСЕ ТРАССЫ<br>ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
           </div>
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ВЕРЕВОЧНЫЙ ПАРК</p>
+          <div class="accordion__subitem" data-price-child-3hours="1200" data-price-grown-3hours="1500" data-price-child-12hours="4000" data-price-grown-12hours="4500">
+            <p class="accordion__subtext accordion__subtext--center">ВЕРЕВОЧНЫЙ ПАРК</p>
           </div>
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">СКАЛОДРОМ</p>
+          <div class="accordion__subitem" data-price-child-3hours="1000" data-price-grown-3hours="1300" data-price-child-12hours="3000" data-price-grown-12hours="3500">
+            <p class="accordion__subtext accordion__subtext--center">СКАЛОДРОМ</p>
           </div>
         </div>
       </div>
@@ -262,13 +257,11 @@
       <div class="accordion__item">
         <p class="accordion__text">Выберите длительность</p>
         <div class="accordion__inner">
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
-            <p class="accordion__sub-text">ЗА 3 ЧАСА</p>
+          <div class="accordion__subitem accordion__subitem--3hours">
+            <p class="accordion__subtext">ПРОХОЖДЕНИЕ ПАРКА<br>ЗА 3 ЧАСА</p>
           </div>
-          <div class="accordion__sub-item">
-            <p class="accordion__sub-text">ПРОХОЖДЕНИЕ ПАРКА</p>
-            <p class="accordion__sub-text">ЗА 12 ЧАСОВ</p>
+          <div class="accordion__subitem accordion__subitem--12hours">
+            <p class="accordion__subtext">ПРОХОЖДЕНИЕ ПАРКА<br>ЗА 12 ЧАСОВ</p>
           </div>
         </div>
       </div>
@@ -284,7 +277,7 @@
               <p class="list-service__title">ВЗРОСЛЫЙ<br>от 7 лет</p>
             </div>
 
-            <table class="list-service__table-wrap service-table">
+            <!-- <table class="list-service__table-wrap service-table">
               <tr class="service-table__row row1">
                 <td class="col1" colspan="3">Прохождение препятствий парка 3 часа</td>
               </tr>
@@ -324,8 +317,55 @@
                 <td class="col2">4000 P</td>
                 <td class="col3">4500 P</td>
               </tr>
-            </table>
+            </table> -->
 
+            <div class="list-service__table-wrap service-table">
+              <div class="service-table__row">
+                <p class="service-table__col1">Прохождение препятствий парка 3 часа</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">ВСЕ ТРАССЫ<br>ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
+                <p class="service-table__col2">2200 P</p>
+                <p class="service-table__col3">2500 P</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">СКAЛОДРОМ</p>
+                <p class="service-table__col2">1000 P</p>
+                <p class="service-table__col3">1300 P</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">ВЕРЕВОЧНЫЙ ПАРК</p>
+                <p class="service-table__col2">1200 P</p>
+                <p class="service-table__col3">1500 P</p>
+              </div>
+            </div>
+
+            <div class="list-service__table-wrap service-table">
+              <div class="service-table__row">
+                <p class="service-table__col1">Прохождение препятствий парка 12 часов</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">ВСЕ ТРАССЫ<br>ВЕРЕВОЧНЫЙ ПАРК + СКАЛОДРОМ</p>
+                <p class="service-table__col2">5500 P</p>
+                <p class="service-table__col3">6000 P</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">СКAЛОДРОМ</p>
+                <p class="service-table__col2">3000 P</p>
+                <p class="service-table__col3">3500 P</p>
+              </div>
+
+              <div class="service-table__row">
+                <p class="service-table__col1">ВЕРЕВОЧНЫЙ ПАРК</p>
+                <p class="service-table__col2">4000 P</p>
+                <p class="service-table__col3">4500 P</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -333,7 +373,7 @@
       <div class="price__info">
         <div class="price__container">
           <span class="price__text-season">Стоимость абонемента</span>
-          <span class="price__price-season">0 Р</span>
+          <span class="price__price-season sum">0 Р</span>
         </div>
       </div>
 

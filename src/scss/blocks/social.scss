@@ -9,20 +9,12 @@
     margin-right: 10px;
     background-color: brown;
 
-    &:last-child{
-      margin-right: 0;
-    }
+    &:last-child {margin-right: 0; }
   }
 
-    &--twitter {
-    @include sprite($twitter-h-s);
-  }
+  &--twitter {@include sprite($twitter-h-s); }
 
-  &--vkontakte {
-    @include sprite($vk-h-s);
-  }
+  &--vkontakte {@include sprite($vk-h-s); }
 
-  &--instagram {
-    @include sprite($instagram-h-s);
-  }
+  &--instagram {@include sprite($instagram-h-s); }
 }

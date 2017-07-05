@@ -13,17 +13,17 @@
 // Вставляем свою стрелку в блоке  "trace"
 .slick-trace .slick-prev,
 .slick-trace .slick-next {
-    height: 41px;
-    width: 23px;
-    //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
-    transform: none;
+  height: 41px;
+  width: 23px;
+  //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
+  transform: none;
 
-    &:before {
+  &:before {
     display: inline-block;
     content: "";
   }
 
-   &:active {
+  &:active {
     transform: scale(0.8);
   }
 }
@@ -32,7 +32,7 @@
   left: -32px;
   top: 135px;
 
-  @media (min-width: $screen-sm) {top: 275px;}
+  @media (min-width: $screen-sm) {top: 275px; }
 
   &:before {
     @include sprite($arrow-prev);
@@ -43,7 +43,7 @@
   right: -32px;
   top: 135px;
 
-  @media (min-width: $screen-sm) {top: 275px;}
+  @media (min-width: $screen-sm) {top: 275px; }
 
   &:before {
     @include sprite($arrow-next);
@@ -58,9 +58,9 @@
 // Вставляем свою стрелку в блоке  "have"
 .slick-foto .slick-prev,
 .slick-foto .slick-next {
-    height: 41px;
-    width: 23px;
-    transform: none;
+  height: 41px;
+  width: 23px;
+  transform: none;
 
   &:before {
     display: inline-block;
@@ -93,10 +93,10 @@
 // Вставляем свою стрелку в блоке  "reviews"
 .slick-reviews .slick-prev,
 .slick-reviews .slick-next {
-    height: 41px;
-    width: 23px;
-    //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
-    transform: none;
+  height: 41px;
+  width: 23px;
+  //убираем, чтоб при нажимании на кнопку, она не опускалась вниз
+  transform: none;
 
   &:before {
     display: inline-block;
@@ -131,17 +131,19 @@
 
 // Вставляем свою кнопку в модальном окне
 button.mfp-close {
+  // чтоб исчезла кнопка которую задают с помощью шрифта и content: ""
   font-size: 0;
+
   &:before{
-     @include sprite($close);
-      position: absolute;
-      display: inline-block;
-      content: "";
-      top: 0;
-      right: 0;
-       width: 41px;
-       height: 43px;
-     }
+    @include sprite($close);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 41px;
+    height: 43px;
+  }
 }
 
 // Перемещаем кнопку в нужное место

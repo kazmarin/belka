@@ -1,3 +1,6 @@
+// =================================
+// Блок "Трассы" trace
+// =================================
 .rocks {
   height: 402px;
   background-size: cover;
@@ -24,9 +27,7 @@
     @include title();
     padding-top: 80px;
 
-    @media (min-width: $screen-sm) {
-      padding-top: 175px;
-    }
+    @media (min-width: $screen-sm) {padding-top: 175px; }
   }
 
   &__text-wrapp {
@@ -44,26 +45,18 @@
     font-size: ($font-size + 2);
     line-height: ($line-height + 6);
 
-    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
-      font-size: $font-size;
-    }
+    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1) {font-size: $font-size; }
 
     &:nth-child(n+2) {
-      @media (max-width: $screen-sm - 1) {
-        display: none;
-      }
+      @media (max-width: $screen-sm - 1) {display: none; }
     }
   }
 
   &__btn {
     margin-top: 35px;
 
-    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){
-      margin-top: 40px;
-    }
+    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1){margin-top: 40px; }
 
-    @media (min-width: $screen-lg) {
-      display: none;
-    }
+    @media (min-width: $screen-lg) {display: none; }
   }
 }

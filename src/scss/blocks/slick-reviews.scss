@@ -1,27 +1,21 @@
+// Карусель в разделе "Отзывы" reviews
+// ===========================================
 .slick-reviews {
   margin: 0 auto;
   width: 224px;
   height: 413px;
 
-  @media (min-width: $screen-sm) {
-    width: 666px;
-  }
+  @media (min-width: $screen-sm) {width: 666px; }
 
-   @media (min-width: $screen-lg) {
-    width: 1068px;
-  }
+   @media (min-width: $screen-lg) {width: 1068px; }
 
   &__card {
     padding-right: 4px;
     padding-left: 4px;
 
-//     @media (min-width: $screen-sm) {
-//     width: 655px;
-//   }
-
-  @media (min-width: $screen-lg) {
-    margin-right: 60px;
-    margin-left: 60px;
-}
-}
+    @media (min-width: $screen-lg) {
+      margin-right: 60px;
+      margin-left: 60px;
+    }
+  }
 }

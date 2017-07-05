@@ -1,11 +1,11 @@
 .contacts-footer {
 
-    @media (min-width: $screen-lg) {
+  @media (min-width: $screen-lg) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 388px;
-    }
+  }
 
   &__address,
   &__phone {
@@ -18,54 +18,54 @@
     color: #dadae7;
 
     &:before {
-    @include sprite($placeholder-f-s);
-    position: absolute;
-    display: inline-block;
-    content: "";
-    top: 2px;
-    left: 0px;
+      @include sprite($placeholder-f-s);
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 2px;
+      left: 0px;
+    }
   }
-}
 
-&__address {
+  &__address {
     line-height: ($line-height + 4);
     color: #dadae7;
 
     @media (min-width: $screen-sm) {
-    font-size: ($font-size + 2);
-    line-height: ($line-height + 12);
+      font-size: ($font-size + 2);
+      line-height: ($line-height + 12);
     }
 
     &:before {
-    @include sprite($placeholder-f-s);
-    top: 4px;
-    left: 0px;
+      @include sprite($placeholder-f-s);
+      top: 4px;
+      left: 0px;
 
-    @media (min-width: $screen-lg) {
-    top: 8px;
-    left: 0px;
+      @media (min-width: $screen-lg) {
+        top: 8px;
+        left: 0px;
+      }
     }
   }
-}
 
   &__phone {
     line-height: $line-height;
     color: #dadae7;
 
     @media (min-width: $screen-sm) {
-    font-size: ($font-size + 2);
-    line-height: $line-height;
+      font-size: ($font-size + 2);
+      line-height: $line-height;
     }
 
     @media (min-width: $screen-lg) {
-    font-size: ($font-size + 2);
-    line-height: $line-height;
+      font-size: ($font-size + 2);
+      line-height: $line-height;
     }
 
     &:before {
-    @include sprite($phone-call-f-s);
-    top: 4px;
-    left: 0;
+      @include sprite($phone-call-f-s);
+      top: 4px;
+      left: 0;
+    }
   }
-}
 }

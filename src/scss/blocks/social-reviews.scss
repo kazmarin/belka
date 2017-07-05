@@ -8,17 +8,10 @@
     content: '';
     margin-right: 10px;
 
-    &:last-child{
-      margin-right: 0;
-    }
+    &:last-child {margin-right: 0; }
   }
 
-  &__instag {
-    @include sprite($instagram);
-  }
+  &__instag {@include sprite($instagram); }
 
-  &__vk {
-    @include sprite($vk-s);
-  }
-
+  &__vk {@include sprite($vk-s); }
 }
