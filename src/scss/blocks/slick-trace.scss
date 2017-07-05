@@ -16,11 +16,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: inherit;
+    width: 1180px;
     height: 700px;
     box-sizing: border-box;
   }

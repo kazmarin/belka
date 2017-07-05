@@ -11,14 +11,15 @@
   }
 
   @media (min-width: $screen-sm) {
-    display: flex;
-    justify-content: space-between;
     width: $screen-sm-content;
     height: 400px;
   }
 
   @media (min-width: $screen-lg) {
-    width: $screen-lg-content;
+    // position: relative;
+    // left: -27px;
+    margin: -27px;
+    width: ($screen-lg-content +54);
     height: 484px;
   }
 

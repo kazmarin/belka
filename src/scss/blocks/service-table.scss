@@ -133,6 +133,12 @@
     }
   }
 
+  &__col1,
+  &__col2,
+  &__col3 {
+    border: 2px solid transparent;
+  }
+
   &__col2,
   &__col3 {
     flex-grow: 1;
